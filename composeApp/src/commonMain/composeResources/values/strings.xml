@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">LiD Trainer</string>
+
+    <!-- Language Select Screen -->
+    <string name="language_select_title">Welcome</string>
+    <string name="language_select_prompt">Choose your native language</string>
+    <string name="language_select_continue">Continue</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="study_questions">Study Questions</string>
+    <string name="practice_test">Practice Test</string>
+    <string name="questions_answered">Questions answered</string>
+    <string name="correct_answers">Correct</string>
+    <string name="incorrect_answers">Incorrect</string>
+    <string name="not_answered">Not answered</string>
+    <string name="progress_label">Progress</string>
+
+    <!-- Learn Screen -->
+    <string name="learn_title">Study</string>
+    <string name="next_question">Next</string>
+    <string name="previous_question">Previous</string>
+    <string name="show_answer">Show Answer</string>
+    <string name="question_number">Question %1$d of %2$d</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="theme_section">Theme</string>
+    <string name="system_theme">System</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="language_section">Language</string>
+    <string name="language_en">English</string>
+    <string name="language_ru">Russian</string>
+    <string name="language_de">German</string>
+
+    <!-- Common -->
+    <string name="back_button_tooltip">Back</string>
+    <string name="loading">Loading…</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="error_general">Something went wrong</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_dialog_title">Exit App</string>
+    <string name="exit_dialog_message">Are you sure you want to exit?</string>
+    <string name="exit_dialog_confirm">Exit</string>
+    <string name="exit_dialog_cancel">Cancel</string>
+</resources>

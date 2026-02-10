@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">LiD Trainer</string>
+
+    <!-- Language Select Screen -->
+    <string name="language_select_title">Добро пожаловать</string>
+    <string name="language_select_prompt">Выберите ваш родной язык</string>
+    <string name="language_select_continue">Продолжить</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_title">Главная</string>
+    <string name="study_questions">Изучать вопросы</string>
+    <string name="practice_test">Пробный тест</string>
+    <string name="questions_answered">Вопросов отвечено</string>
+    <string name="correct_answers">Правильно</string>
+    <string name="incorrect_answers">Неправильно</string>
+    <string name="not_answered">Без ответа</string>
+    <string name="progress_label">Прогресс</string>
+
+    <!-- Learn Screen -->
+    <string name="learn_title">Изучение</string>
+    <string name="next_question">Далее</string>
+    <string name="previous_question">Назад</string>
+    <string name="show_answer">Показать ответ</string>
+    <string name="question_number">Вопрос %1$d из %2$d</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Настройки</string>
+    <string name="theme_section">Тема</string>
+    <string name="system_theme">Системная</string>
+    <string name="light_theme">Светлая</string>
+    <string name="dark_theme">Тёмная</string>
+    <string name="language_section">Язык</string>
+    <string name="language_en">Английский</string>
+    <string name="language_ru">Русский</string>
+    <string name="language_de">Немецкий</string>
+
+    <!-- Common -->
+    <string name="back_button_tooltip">Назад</string>
+    <string name="loading">Загрузка…</string>
+    <string name="ok_button">ОК</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="error_general">Что-то пошло не так</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_dialog_title">Выход</string>
+    <string name="exit_dialog_message">Вы уверены, что хотите выйти?</string>
+    <string name="exit_dialog_confirm">Выйти</string>
+    <string name="exit_dialog_cancel">Отмена</string>
+</resources>

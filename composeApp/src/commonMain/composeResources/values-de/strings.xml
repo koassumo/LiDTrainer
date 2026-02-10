@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">LiD Trainer</string>
+
+    <!-- Language Select Screen -->
+    <string name="language_select_title">Willkommen</string>
+    <string name="language_select_prompt">Wählen Sie Ihre Muttersprache</string>
+    <string name="language_select_continue">Weiter</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_title">Übersicht</string>
+    <string name="study_questions">Fragen lernen</string>
+    <string name="practice_test">Probetest</string>
+    <string name="questions_answered">Fragen beantwortet</string>
+    <string name="correct_answers">Richtig</string>
+    <string name="incorrect_answers">Falsch</string>
+    <string name="not_answered">Nicht beantwortet</string>
+    <string name="progress_label">Fortschritt</string>
+
+    <!-- Learn Screen -->
+    <string name="learn_title">Lernen</string>
+    <string name="next_question">Weiter</string>
+    <string name="previous_question">Zurück</string>
+    <string name="show_answer">Antwort anzeigen</string>
+    <string name="question_number">Frage %1$d von %2$d</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="theme_section">Design</string>
+    <string name="system_theme">System</string>
+    <string name="light_theme">Hell</string>
+    <string name="dark_theme">Dunkel</string>
+    <string name="language_section">Sprache</string>
+    <string name="language_en">Englisch</string>
+    <string name="language_ru">Russisch</string>
+    <string name="language_de">Deutsch</string>
+
+    <!-- Common -->
+    <string name="back_button_tooltip">Zurück</string>
+    <string name="loading">Laden…</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Abbrechen</string>
+    <string name="error_general">Etwas ist schiefgelaufen</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_dialog_title">App beenden</string>
+    <string name="exit_dialog_message">Möchten Sie die App wirklich beenden?</string>
+    <string name="exit_dialog_confirm">Beenden</string>
+    <string name="exit_dialog_cancel">Abbrechen</string>
+</resources>
