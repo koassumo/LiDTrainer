@@ -24,6 +24,8 @@ import org.igo.lidtrainer.ui.common.TopBarState
 import org.igo.lidtrainer.ui.common.exitApp
 import org.igo.lidtrainer.ui.navigation.Destinations
 import org.igo.lidtrainer.ui.screen.dashboard.DashboardScreen
+import org.igo.lidtrainer.ui.screen.learn.LearnScreen
+import org.igo.lidtrainer.ui.screen.learn.LearnViewModel
 import org.igo.lidtrainer.ui.theme.LocalAppStrings
 import org.koin.compose.viewmodel.koinViewModel
 
@@ -74,12 +76,11 @@ fun MainScreen() {
                         )
                     }
                     Destinations.LEARN -> {
-                        topBarState.title = strings.learnTitle
-                        topBarState.canNavigateBack = true
-                        topBarState.onNavigateBack = { viewModel.navigateBack() }
-                        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                            Text("Learn — coming soon")
-                        }
+                        val learnViewModel = koinViewModel<LearnViewModel>()
+                        LearnScreen(
+                            viewModel = learnViewModel,
+                            onNavigateBack = { viewModel.navigateBack() }
+                        )
                     }
                     Destinations.SETTINGS -> {
                         topBarState.title = strings.settingsTitle
