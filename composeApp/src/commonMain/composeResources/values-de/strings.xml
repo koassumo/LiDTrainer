@@ -30,6 +30,7 @@
     <string name="light_theme">Hell</string>
     <string name="dark_theme">Dunkel</string>
     <string name="language_section">Sprache</string>
+    <string name="language_content_section">Inhaltssprache</string>
     <string name="language_en">Englisch</string>
     <string name="language_ru">Russisch</string>
     <string name="language_de">Deutsch</string>

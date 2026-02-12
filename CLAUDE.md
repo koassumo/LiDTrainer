@@ -63,7 +63,10 @@ Data Layer (Repositories + API/DB)
 - **ExitApp**: `exitApp()` — Android kills process, iOS is no-op
 - **Settings storage**: SharedPreferences (Android), NSUserDefaults (iOS) — via PlatformModule
 - **HttpClient engines**: OkHttp (Android), Darwin (iOS) — via Ktor
-- **SQLDelight drivers**: AndroidSqliteDriver, NativeSqliteDriver — via PlatformModule (not yet configured)
+- **SQLDelight drivers**: AndroidSqliteDriver, NativeSqliteDriver — via PlatformModule
+- **System locale detection**: `getSystemLanguageCode()` — Locale.getDefault() (Android), NSUserDefaults (iOS)
+- **UpdateAppLanguage**: Sets `Locale.setDefault()` (Android), `NSUserDefaults AppleLanguages` (iOS)
+- **UpdateSystemBarsTheme**: `WindowInsetsControllerCompat` (Android), no-op (iOS)
 
 ## Key Technologies
 
@@ -71,7 +74,7 @@ Data Layer (Repositories + API/DB)
 - **Compose Multiplatform**: 1.10.0
 - **AGP**: 8.13.2 (not upgrading to 9.x — breaking changes)
 - **DI**: Koin 4.1.1 — See `di/` directory for module organization
-- **Database**: SQLDelight 2.2.1 — Local question storage (plugin not yet applied)
+- **Database**: SQLDelight 2.2.1 — Local question storage with Note entity
 - **Networking**: Ktor Client 3.4.0 — Language pack downloads, Firebase API
 - **Serialization**: kotlinx-serialization 1.10.0
 - **Date/Time**: kotlinx-datetime 0.7.1
@@ -84,9 +87,9 @@ Data Layer (Repositories + API/DB)
 
 Koin modules are organized in `di/`:
 - `AppModule.kt` — Entry point with `initKoin()`, loads all modules
-- `DataModule.kt` — Repositories, API clients, database (currently empty)
-- `DomainModule.kt` — Use cases as `factory` (currently empty)
-- `UiModule.kt` — ViewModels as `viewModelOf` (MainViewModel registered)
+- `DataModule.kt` — TimeProvider, AppDatabase, NoteRepository, SettingsRepository
+- `DomainModule.kt` — Use cases as `factory` (LoadNotesFromJsonUseCase)
+- `UiModule.kt` — ViewModels as `viewModelOf` (MainViewModel, LessonViewModel, SettingsViewModel)
 - `PlatformModule.kt` — `expect/actual` per platform (Settings registered)
 
 **Initialization:**
@@ -244,26 +247,63 @@ Text("Hardcoded text")      // ❌ Wrong
 
 **Note:** UI localization (EN/RU/DE) is separate from quiz content localization (~200 languages loaded from server).
 
+## Language Configuration — Two Independent Settings
+
+The app has **two separate language settings** stored in `SettingsRepository`:
+
+1. **`languageState: StateFlow<AppLanguageConfig>`** — UI language (menu, buttons, labels)
+   - Values: `SYSTEM`, `EN`, `RU`, `DE`
+   - Stored as: `"app_language_key"` in Settings
+   - Controls: `UpdateAppLanguage()` + `rememberAppStrings()`
+   - User can change in Settings → Language
+
+2. **`languageContentState: StateFlow<String>`** — Content language (quiz question translations)
+   - Values: `"en"`, `"ru"`, `"de"` (or `""` if not selected)
+   - Stored as: `"language_content_code"` in Settings
+   - Controls: Which JSON pack to load (`pack_en.json`, `pack_ru.json`, etc.)
+   - User can change in Settings → Content Language
+
+**First Launch Behavior:**
+- `LanguageSelectScreen` auto-detects system language via `getSystemLanguageCode()`
+- User selects native language → sets BOTH `languageState` AND `languageContentState` to same value
+- Example: User picks Russian → UI becomes Russian + questions show Russian translations
+
+**After First Launch:**
+- User can independently change UI language (e.g., switch UI to English) and content language (keep Russian translations)
+- This flexibility allows mixing (e.g., German UI with English translations for learners)
+
 ## Screens
 
-1. **LanguageSelectScreen** — First launch: choose native language for quiz content (not yet implemented)
-2. **DashboardScreen** — Statistics, "Study questions" / "Practice test" buttons (placeholder)
-3. **LessonScreen** — Main screen with question cards
-4. **SettingsScreen** — Theme, UI language (placeholder)
+1. **LanguageSelectScreen** — First launch: choose native language for quiz content. Auto-detects system language and pre-selects it. On continue, sets both UI language and content language to the same value.
+2. **DashboardScreen** — Statistics, "Study questions" button navigating to LessonScreen
+3. **LessonScreen** — Question cards with German text + native language translation, 4 answer options with color feedback (green/red), navigation between questions
+4. **SettingsScreen** — Three settings: Theme (System/Light/Dark), UI Language (System/EN/RU/DE), Content Language (EN/RU/DE). Uses local sub-navigation with AnimatedContent.
 
 ## Data Model
 
-### Question Entity (SQLDelight — not yet created)
+### Note Entity (SQLDelight)
+SQLDelight schema at `commonMain/sqldelight/org/igo/lidtrainer/db/Note.sq`
+
+**Structure:** Parallel German + Native language fields
 ```
-- questionNumber: Int
-- questionText: String
-- answer1: String
-- answer2: String
-- answer3: String
-- answer4: String
-- correctAnswerIndex: Int
-- userStatus: enum (NOT_ANSWERED / CORRECT / INCORRECT)
+- id: Long (PRIMARY KEY AUTOINCREMENT)
+- questionNumber: Int (UNIQUE NOT NULL)
+- questionTextDe: String (German question text)
+- answer1De, answer2De, answer3De, answer4De: String (German answers)
+- langNative: String (native language code: "en", "ru", "de")
+- questionTextNative: String (translated question text)
+- answer1Native, answer2Native, answer3Native, answer4Native: String (translated answers)
+- correctAnswerIndex: Int (1-4)
+- category: String ("GENERAL", "Berlin", "Bayern", etc.)
+- imageUrl: String? (optional image)
+- userAnswerIndex: Int? (user's answer, null if not answered)
+- isAnsweredCorrectly: Boolean? (null if not answered)
+- lastAnsweredAt: Long? (timestamp)
 ```
+
+**Loading:** `LoadNotesFromJsonUseCase` loads bundled JSON files (`pack_de.json` + `pack_{lang}.json`), merges by index, inserts into DB.
+
+**DTO Pipeline:** `JNote` (JSON) → `PreNote` (intermediate) → `Note` (domain/DB entity)
 
 ## What's Done vs What's Remaining
 
@@ -276,16 +316,21 @@ Text("Hardcoded text")      // ❌ Wrong
 - [x] Single Scaffold architecture (MainScreen + TopBarState)
 - [x] Navigation with stack (MainViewModel + Destinations)
 - [x] Cross-platform BackHandler + ExitApp (expect/actual)
+- [x] SQLDelight database setup (Note entity with parallel DE + native fields)
+- [x] NoteRepository + LoadNotesFromJsonUseCase (bundled JSON loading)
+- [x] SettingsRepository (theme + UI language + content language persistence)
+- [x] LanguageSelectScreen (first launch flow with system language detection)
+- [x] SettingsScreen (theme + UI language + content language switching)
+- [x] DashboardScreen (statistics + navigation to LessonScreen)
+- [x] LessonScreen (question cards with answer feedback)
+- [x] UpdateAppLanguage + UpdateSystemBarsTheme (expect/actual for locale and status bar)
+- [x] System language detection (getSystemLanguageCode via Platform.kt)
 
 ### Remaining
-- [ ] SettingsScreen (theme + language switching)
-- [ ] LanguageSelectScreen (first launch flow)
-- [ ] DashboardScreen (statistics + navigation)
-- [x] LessonScreen (question cards)
-- [ ] SQLDelight database setup (Question entity)
-- [ ] Ktor API client (language pack loading from Firebase)
-- [ ] BuildKonfig setup (API keys)
-- [ ] SettingsRepository (persist theme/language choices)
+- [ ] Ktor API client (language pack loading from Firebase for ~200 languages)
+- [ ] BuildKonfig setup (API keys from local.properties)
+- [ ] Full statistics display on DashboardScreen
+- [ ] Practice test mode (timer, scoring, no answer reveal until end)
 
 ## Reference Project
 

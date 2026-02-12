@@ -26,6 +26,7 @@ import org.igo.lidtrainer.ui.common.TopBarState
 import org.igo.lidtrainer.ui.common.exitApp
 import org.igo.lidtrainer.ui.navigation.Destinations
 import org.igo.lidtrainer.ui.screen.dashboard.DashboardScreen
+import org.igo.lidtrainer.ui.screen.languageselect.LanguageSelectScreen
 import org.igo.lidtrainer.ui.screen.lesson.LessonScreen
 import org.igo.lidtrainer.ui.screen.lesson.LessonViewModel
 import org.igo.lidtrainer.ui.screen.settings.SettingsScreen
@@ -63,7 +64,7 @@ fun MainScreen() {
                     navigateUp = topBarState.onNavigateBack,
                     backButtonDescription = strings.backButtonTooltip,
                     actions = {
-                        if (currentRoute != Destinations.SETTINGS) {
+                        if (currentRoute != Destinations.SETTINGS && currentRoute != Destinations.LANGUAGE_SELECT) {
                             IconButton(
                                 onClick = { viewModel.navigateTo(Destinations.SETTINGS) }
                             ) {
@@ -83,6 +84,13 @@ fun MainScreen() {
                     .padding(innerPadding)
             ) {
                 when (currentRoute) {
+                    Destinations.LANGUAGE_SELECT -> {
+                        LanguageSelectScreen(
+                            onLanguageSelected = { code ->
+                                viewModel.onLanguageSelected(code)
+                            }
+                        )
+                    }
                     Destinations.DASHBOARD -> {
                         DashboardScreen(
                             totalQuestions = totalQuestions,

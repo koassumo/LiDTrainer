@@ -33,6 +33,7 @@ interface AppStrings {
     val lightTheme: String
     val darkTheme: String
     val languageSection: String
+    val languageContentSection: String
     val languageEn: String
     val languageRu: String
     val languageDe: String

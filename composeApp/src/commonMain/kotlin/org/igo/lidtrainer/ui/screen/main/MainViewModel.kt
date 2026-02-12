@@ -7,42 +7,74 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import org.igo.lidtrainer.domain.rep_interface.NoteRepository
+import org.igo.lidtrainer.domain.rep_interface.SettingsRepository
 import org.igo.lidtrainer.domain.usecase.LoadNotesFromJsonUseCase
 import org.igo.lidtrainer.ui.navigation.Destinations
+import org.igo.lidtrainer.ui.theme.AppLanguageConfig
 
 class MainViewModel(
     private val loadNotesFromJsonUseCase: LoadNotesFromJsonUseCase,
-    private val noteRepository: NoteRepository
+    private val noteRepository: NoteRepository,
+    private val settingsRepository: SettingsRepository
 ) : ViewModel() {
 
-    private val _currentRoute = MutableStateFlow(Destinations.DASHBOARD)
+    private val _currentRoute = MutableStateFlow("")
     val currentRoute: StateFlow<String> = _currentRoute.asStateFlow()
 
     private val _totalQuestions = MutableStateFlow(0L)
     val totalQuestions: StateFlow<Long> = _totalQuestions.asStateFlow()
 
     // Стек навигации для правильной обработки "Назад"
-    private val navigationStack = mutableListOf(Destinations.DASHBOARD)
+    private val navigationStack = mutableListOf<String>()
 
     init {
-        loadInitialData()
+        determineInitialRoute()
     }
 
-    private fun loadInitialData() {
+    private fun determineInitialRoute() {
         viewModelScope.launch {
-            try {
-                // Пока хардкодим "ru" как родной язык (потом будет из Settings)
-                loadNotesFromJsonUseCase("ru")
-            } catch (e: Exception) {
-                // Данные уже загружены или ошибка — продолжаем
+            if (settingsRepository.isLanguageContentSelected()) {
+                // Язык выбран — загружаем данные и идём в Dashboard
+                _currentRoute.value = Destinations.DASHBOARD
+                navigationStack.add(Destinations.DASHBOARD)
+                loadInitialData()
+            } else {
+                // Первый запуск — показываем выбор языка
+                _currentRoute.value = Destinations.LANGUAGE_SELECT
+                navigationStack.add(Destinations.LANGUAGE_SELECT)
             }
-            updateStatistics()
         }
+    }
+
+    private suspend fun loadInitialData() {
+        try {
+            val languageCode = settingsRepository.languageContentState.value
+            loadNotesFromJsonUseCase(languageCode)
+        } catch (e: Exception) {
+            // Данные уже загружены или ошибка — продолжаем
+        }
+        updateStatistics()
     }
 
     private suspend fun updateStatistics() {
         val stats = noteRepository.getStatistics()
         _totalQuestions.value = stats.totalCount
+    }
+
+    fun onLanguageSelected(code: String) {
+        viewModelScope.launch {
+            settingsRepository.setLanguageContentCode(code)
+            // Устанавливаем и UI язык при первом запуске
+            val uiLanguage = when (code) {
+                "en" -> AppLanguageConfig.EN
+                "ru" -> AppLanguageConfig.RU
+                "de" -> AppLanguageConfig.DE
+                else -> AppLanguageConfig.EN
+            }
+            settingsRepository.setLanguage(uiLanguage)
+            loadInitialData()
+            navigateTo(Destinations.DASHBOARD)
+        }
     }
 
     fun navigateTo(route: String) {
