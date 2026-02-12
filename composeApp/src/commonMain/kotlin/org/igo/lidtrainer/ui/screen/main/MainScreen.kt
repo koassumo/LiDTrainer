@@ -23,6 +23,7 @@ import org.igo.lidtrainer.ui.common.LocalTopBarState
 import org.igo.lidtrainer.ui.common.TopBarState
 import org.igo.lidtrainer.ui.common.exitApp
 import org.igo.lidtrainer.ui.navigation.Destinations
+import org.igo.lidtrainer.ui.screen.dashboard.DashboardScreen
 import org.igo.lidtrainer.ui.theme.LocalAppStrings
 import org.koin.compose.viewmodel.koinViewModel
 
@@ -32,6 +33,7 @@ fun MainScreen() {
     val strings = LocalAppStrings.current
 
     val currentRoute by viewModel.currentRoute.collectAsState()
+    val totalQuestions by viewModel.totalQuestions.collectAsState()
     var showExitDialog by remember { mutableStateOf(false) }
     val snackbarHostState = remember { SnackbarHostState() }
     val topBarState = remember { TopBarState() }
@@ -64,12 +66,12 @@ fun MainScreen() {
             ) {
                 when (currentRoute) {
                     Destinations.DASHBOARD -> {
-                        // Placeholder — DashboardScreen будет создан позже
-                        topBarState.title = strings.dashboardTitle
-                        topBarState.canNavigateBack = false
-                        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                            Text("Dashboard — coming soon")
-                        }
+                        DashboardScreen(
+                            totalQuestions = totalQuestions,
+                            onAllQuestionsClick = {
+                                viewModel.navigateTo(Destinations.LEARN)
+                            }
+                        )
                     }
                     Destinations.LEARN -> {
                         topBarState.title = strings.learnTitle
