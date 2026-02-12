@@ -47,36 +47,51 @@ Data Layer (Repositories + API/DB)
 - `composeApp/src/iosMain/` - iOS-specific implementations
 
 ### Key Directories (under `commonMain/kotlin/org/igo/lidtrainer/`)
-- `core/` - Cross-cutting concerns (TimeProvider, error handling)
+- `core/` - Cross-cutting concerns (reserved for future use)
 - `data/` - Repository implementations, API clients, mappers, DTOs
 - `domain/` - Business models, repository interfaces, use cases
+  - `domain/strings/` - AppStrings interface (localization contract)
 - `di/` - Koin dependency injection modules
 - `ui/` - Compose screens, ViewModels, theme, navigation
+  - `ui/common/` - Reusable components (CommonButton, CommonCard, TopBarState, etc.)
+  - `ui/theme/` - Color.kt, Theme.kt, AppStringsImpl, AppThemeConfig, AppLanguageConfig
+  - `ui/navigation/` - Destinations
+  - `ui/screen/main/` - MainScreen (Single Scaffold) + MainViewModel
 
-### Platform-Specific Patterns
-The project uses `expect/actual` declarations for platform differences:
-- **HttpClient engines**: OkHttp (Android), Darwin (iOS)
-- **SQLDelight drivers**: AndroidSqliteDriver, NativeSqliteDriver
-- **Settings storage**: SharedPreferences (Android), NSUserDefaults (iOS)
+### Platform-Specific Patterns (`expect/actual`)
+- **BackHandler**: `AppBackHandler` — Android delegates to BackHandler, iOS is no-op
+- **ExitApp**: `exitApp()` — Android kills process, iOS is no-op
+- **Settings storage**: SharedPreferences (Android), NSUserDefaults (iOS) — via PlatformModule
+- **HttpClient engines**: OkHttp (Android), Darwin (iOS) — via Ktor
+- **SQLDelight drivers**: AndroidSqliteDriver, NativeSqliteDriver — via PlatformModule (not yet configured)
 
 ## Key Technologies
 
-- **DI**: Koin 4.1.1 - See `di/` directory for module organization
-- **Database**: SQLDelight 2.2.1 - Local question storage
-- **Networking**: Ktor Client 3.4.0 - Language pack downloads, Firebase API
+- **Kotlin**: 2.3.0
+- **Compose Multiplatform**: 1.10.0
+- **AGP**: 8.13.2 (not upgrading to 9.x — breaking changes)
+- **DI**: Koin 4.1.1 — See `di/` directory for module organization
+- **Database**: SQLDelight 2.2.1 — Local question storage (plugin not yet applied)
+- **Networking**: Ktor Client 3.4.0 — Language pack downloads, Firebase API
 - **Serialization**: kotlinx-serialization 1.10.0
 - **Date/Time**: kotlinx-datetime 0.7.1
-- **Settings**: multiplatform-settings 1.3.0 - User preferences (theme, language)
+- **Coroutines**: kotlinx-coroutines 1.10.2
+- **Settings**: multiplatform-settings 1.3.0 — User preferences (theme, language)
+- **Build Config**: BuildKonfig 0.17.1 — API keys from local.properties (plugin not yet applied)
 - **State Management**: StateFlow with `MutableStateFlow` + `.asStateFlow()` pattern
 
 ## Dependency Injection
 
 Koin modules are organized in `di/`:
-- `AppModule.kt` - Entry point, initializes all modules
-- `DataModule.kt` - Repositories, API clients, database
-- `DomainModule.kt` - Use cases (all as `factory`)
-- `UiModule.kt` - ViewModels (all as `viewModelOf`)
-- `PlatformModule.kt` - Platform-specific implementations (`expect/actual`)
+- `AppModule.kt` — Entry point with `initKoin()`, loads all modules
+- `DataModule.kt` — Repositories, API clients, database (currently empty)
+- `DomainModule.kt` — Use cases as `factory` (currently empty)
+- `UiModule.kt` — ViewModels as `viewModelOf` (MainViewModel registered)
+- `PlatformModule.kt` — `expect/actual` per platform (Settings registered)
+
+**Initialization:**
+- Android: `LiDTrainerApp` (Application class) → `initKoin { androidLogger(); androidContext() }`
+- iOS: `KoinStarter.startKoinIos()` → `initKoin()` (called from iOSApp.swift `init()`)
 
 ## Collaborative Development Principles
 
@@ -95,17 +110,19 @@ Koin modules are organized in `di/`:
 ### Technical Guardrails
 - **Sync DI**: Ensure any new components are registered in the appropriate Koin module (`di/`).
 - **Domain First**: Keep business logic in Use Cases. Avoid putting complex logic directly into ViewModels or Data Mappers.
+- **Import conflicts**: The `ui/` package can conflict with `org.jetbrains.compose.ui.tooling.preview`. Avoid `@Preview` annotation in `commonMain` files; use it only in `androidMain` with `androidx.compose.ui.tooling.preview.Preview`.
 
 ## UI Architecture & Patterns
 
 ### Single TopBar Architecture
 
-The app uses a **single Scaffold in MainScreen** that owns TopBar and Snackbar. **No BottomBar** (unlike MyCorc). Child screens publish their TopBar configuration through `TopBarState` via CompositionLocal.
+The app uses a **single Scaffold in MainScreen** that owns TopBar, Snackbar, and ExitDialog. **No BottomBar, no FAB**. Child screens publish their TopBar configuration through `TopBarState` via CompositionLocal.
 
 **Key components:**
-- **`TopBarState`** (`ui/common/TopBarState.kt`) - Reactive state holder with `mutableStateOf` properties
-- **`LocalTopBarState`** - `staticCompositionLocalOf` for distributing state down the composition tree
-- **Single Scaffold** - MainScreen owns the only Scaffold, child screens are content-only
+- **`TopBarState`** (`ui/common/TopBarState.kt`) — Reactive state holder with `mutableStateOf` properties
+- **`LocalTopBarState`** — `staticCompositionLocalOf` for distributing state down the composition tree
+- **`CommonTopBar`** (`ui/common/CommonTopBar.kt`) — CenterAlignedTopAppBar with back button + divider
+- **Single Scaffold** — MainScreen owns the only Scaffold, child screens are content-only
 
 **Example usage in child screens:**
 ```kotlin
@@ -126,13 +143,22 @@ fun DashboardScreen() {
 - ✅ No nested Scaffolds (avoids window insets issues)
 - ✅ Centralized back navigation handling
 - ❌ No BottomNavigationBar in this project
+- ❌ No FAB in this project
 
 ### Navigation & BackHandler
 
-**AppBackHandler** - Cross-platform back button handling:
-- Sub-screens → previous screen (from navigation stack)
-- Main screen → exit dialog
+**MainViewModel** manages navigation with a stack:
+- `navigateTo(route)` — main tabs clear stack; sub-screens push to stack
+- `navigateBack()` — pops from stack or returns to Dashboard
+- `currentRoute: StateFlow<String>` — observed by MainScreen
+
+**AppBackHandler** — Cross-platform back button handling:
+- Dashboard → show ExitDialog
+- Sub-screens → `viewModel.navigateBack()` (pops from navigation stack)
 - iOS: every sub-screen must have a back button in TopBar (no physical back button)
+
+**Destinations** (`ui/navigation/Destinations.kt`):
+- `LANGUAGE_SELECT`, `DASHBOARD`, `LEARN`, `SETTINGS`
 
 ### Centralized Dimensions (Dimens.kt)
 
@@ -148,7 +174,7 @@ Text("Title", modifier = Modifier.padding(Dimens.SpaceMedium))
 
 ### Reusable Components
 
-**CommonButton & CommonOutlinedButton** — unified button components:
+**CommonButton & CommonOutlinedButton** (`ui/common/CommonButton.kt`):
 
 **CRITICAL: ALL buttons MUST use these components. NEVER use Material3 `Button` or `OutlinedButton` directly.**
 
@@ -160,12 +186,16 @@ CommonButton(text = strings.startTest, onClick = { viewModel.start() })
 Button(onClick = { ... }) { Text("Start") }
 ```
 
-**CommonCard** — standard card component:
+**CommonCard** (`ui/common/CommonCard.kt`):
 ```kotlin
 CommonCard(modifier = Modifier.fillMaxWidth(), onClick = { }) {
     Text("Question card content")
 }
 ```
+
+**LoadingContent** (`ui/common/LoadingContent.kt`) — semi-transparent overlay with spinner.
+
+**ExitDialog** (`ui/common/ExitDialog.kt`) — localized exit confirmation dialog.
 
 ### Color System & Theming
 
@@ -174,12 +204,17 @@ CommonCard(modifier = Modifier.fillMaxWidth(), onClick = { }) {
 Color.kt (color definitions) → Theme.kt (Material3 role binding) → MaterialTheme.colorScheme → Component
 ```
 
+**Current palette:**
+- Light theme: **Indigo** primary, **Teal** secondary
+- Dark theme: **Indigo 300** primary, **Teal 300** secondary
+- Custom colors: `myCardBorder`, `myBarDivider`, answer status colors (correct/incorrect)
+
 **Rules:**
 1. Never set colors in component code. All via `Color.kt` → `Theme.kt` → `MaterialTheme`.
 2. To change a color — modify only `Color.kt`.
 3. Dynamic Color (Material You) is disabled.
 4. Light + Dark themes supported.
-5. Theme switching: System / Light / Dark (via Settings).
+5. Theme switching: System / Light / Dark (via Settings, to be implemented).
 
 ### Localization
 
@@ -187,10 +222,17 @@ All user-facing strings are managed through **Jetpack Compose Resources** (multi
 
 **Supported UI languages:** English (default), Russian, German.
 
+**Key files:**
+- `domain/strings/AppStrings.kt` — interface (35 string properties)
+- `ui/theme/AppStringsImpl.kt` — data class + `LocalAppStrings` + `rememberAppStrings()`
+- `composeResources/values/strings.xml` — English
+- `composeResources/values-ru/strings.xml` — Russian
+- `composeResources/values-de/strings.xml` — German
+
 **Adding new strings:**
 1. Add to interface: `domain/strings/AppStrings.kt`
-2. Add to data class: `ui/theme/AppStringsImpl.kt`
-3. Add resource mapping: `rememberAppStrings()` in `AppStringsImpl.kt`
+2. Add to data class constructor: `ui/theme/AppStringsImpl.kt`
+3. Add resource mapping in `rememberAppStrings()`: `ui/theme/AppStringsImpl.kt`
 4. Add XML entries to all 3 language files: `composeResources/values*/strings.xml`
 
 **Usage in screens:**
@@ -204,14 +246,14 @@ Text("Hardcoded text")      // ❌ Wrong
 
 ## Screens
 
-1. **LanguageSelectScreen** — First launch: choose native language for quiz content
-2. **DashboardScreen** — Statistics, "Study questions" / "Practice test" buttons
-3. **LearnScreen** — Main screen with question cards
-4. **SettingsScreen** — Theme, UI language
+1. **LanguageSelectScreen** — First launch: choose native language for quiz content (not yet implemented)
+2. **DashboardScreen** — Statistics, "Study questions" / "Practice test" buttons (placeholder)
+3. **LearnScreen** — Main screen with question cards (placeholder)
+4. **SettingsScreen** — Theme, UI language (placeholder)
 
 ## Data Model
 
-### Question Entity (SQLDelight)
+### Question Entity (SQLDelight — not yet created)
 ```
 - questionNumber: Int
 - questionText: String
@@ -222,6 +264,28 @@ Text("Hardcoded text")      // ❌ Wrong
 - correctAnswerIndex: Int
 - userStatus: enum (NOT_ANSWERED / CORRECT / INCORRECT)
 ```
+
+## What's Done vs What's Remaining
+
+### Done
+- [x] Project setup with all dependencies (Gradle sync passes)
+- [x] Koin DI infrastructure (5 modules + platform init)
+- [x] Theme system (Color.kt + Theme.kt + Dimens.kt + Light/Dark)
+- [x] Localization system (AppStrings + 3 languages + CompositionLocal)
+- [x] Common UI components (CommonButton, CommonCard, CommonTopBar, LoadingContent, ExitDialog)
+- [x] Single Scaffold architecture (MainScreen + TopBarState)
+- [x] Navigation with stack (MainViewModel + Destinations)
+- [x] Cross-platform BackHandler + ExitApp (expect/actual)
+
+### Remaining
+- [ ] SettingsScreen (theme + language switching)
+- [ ] LanguageSelectScreen (first launch flow)
+- [ ] DashboardScreen (statistics + navigation)
+- [ ] LearnScreen (question cards)
+- [ ] SQLDelight database setup (Question entity)
+- [ ] Ktor API client (language pack loading from Firebase)
+- [ ] BuildKonfig setup (API keys)
+- [ ] SettingsRepository (persist theme/language choices)
 
 ## Reference Project
 

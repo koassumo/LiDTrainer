@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "language": "en",
+  "lastUpdated": "2026-02-12",
+  "jNotes": [
+    {
+      "id": 1,
+      "questionNumber": 1,
+      "questionText": "In Germany, people are allowed to openly say something against the government because …",
+      "answer1": "freedom of religion applies here.",
+      "answer2": "people in Germany have a duty to vote.",
+      "answer3": "freedom of opinion applies here.",
+      "answer4": "people in Germany must work for the state.",
+      "correctAnswerIndex": 3,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 2,
+      "questionNumber": 2,
+      "questionText": "In Germany, parents can decide until their child's 14th year of life whether the child participates in … at school.",
+      "answer1": "history lessons.",
+      "answer2": "religious education.",
+      "answer3": "physical education.",
+      "answer4": "politics lessons.",
+      "correctAnswerIndex": 2,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 3,
+      "questionNumber": 3,
+      "questionText": "Germany is a constitutional state. What does that mean?",
+      "answer1": "All residents and the state must abide by the laws.",
+      "answer2": "The state does not have to abide by the laws.",
+      "answer3": "Only Germans must follow the laws.",
+      "answer4": "The laws only apply to people with a German passport.",
+      "correctAnswerIndex": 1,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 4,
+      "questionNumber": 4,
+      "questionText": "Which right belongs to the basic rights in Germany?",
+      "answer1": "Right to bear arms",
+      "answer2": "Freedom of opinion",
+      "answer3": "Law of the fist",
+      "answer4": "Obligation to leave the country",
+      "correctAnswerIndex": 2,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 5,
+      "questionNumber": 5,
+      "questionText": "Elections in Germany are free. What does that mean?",
+      "answer1": "You may only vote by phone.",
+      "answer2": "All citizens must vote.",
+      "answer3": "The state determines whom people must vote for.",
+      "answer4": "Everyone can freely decide whether they vote and whom they vote for.",
+      "correctAnswerIndex": 4,
+      "category": "GENERAL",
+      "imageUrl": null
+    }
+  ]
+}

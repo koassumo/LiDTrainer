@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "language": "de",
+  "lastUpdated": "2026-02-12",
+  "jNotes": [
+    {
+      "id": 1,
+      "questionNumber": 1,
+      "questionText": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …",
+      "answer1": "hier Religionsfreiheit__(Глагол-отделяемая приставка) gilt.",
+      "answer2": "die Menschen__(Мн.ч.)__(Предлог: в Герм.) Wahlpflicht haben.",
+      "answer3": "hier__(Глагол: быть в наличии) Meinungsfreiheit gilt.",
+      "answer4": "die Menschen__(Мн.ч.)__(Предлог: в Герм.)__(Артикль: муж/ср род Дат.)__(Сущ.: государство)__(Глагол-отделяемая приставка)__(Глагол: работать) müssen.",
+      "correctAnswerIndex": 3,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 2,
+      "questionNumber": 2,
+      "questionText": "In Deutschland können Eltern bis__(Предлог: до) zum__(Артикль: до какого?) 14. Lebensjahr__(Сущ.: год жизни) ihres__(Притяж. мест.: их, род. п.) Kindes__(Сущ.: ребёнок, род. п.) entscheiden__(Глагол: решать), ob__(Союз: ли) es__(Мест.: оно) in der__(Артикль: жен. р. дат. п.) Schule am__(Предлог+Артикль: на) …",
+      "answer1": "Geschichtsunterricht__(Сущ.: урок истории) teilnimmt__(Глагол: участвовать).",
+      "answer2": "__(Сущ.: урок религии)__(Глагол-отделяемая приставка) teilnimmt.",
+      "answer3": "__(Сущ.: урок спорта) teilnimmt.",
+      "answer4": "__(Сущ.: урок политики) teilnimmt.",
+      "correctAnswerIndex": 2,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 3,
+      "questionNumber": 3,
+      "questionText": "Deutschland ist ein Rechtsstaat__(Сущ.: правовое государство). Was__(Вопр.: что) ist__(Глагол: есть) damit__(Наречие: этим) gemeint__(Прич.: имеется в виду)?",
+      "answer1": "Alle__(Мест.: все) Einwohner / Einwohnerinnen__(Сущ.: жители/жительницы) und__(Союз: и) der__(Артикль: определённый) Staat__(Сущ.: государство) müssen__(Глагол: должны) sich__(Мест.: себя) an__(Предлог: по) die__(Артикль: определённый, мн.ч.) Gesetze__(Сущ.: законы) halten__(Глагол: соблюдать).",
+      "answer2": "Der__(Артикль: определённый) Staat__(Сущ.: государство) muss__(Глагол: должен) sich__(Мест.: себя) nicht__(Частица: не) an__(Предлог: по) die__(Артикль: определённый, мн.ч.) Gesetze__(Сущ.: законы) halten__(Глагол: соблюдать).",
+      "answer3": "Nur__(Наречие: только) Deutsche__(Сущ.: немцы) müssen__(Глагол: должны) die__(Артикль: определённый, мн.ч.) Gesetze__(Сущ.: законы) befolgen__(Глагол: выполнять).",
+      "answer4": "Die__(Артикль: определённый, мн.ч.) Gesetze__(Сущ.: законы)__(Глагол: считать/быть действительным)__(Наречие: только) __(Предлог: для)__(Мест.: людей) __(Предлог: с)__(Прил.: немецким) __(Сущ.: паспортом).",
+      "correctAnswerIndex": 1,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 4,
+      "questionNumber": 4,
+      "questionText": "Welches Recht gehört zu den Grundrechten in Deutschland?",
+      "answer1": "Waffenrecht",
+      "answer2": "Meinungsfreiheit",
+      "answer3": "Faustrecht",
+      "answer4": "Ausreisepflicht",
+      "correctAnswerIndex": 2,
+      "category": "GENERAL",
+      "imageUrl": null
+    },
+    {
+      "id": 5,
+      "questionNumber": 5,
+      "questionText": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+      "answer1": "Man__(Мест.: человек) darf__(Глагол: разрешено)__(Наречие: только)__(Предлог: по) __(Глагол: звонить/идти) wählen.",
+      "answer2": "Alle__(Мест.: все)__(Сущ.: граждане/гражданки) __(Глагол: должны)__(Глагол: выбирать/голосовать).",
+      "answer3": "Der__(Артикль: определённый)
+
+
+
+
+
+__(Глагол: определять),__(Мест.: кого) __(Артикль: определённый, мн.ч.) __(Сущ.: люди/граждане) __(Глагол: выбирать) __(Глагол: должны).",
+      "answer4": "Jeder__(Мест.: каждый) kann__(Глагол: может) frei__(Наречие: свободно) entscheiden__(Глагол: решать), ob__(Союз: ли) er / sie__(Мест.: он/она) wählt__(Глагол: голосует) und__(Союз: и) wen__(Мест.: кого) er / sie wählt.",
+      "correctAnswerIndex": 4,
+      "category": "GENERAL",
+      "imageUrl": null
+    }
+  ]
+}

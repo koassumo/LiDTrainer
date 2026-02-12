@@ -1,0 +1,97 @@
+CREATE TABLE noteEntity (
+    id INTEGER NOT NULL PRIMARY KEY,
+    questionNumber INTEGER NOT NULL,
+    questionTextDe TEXT NOT NULL,
+    answer1De TEXT NOT NULL,
+    answer2De TEXT NOT NULL,
+    answer3De TEXT NOT NULL,
+    answer4De TEXT NOT NULL,
+    langNative TEXT NOT NULL DEFAULT "",
+    questionTextNative TEXT NOT NULL DEFAULT "",
+    answer1Native TEXT NOT NULL DEFAULT "",
+    answer2Native TEXT NOT NULL DEFAULT "",
+    answer3Native TEXT NOT NULL DEFAULT "",
+    answer4Native TEXT NOT NULL DEFAULT "",
+    correctAnswerIndex INTEGER NOT NULL,
+    category TEXT NOT NULL,
+    imageUrl TEXT,
+    userAnswerIndex INTEGER,
+    isAnsweredCorrectly INTEGER,
+    lastAnsweredAt INTEGER
+);
+
+-- Get all notes ordered by question number
+getAllNotes:
+SELECT * FROM noteEntity
+ORDER BY questionNumber ASC;
+
+-- Get note by ID
+getNoteById:
+SELECT * FROM noteEntity
+WHERE id = ?;
+
+-- Get note by question number
+getNoteByQuestionNumber:
+SELECT * FROM noteEntity
+WHERE questionNumber = ?;
+
+-- Get notes by category
+getNotesByCategory:
+SELECT * FROM noteEntity
+WHERE category = ?
+ORDER BY questionNumber ASC;
+
+-- Insert or replace a note
+insertNote:
+INSERT OR REPLACE INTO noteEntity(
+    id, questionNumber,
+    questionTextDe, answer1De, answer2De, answer3De, answer4De,
+    langNative, questionTextNative, answer1Native, answer2Native, answer3Native, answer4Native,
+    correctAnswerIndex, category, imageUrl,
+    userAnswerIndex, isAnsweredCorrectly, lastAnsweredAt
+)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+-- Update user answer for a specific note
+updateUserAnswer:
+UPDATE noteEntity
+SET userAnswerIndex = ?,
+    isAnsweredCorrectly = ?,
+    lastAnsweredAt = ?
+WHERE id = ?;
+
+-- Update native translations for all notes (when user changes language)
+updateNativeTranslation:
+UPDATE noteEntity
+SET langNative = ?,
+    questionTextNative = ?,
+    answer1Native = ?,
+    answer2Native = ?,
+    answer3Native = ?,
+    answer4Native = ?
+WHERE id = ?;
+
+-- Clear all user progress (reset answers)
+clearAllUserProgress:
+UPDATE noteEntity
+SET userAnswerIndex = NULL,
+    isAnsweredCorrectly = NULL,
+    lastAnsweredAt = NULL;
+
+-- Delete all notes
+deleteAll:
+DELETE FROM noteEntity;
+
+-- Count total notes
+countNotes:
+SELECT COUNT(*) FROM noteEntity;
+
+-- Count answered notes
+countAnswered:
+SELECT COUNT(*) FROM noteEntity
+WHERE userAnswerIndex IS NOT NULL;
+
+-- Count correctly answered notes
+countCorrect:
+SELECT COUNT(*) FROM noteEntity
+WHERE isAnsweredCorrectly = 1;
