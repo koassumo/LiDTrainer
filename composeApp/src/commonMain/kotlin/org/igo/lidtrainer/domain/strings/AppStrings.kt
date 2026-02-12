@@ -19,8 +19,8 @@ interface AppStrings {
     val notAnswered: String
     val progressLabel: String
 
-    // Learn Screen
-    val learnTitle: String
+    // Lesson Screen
+    val lessonTitle: String
     val nextQuestion: String
     val previousQuestion: String
     val showAnswer: String

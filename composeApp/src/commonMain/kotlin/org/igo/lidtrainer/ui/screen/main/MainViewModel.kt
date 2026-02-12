@@ -47,8 +47,7 @@ class MainViewModel(
 
     fun navigateTo(route: String) {
         val mainTabs = listOf(
-            Destinations.DASHBOARD,
-            Destinations.SETTINGS
+            Destinations.DASHBOARD
         )
 
         if (route in mainTabs) {

@@ -158,7 +158,7 @@ fun DashboardScreen() {
 - iOS: every sub-screen must have a back button in TopBar (no physical back button)
 
 **Destinations** (`ui/navigation/Destinations.kt`):
-- `LANGUAGE_SELECT`, `DASHBOARD`, `LEARN`, `SETTINGS`
+- `LANGUAGE_SELECT`, `DASHBOARD`, `LESSON`, `SETTINGS`
 
 ### Centralized Dimensions (Dimens.kt)
 
@@ -248,7 +248,7 @@ Text("Hardcoded text")      // ❌ Wrong
 
 1. **LanguageSelectScreen** — First launch: choose native language for quiz content (not yet implemented)
 2. **DashboardScreen** — Statistics, "Study questions" / "Practice test" buttons (placeholder)
-3. **LearnScreen** — Main screen with question cards (placeholder)
+3. **LessonScreen** — Main screen with question cards
 4. **SettingsScreen** — Theme, UI language (placeholder)
 
 ## Data Model
@@ -281,7 +281,7 @@ Text("Hardcoded text")      // ❌ Wrong
 - [ ] SettingsScreen (theme + language switching)
 - [ ] LanguageSelectScreen (first launch flow)
 - [ ] DashboardScreen (statistics + navigation)
-- [ ] LearnScreen (question cards)
+- [x] LessonScreen (question cards)
 - [ ] SQLDelight database setup (Question entity)
 - [ ] Ktor API client (language pack loading from Firebase)
 - [ ] BuildKonfig setup (API keys)

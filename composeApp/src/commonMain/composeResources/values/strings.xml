@@ -16,8 +16,8 @@
     <string name="not_answered">Not answered</string>
     <string name="progress_label">Progress</string>
 
-    <!-- Learn Screen -->
-    <string name="learn_title">Study</string>
+    <!-- Lesson Screen -->
+    <string name="lesson_title">Study</string>
     <string name="next_question">Next</string>
     <string name="previous_question">Previous</string>
     <string name="show_answer">Show Answer</string>
