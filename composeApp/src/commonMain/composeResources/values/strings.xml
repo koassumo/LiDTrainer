@@ -9,7 +9,7 @@
     <!-- Bundesland Select Screen -->
     <string name="bundesland_select_title">Select State</string>
     <string name="bundesland_select_prompt">In which state do you live?</string>
-    <string name="bundesland_section">Bundesland</string>
+    <string name="bundesland_section">Federal State</string>
 
     <!-- Dashboard Screen -->
     <string name="dashboard_title">Dashboard</string>

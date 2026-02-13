@@ -30,7 +30,17 @@ class LessonViewModel(
 
     val showCorrectImmediately: StateFlow<Boolean> = settingsRepository.showCorrectImmediatelyState
 
+    val isTranslationAvailable: StateFlow<Boolean> get() = _isTranslationAvailable
+    private val _isTranslationAvailable = MutableStateFlow(true)
+
     init {
+        viewModelScope.launch {
+            settingsRepository.languageContentState.collect { langCode ->
+                val available = langCode != "de"
+                _isTranslationAvailable.value = available
+                if (!available) showTranslation.value = false
+            }
+        }
         loadNotes()
     }
 

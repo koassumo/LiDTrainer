@@ -43,6 +43,7 @@ fun LessonScreen(
     val clickedAnswers by viewModel.clickedAnswers.collectAsState()
     val showTranslation by viewModel.showTranslation.collectAsState()
     val showCorrectImmediately by viewModel.showCorrectImmediately.collectAsState()
+    val isTranslationAvailable by viewModel.isTranslationAvailable.collectAsState()
 
     val currentNote = notes.getOrNull(currentIndex)
     val totalCount = notes.size
@@ -72,24 +73,20 @@ fun LessonScreen(
             )
             .verticalScroll(rememberScrollState())
     ) {
-        // Номер вопроса + переключатель перевода
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(
-                text = "Frage ${currentNote.questionNumber}",
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.primary
-            )
-            Switch(
-                checked = showTranslation,
-                onCheckedChange = { viewModel.toggleTranslation() }
-            )
+        // Переключатель перевода
+        if (isTranslationAvailable) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.End,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Switch(
+                    checked = showTranslation,
+                    onCheckedChange = { viewModel.toggleTranslation() }
+                )
+            }
+            Spacer(Modifier.height(Dimens.SpaceSmall))
         }
-
-        Spacer(Modifier.height(Dimens.SpaceSmall))
 
         // Текст вопроса на немецком
         Text(

@@ -9,7 +9,7 @@
     <!-- Bundesland Select Screen -->
     <string name="bundesland_select_title">Выберите землю</string>
     <string name="bundesland_select_prompt">В какой земле вы проживаете?</string>
-    <string name="bundesland_section">Bundesland</string>
+    <string name="bundesland_section">Федеральная земля</string>
 
     <!-- Dashboard Screen -->
     <string name="dashboard_title">Главная</string>
