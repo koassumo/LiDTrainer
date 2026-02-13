@@ -38,6 +38,7 @@ import org.koin.compose.viewmodel.koinViewModel
 @Composable
 fun MainScreen() {
     val viewModel = koinViewModel<MainViewModel>()
+    val lessonViewModel = koinViewModel<LessonViewModel>()
     val strings = LocalAppStrings.current
 
     val currentRoute by viewModel.currentRoute.collectAsState()
@@ -109,7 +110,6 @@ fun MainScreen() {
                         )
                     }
                     Destinations.LESSON -> {
-                        val lessonViewModel = koinViewModel<LessonViewModel>()
                         LessonScreen(
                             viewModel = lessonViewModel,
                             onNavigateBack = { viewModel.navigateBack() }

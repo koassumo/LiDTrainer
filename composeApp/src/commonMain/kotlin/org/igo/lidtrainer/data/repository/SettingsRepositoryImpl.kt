@@ -78,10 +78,23 @@ class SettingsRepositoryImpl(
         return settings.getString(KEY_BUNDESLAND, "")
     }
 
+    private val _showCorrectImmediatelyState = MutableStateFlow(getCurrentShowCorrectImmediately())
+    override val showCorrectImmediatelyState: StateFlow<Boolean> = _showCorrectImmediatelyState.asStateFlow()
+
+    override fun setShowCorrectImmediately(enabled: Boolean) {
+        settings.putBoolean(KEY_SHOW_CORRECT_IMMEDIATELY, enabled)
+        _showCorrectImmediatelyState.value = enabled
+    }
+
+    private fun getCurrentShowCorrectImmediately(): Boolean {
+        return settings.getBoolean(KEY_SHOW_CORRECT_IMMEDIATELY, false)
+    }
+
     companion object {
         private const val KEY_THEME = "app_theme_key"
         private const val KEY_LANGUAGE = "app_language_key"
         private const val KEY_LANGUAGE_CONTENT = "language_content_code"
         private const val KEY_BUNDESLAND = "bundesland_key"
+        private const val KEY_SHOW_CORRECT_IMMEDIATELY = "show_correct_immediately_key"
     }
 }

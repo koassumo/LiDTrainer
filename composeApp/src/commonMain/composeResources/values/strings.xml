@@ -39,6 +39,7 @@
     <string name="language_en">English</string>
     <string name="language_ru">Russian</string>
     <string name="language_de">German</string>
+    <string name="show_correct_immediately">Show correct answer immediately</string>
 
     <!-- Common -->
     <string name="back_button_tooltip">Back</string>

@@ -16,9 +16,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
@@ -44,6 +41,8 @@ fun LessonScreen(
     val notes by viewModel.notes.collectAsState()
     val currentIndex by viewModel.currentIndex.collectAsState()
     val clickedAnswers by viewModel.clickedAnswers.collectAsState()
+    val showTranslation by viewModel.showTranslation.collectAsState()
+    val showCorrectImmediately by viewModel.showCorrectImmediately.collectAsState()
 
     val currentNote = notes.getOrNull(currentIndex)
     val totalCount = notes.size
@@ -60,8 +59,9 @@ fun LessonScreen(
         return
     }
 
-    var showTranslation by rememberSaveable { mutableStateOf(false) }
     val noteClickedSet = clickedAnswers[currentNote.id] ?: emptySet()
+    // Если включён режим "сразу показать правильный" и пользователь уже нажал хотя бы один ответ
+    val revealAll = showCorrectImmediately && noteClickedSet.isNotEmpty()
 
     Column(
         modifier = Modifier
@@ -85,7 +85,7 @@ fun LessonScreen(
             )
             Switch(
                 checked = showTranslation,
-                onCheckedChange = { showTranslation = it }
+                onCheckedChange = { viewModel.toggleTranslation() }
             )
         }
 
@@ -111,48 +111,31 @@ fun LessonScreen(
         Spacer(Modifier.height(Dimens.SpaceMedium))
 
         // 4 варианта ответа
-        AnswerCard(
-            index = 1,
-            textDe = currentNote.answer1De,
-            textNative = currentNote.answer1Native,
-            isClicked = 1 in noteClickedSet,
-            isCorrect = currentNote.correctAnswerIndex == 1,
-            showTranslation = showTranslation,
-            onClick = { viewModel.onAnswerClick(1) }
-        )
-        Spacer(Modifier.height(Dimens.SpaceSmall))
-
-        AnswerCard(
-            index = 2,
-            textDe = currentNote.answer2De,
-            textNative = currentNote.answer2Native,
-            isClicked = 2 in noteClickedSet,
-            isCorrect = currentNote.correctAnswerIndex == 2,
-            showTranslation = showTranslation,
-            onClick = { viewModel.onAnswerClick(2) }
-        )
-        Spacer(Modifier.height(Dimens.SpaceSmall))
-
-        AnswerCard(
-            index = 3,
-            textDe = currentNote.answer3De,
-            textNative = currentNote.answer3Native,
-            isClicked = 3 in noteClickedSet,
-            isCorrect = currentNote.correctAnswerIndex == 3,
-            showTranslation = showTranslation,
-            onClick = { viewModel.onAnswerClick(3) }
-        )
-        Spacer(Modifier.height(Dimens.SpaceSmall))
-
-        AnswerCard(
-            index = 4,
-            textDe = currentNote.answer4De,
-            textNative = currentNote.answer4Native,
-            isClicked = 4 in noteClickedSet,
-            isCorrect = currentNote.correctAnswerIndex == 4,
-            showTranslation = showTranslation,
-            onClick = { viewModel.onAnswerClick(4) }
-        )
+        for (i in 1..4) {
+            val textDe = when (i) {
+                1 -> currentNote.answer1De
+                2 -> currentNote.answer2De
+                3 -> currentNote.answer3De
+                else -> currentNote.answer4De
+            }
+            val textNative = when (i) {
+                1 -> currentNote.answer1Native
+                2 -> currentNote.answer2Native
+                3 -> currentNote.answer3Native
+                else -> currentNote.answer4Native
+            }
+            AnswerCard(
+                index = i,
+                textDe = textDe,
+                textNative = textNative,
+                isClicked = i in noteClickedSet,
+                isCorrect = currentNote.correctAnswerIndex == i,
+                showTranslation = showTranslation,
+                revealAll = revealAll,
+                onClick = { viewModel.onAnswerClick(i) }
+            )
+            if (i < 4) Spacer(Modifier.height(Dimens.SpaceSmall))
+        }
 
         Spacer(Modifier.height(Dimens.SpaceLarge))
 
@@ -187,22 +170,26 @@ private fun AnswerCard(
     isClicked: Boolean,
     isCorrect: Boolean,
     showTranslation: Boolean,
+    revealAll: Boolean,
     onClick: () -> Unit
 ) {
+    // Показываем подсветку если: 1) этот ответ был нажат, ИЛИ 2) revealAll включён
+    val isHighlighted = isClicked || revealAll
+
     val containerColor = when {
-        !isClicked -> MaterialTheme.colorScheme.surface
+        !isHighlighted -> MaterialTheme.colorScheme.surface
         isCorrect -> CorrectAnswerBackground
         else -> IncorrectAnswerBackground
     }
 
     val textColor = when {
-        !isClicked -> MaterialTheme.colorScheme.onSurface
+        !isHighlighted -> MaterialTheme.colorScheme.onSurface
         isCorrect -> CorrectAnswerText
         else -> IncorrectAnswerText
     }
 
     val borderColor = when {
-        !isClicked -> MaterialTheme.colorScheme.outlineVariant
+        !isHighlighted -> MaterialTheme.colorScheme.outlineVariant
         isCorrect -> CorrectAnswerText
         else -> IncorrectAnswerText
     }

@@ -57,7 +57,12 @@ class MainViewModel(
     }
 
     private suspend fun updateStatistics() {
-        val stats = noteRepository.getStatistics()
+        val bundesland = settingsRepository.bundeslandState.value
+        val stats = if (bundesland.isNotEmpty()) {
+            noteRepository.getStatisticsByBundesland(bundesland)
+        } else {
+            noteRepository.getStatistics()
+        }
         _totalQuestions.value = stats.totalCount
     }
 

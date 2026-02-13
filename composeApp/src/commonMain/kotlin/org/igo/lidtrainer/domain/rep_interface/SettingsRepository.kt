@@ -18,4 +18,7 @@ interface SettingsRepository {
     val bundeslandState: StateFlow<String>
     fun setBundesland(code: String)
     fun isBundeslandSelected(): Boolean
+
+    val showCorrectImmediatelyState: StateFlow<Boolean>
+    fun setShowCorrectImmediately(enabled: Boolean)
 }

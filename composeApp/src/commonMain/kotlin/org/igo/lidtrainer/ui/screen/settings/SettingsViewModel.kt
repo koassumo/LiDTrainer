@@ -42,6 +42,12 @@ class SettingsViewModel(
                 _state.update { it.copy(selectedBundesland = newBundesland) }
             }
         }
+
+        viewModelScope.launch {
+            repository.showCorrectImmediatelyState.collect { enabled ->
+                _state.update { it.copy(showCorrectImmediately = enabled) }
+            }
+        }
     }
 
     fun updateTheme(newTheme: AppThemeConfig) {
@@ -58,5 +64,9 @@ class SettingsViewModel(
 
     fun updateBundesland(code: String) {
         repository.setBundesland(code)
+    }
+
+    fun updateShowCorrectImmediately(enabled: Boolean) {
+        repository.setShowCorrectImmediately(enabled)
     }
 }

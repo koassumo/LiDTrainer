@@ -26,6 +26,7 @@ import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -127,10 +128,12 @@ fun SettingsScreen(
                         currentLanguage = state.selectedLanguage,
                         currentLanguageContent = state.selectedLanguageContent,
                         currentBundesland = state.selectedBundesland,
+                        showCorrectImmediately = state.showCorrectImmediately,
                         onThemeClick = { currentPage = SettingsPage.ThemeSelection },
                         onLanguageClick = { currentPage = SettingsPage.LanguageSelection },
                         onLanguageContentClick = { currentPage = SettingsPage.LanguageContentSelection },
-                        onBundeslandClick = { currentPage = SettingsPage.BundeslandSelection }
+                        onBundeslandClick = { currentPage = SettingsPage.BundeslandSelection },
+                        onShowCorrectImmediatelyChanged = { viewModel.updateShowCorrectImmediately(it) }
                     )
                 }
 
@@ -201,10 +204,12 @@ private fun SettingsMainList(
     currentLanguage: AppLanguageConfig,
     currentLanguageContent: String,
     currentBundesland: String,
+    showCorrectImmediately: Boolean,
     onThemeClick: () -> Unit,
     onLanguageClick: () -> Unit,
     onLanguageContentClick: () -> Unit,
     onBundeslandClick: () -> Unit,
+    onShowCorrectImmediatelyChanged: (Boolean) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val strings = LocalAppStrings.current
@@ -262,6 +267,14 @@ private fun SettingsMainList(
         )
 
         HorizontalDivider()
+
+        SettingsSwitchItem(
+            title = strings.showCorrectImmediately,
+            checked = showCorrectImmediately,
+            onCheckedChange = onShowCorrectImmediatelyChanged
+        )
+
+        HorizontalDivider()
     }
 }
 
@@ -291,6 +304,29 @@ private fun SettingsMenuItem(
                 imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
+    )
+}
+
+@Composable
+private fun SettingsSwitchItem(
+    title: String,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit
+) {
+    ListItem(
+        modifier = Modifier.clickable { onCheckedChange(!checked) },
+        headlineContent = {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleMedium
+            )
+        },
+        trailingContent = {
+            Switch(
+                checked = checked,
+                onCheckedChange = onCheckedChange
             )
         }
     )

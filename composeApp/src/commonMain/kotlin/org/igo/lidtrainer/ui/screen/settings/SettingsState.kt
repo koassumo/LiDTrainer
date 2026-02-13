@@ -7,5 +7,6 @@ data class SettingsState(
     val selectedTheme: AppThemeConfig = AppThemeConfig.SYSTEM,
     val selectedLanguage: AppLanguageConfig = AppLanguageConfig.SYSTEM,
     val selectedLanguageContent: String = "",
-    val selectedBundesland: String = ""
+    val selectedBundesland: String = "",
+    val showCorrectImmediately: Boolean = false
 )

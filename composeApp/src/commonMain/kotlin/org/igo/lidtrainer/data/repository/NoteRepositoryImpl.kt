@@ -44,6 +44,13 @@ class NoteRepositoryImpl(
             .map { entities -> entities.map { it.mapToNote() } }
     }
 
+    override fun getNotesByBundesland(bundesland: String): Flow<List<Note>> {
+        return queries.getNotesByBundesland(bundesland)
+            .asFlow()
+            .mapToList(Dispatchers.IO)
+            .map { entities -> entities.map { it.mapToNote() } }
+    }
+
     override suspend fun insertNotes(notes: List<Note>) {
         withContext(Dispatchers.IO) {
             db.transaction {
@@ -121,6 +128,16 @@ class NoteRepositoryImpl(
                 totalCount = queries.countNotes().executeAsOne(),
                 answeredCount = queries.countAnswered().executeAsOne(),
                 correctCount = queries.countCorrect().executeAsOne()
+            )
+        }
+    }
+
+    override suspend fun getStatisticsByBundesland(bundesland: String): NoteStatistics {
+        return withContext(Dispatchers.IO) {
+            NoteStatistics(
+                totalCount = queries.countNotesByBundesland(bundesland).executeAsOne(),
+                answeredCount = queries.countAnsweredByBundesland(bundesland).executeAsOne(),
+                correctCount = queries.countCorrectByBundesland(bundesland).executeAsOne()
             )
         }
     }

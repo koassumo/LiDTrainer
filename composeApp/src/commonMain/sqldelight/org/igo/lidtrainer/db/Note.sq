@@ -95,3 +95,24 @@ WHERE userAnswerIndex IS NOT NULL;
 countCorrect:
 SELECT COUNT(*) FROM noteEntity
 WHERE isAnsweredCorrectly = 1;
+
+-- Get notes by GENERAL + specific bundesland category
+getNotesByBundesland:
+SELECT * FROM noteEntity
+WHERE category = 'GENERAL' OR category = ?
+ORDER BY questionNumber ASC;
+
+-- Count notes by GENERAL + specific bundesland category
+countNotesByBundesland:
+SELECT COUNT(*) FROM noteEntity
+WHERE category = 'GENERAL' OR category = ?;
+
+-- Count answered notes by GENERAL + specific bundesland category
+countAnsweredByBundesland:
+SELECT COUNT(*) FROM noteEntity
+WHERE (category = 'GENERAL' OR category = ?) AND userAnswerIndex IS NOT NULL;
+
+-- Count correct notes by GENERAL + specific bundesland category
+countCorrectByBundesland:
+SELECT COUNT(*) FROM noteEntity
+WHERE (category = 'GENERAL' OR category = ?) AND isAnsweredCorrectly = 1;

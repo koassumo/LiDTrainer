@@ -5,13 +5,15 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import org.igo.lidtrainer.domain.model.Note
 import org.igo.lidtrainer.domain.rep_interface.NoteRepository
+import org.igo.lidtrainer.domain.rep_interface.SettingsRepository
 
 class LessonViewModel(
-    private val noteRepository: NoteRepository
+    private val noteRepository: NoteRepository,
+    private val settingsRepository: SettingsRepository
 ) : ViewModel() {
 
     private val _notes = MutableStateFlow<List<Note>>(emptyList())
@@ -24,14 +26,31 @@ class LessonViewModel(
     private val _clickedAnswers = MutableStateFlow<Map<Long, Set<Int>>>(emptyMap())
     val clickedAnswers: StateFlow<Map<Long, Set<Int>>> = _clickedAnswers.asStateFlow()
 
+    val showTranslation = MutableStateFlow(false)
+
+    val showCorrectImmediately: StateFlow<Boolean> = settingsRepository.showCorrectImmediatelyState
+
     init {
         loadNotes()
     }
 
     private fun loadNotes() {
         viewModelScope.launch {
-            val notesList = noteRepository.getAllNotes().first()
-            _notes.value = notesList
+            settingsRepository.bundeslandState.collectLatest { bundesland ->
+                if (bundesland.isNotEmpty()) {
+                    noteRepository.getNotesByBundesland(bundesland).collectLatest { notesList ->
+                        _notes.value = notesList
+                        // Сбрасываем индекс если он за пределами нового списка
+                        if (_currentIndex.value >= notesList.size) {
+                            _currentIndex.value = 0
+                        }
+                    }
+                } else {
+                    noteRepository.getAllNotes().collectLatest { notesList ->
+                        _notes.value = notesList
+                    }
+                }
+            }
         }
     }
 
@@ -52,6 +71,10 @@ class LessonViewModel(
                 noteRepository.updateUserAnswer(noteId, answerIndex, true)
             }
         }
+    }
+
+    fun toggleTranslation() {
+        showTranslation.value = !showTranslation.value
     }
 
     fun goToNext() {
