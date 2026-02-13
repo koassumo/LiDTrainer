@@ -90,11 +90,20 @@ class SettingsRepositoryImpl(
         return settings.getBoolean(KEY_SHOW_CORRECT_IMMEDIATELY, false)
     }
 
+    override fun hasSeenSwipeHint(): Boolean {
+        return settings.getBoolean(KEY_SWIPE_HINT_SEEN, false)
+    }
+
+    override fun setSeenSwipeHint() {
+        settings.putBoolean(KEY_SWIPE_HINT_SEEN, true)
+    }
+
     companion object {
         private const val KEY_THEME = "app_theme_key"
         private const val KEY_LANGUAGE = "app_language_key"
         private const val KEY_LANGUAGE_CONTENT = "language_content_code"
         private const val KEY_BUNDESLAND = "bundesland_key"
         private const val KEY_SHOW_CORRECT_IMMEDIATELY = "show_correct_immediately_key"
+        private const val KEY_SWIPE_HINT_SEEN = "swipe_hint_seen_key"
     }
 }

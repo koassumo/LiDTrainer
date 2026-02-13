@@ -1,17 +1,29 @@
 package org.igo.lidtrainer.ui.screen.lesson
 
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -19,10 +31,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.unit.IntOffset
+
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import org.igo.lidtrainer.ui.common.CommonCard
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
@@ -46,6 +68,7 @@ fun LessonScreen(
     val showTranslation by viewModel.showTranslation.collectAsState()
     val showCorrectImmediately by viewModel.showCorrectImmediately.collectAsState()
     val isTranslationAvailable by viewModel.isTranslationAvailable.collectAsState()
+    val showSwipeHint by viewModel.showSwipeHint.collectAsState()
 
     val totalCount = notes.size
 
@@ -63,9 +86,14 @@ fun LessonScreen(
     )
 
     // Pager → ViewModel
+    var initialPage by remember { mutableStateOf(pagerState.currentPage) }
     LaunchedEffect(pagerState) {
         snapshotFlow { pagerState.currentPage }.collect { page ->
             viewModel.setCurrentIndex(page)
+            // Пользователь свайпнул (страница изменилась) — убираем подсказку навсегда
+            if (page != initialPage && showSwipeHint) {
+                viewModel.onSwipeHintSeen()
+            }
         }
     }
 
@@ -79,85 +107,170 @@ fun LessonScreen(
     // Update top bar title from pager
     topBar.title = "${pagerState.currentPage + 1} / $totalCount"
 
-    HorizontalPager(
-        state = pagerState,
-        modifier = Modifier.fillMaxSize()
-    ) { page ->
-        val currentNote = notes[page]
-        val noteClickedSet = clickedAnswers[currentNote.id] ?: emptySet()
-        val revealAll = showCorrectImmediately && noteClickedSet.isNotEmpty()
+    // Подсказка: текущая карточка + правильный ответ найден + пользователь ещё ни разу не свайпнул
+    val currentNote = notes.getOrNull(pagerState.currentPage)
+    val currentNoteClicked = currentNote?.let { clickedAnswers[it.id] } ?: emptySet()
+    val correctFound = currentNote != null && currentNote.correctAnswerIndex in currentNoteClicked
+    val shouldShowHint = showSwipeHint && correctFound
 
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(
-                    horizontal = Dimens.ScreenPaddingSides,
-                    vertical = Dimens.ScreenPaddingTop
+    // Анимация стрелки: отдельный Animatable для позиции (0f = правый край, 1f = 70% влево)
+    val arrowProgress = remember { Animatable(0f) }
+    // Прозрачность стрелки
+    val arrowAlpha = remember { Animatable(0f) }
+    // Ширина контейнера
+    var containerWidthPx by remember { mutableStateOf(0) }
+
+    // Nudge бесконечный: 3с пауза → стрелка тянет экран → стрелка пропадает → экран возвращается
+    LaunchedEffect(shouldShowHint) {
+        if (shouldShowHint && totalCount > 1) {
+            delay(3000)
+            while (true) {
+                // Стрелка появляется и тянет экран параллельно
+                coroutineScope {
+                    launch { arrowAlpha.animateTo(1f, tween(400)) }
+                    launch { arrowProgress.animateTo(1f, tween(1400)) }  // 50% экрана
+                    launch {
+                        delay(200) // Стрелка чуть опережает
+                        pagerState.animateScrollToPage(
+                            page = pagerState.currentPage,
+                            pageOffsetFraction = 0.15f,
+                            animationSpec = tween(1200)
+                        )
+                    }
+                }
+                // Стрелка исчезает — "отпустили"
+                arrowAlpha.animateTo(0f, tween(400))
+                arrowProgress.snapTo(0f) // Сброс позиции после полного исчезновения
+                // Экран возвращается пружиной
+                pagerState.animateScrollToPage(
+                    page = pagerState.currentPage,
+                    pageOffsetFraction = 0f,
+                    animationSpec = spring(
+                        dampingRatio = Spring.DampingRatioMediumBouncy,
+                        stiffness = Spring.StiffnessLow
+                    )
                 )
-                .verticalScroll(rememberScrollState())
-        ) {
-            // Переключатель перевода
-            if (isTranslationAvailable) {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.End,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Switch(
-                        checked = showTranslation,
-                        onCheckedChange = { viewModel.toggleTranslation() }
+                delay(3000)
+            }
+        } else {
+            // Сброс при выключении подсказки
+            arrowAlpha.snapTo(0f)
+            arrowProgress.snapTo(0f)
+        }
+    }
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .onSizeChanged { containerWidthPx = it.width }
+    ) {
+        HorizontalPager(
+            state = pagerState,
+            modifier = Modifier.fillMaxSize()
+        ) { page ->
+            val currentNote = notes[page]
+            val noteClickedSet = clickedAnswers[currentNote.id] ?: emptySet()
+            val revealAll = showCorrectImmediately && noteClickedSet.isNotEmpty()
+
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(
+                        horizontal = Dimens.ScreenPaddingSides,
+                        vertical = Dimens.ScreenPaddingTop
+                    )
+                    .verticalScroll(rememberScrollState())
+            ) {
+                // Переключатель перевода
+                if (isTranslationAvailable) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.End,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Switch(
+                            checked = showTranslation,
+                            onCheckedChange = { viewModel.toggleTranslation() }
+                        )
+                    }
+                    Spacer(Modifier.height(Dimens.SpaceSmall))
+                }
+
+                // Текст вопроса на немецком
+                Text(
+                    text = currentNote.questionTextDe,
+                    style = MaterialTheme.typography.bodyLarge
+                )
+
+                // Перевод на родном языке
+                if (showTranslation && currentNote.questionTextNative.isNotBlank()) {
+                    Spacer(Modifier.height(Dimens.SpaceSmall))
+                    Text(
+                        text = currentNote.questionTextNative,
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontStyle = FontStyle.Italic,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
-                Spacer(Modifier.height(Dimens.SpaceSmall))
+
+                Spacer(Modifier.height(Dimens.SpaceMedium))
+
+                // 4 варианта ответа
+                for (i in 1..4) {
+                    val textDe = when (i) {
+                        1 -> currentNote.answer1De
+                        2 -> currentNote.answer2De
+                        3 -> currentNote.answer3De
+                        else -> currentNote.answer4De
+                    }
+                    val textNative = when (i) {
+                        1 -> currentNote.answer1Native
+                        2 -> currentNote.answer2Native
+                        3 -> currentNote.answer3Native
+                        else -> currentNote.answer4Native
+                    }
+                    AnswerCard(
+                        index = i,
+                        textDe = textDe,
+                        textNative = textNative,
+                        isClicked = i in noteClickedSet,
+                        isCorrect = currentNote.correctAnswerIndex == i,
+                        showTranslation = showTranslation,
+                        revealAll = revealAll,
+                        onClick = { viewModel.onAnswerClick(i, currentNote.id) }
+                    )
+                    if (i < 4) Spacer(Modifier.height(Dimens.SpaceSmall))
+                }
+
+                Spacer(Modifier.height(Dimens.ScreenPaddingBottom))
             }
+        }
 
-            // Текст вопроса на немецком
-            Text(
-                text = currentNote.questionTextDe,
-                style = MaterialTheme.typography.bodyLarge
-            )
-
-            // Перевод на родном языке
-            if (showTranslation && currentNote.questionTextNative.isNotBlank()) {
-                Spacer(Modifier.height(Dimens.SpaceSmall))
-                Text(
-                    text = currentNote.questionTextNative,
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontStyle = FontStyle.Italic,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+        // Стрелка ← в полупрозрачном кружке, внизу экрана
+        if (arrowAlpha.value > 0f) {
+            Box(
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(end = Dimens.SpaceLarge, bottom = Dimens.SwipeHintBottomPadding)
+                    .offset {
+                        val distance = containerWidthPx * 0.5f
+                        IntOffset(x = -(arrowProgress.value * distance).toInt(), y = 0)
+                    }
+                    .alpha(arrowAlpha.value)
+                    .size(Dimens.SwipeHintCircleSize)
+                    .background(
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.85f),
+                        shape = CircleShape
+                    ),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                    contentDescription = null,
+                    modifier = Modifier.size(Dimens.SwipeHintIconSize),
+                    tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
             }
-
-            Spacer(Modifier.height(Dimens.SpaceMedium))
-
-            // 4 варианта ответа
-            for (i in 1..4) {
-                val textDe = when (i) {
-                    1 -> currentNote.answer1De
-                    2 -> currentNote.answer2De
-                    3 -> currentNote.answer3De
-                    else -> currentNote.answer4De
-                }
-                val textNative = when (i) {
-                    1 -> currentNote.answer1Native
-                    2 -> currentNote.answer2Native
-                    3 -> currentNote.answer3Native
-                    else -> currentNote.answer4Native
-                }
-                AnswerCard(
-                    index = i,
-                    textDe = textDe,
-                    textNative = textNative,
-                    isClicked = i in noteClickedSet,
-                    isCorrect = currentNote.correctAnswerIndex == i,
-                    showTranslation = showTranslation,
-                    revealAll = revealAll,
-                    onClick = { viewModel.onAnswerClick(i, currentNote.id) }
-                )
-                if (i < 4) Spacer(Modifier.height(Dimens.SpaceSmall))
-            }
-
-            Spacer(Modifier.height(Dimens.ScreenPaddingBottom))
         }
     }
 }
@@ -173,7 +286,6 @@ private fun AnswerCard(
     revealAll: Boolean,
     onClick: () -> Unit
 ) {
-    // Показываем подсветку если: 1) этот ответ был нажат, ИЛИ 2) revealAll включён
     val isHighlighted = isClicked || revealAll
 
     val containerColor = when {

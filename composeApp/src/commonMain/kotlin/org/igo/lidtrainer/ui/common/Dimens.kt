@@ -39,6 +39,11 @@ object Dimens {
     // ==================== Input Fields ====================
     val InputFieldCornerRadius = 8.dp
 
+    // ==================== Swipe Hint ====================
+    val SwipeHintCircleSize = 56.dp
+    val SwipeHintIconSize = 28.dp
+    val SwipeHintBottomPadding = 80.dp
+
     // ==================== Other ====================
     val BorderWidthStandard = 1.dp
 

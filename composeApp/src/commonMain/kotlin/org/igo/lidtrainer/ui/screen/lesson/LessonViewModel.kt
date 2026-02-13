@@ -33,6 +33,9 @@ class LessonViewModel(
     val isTranslationAvailable: StateFlow<Boolean> get() = _isTranslationAvailable
     private val _isTranslationAvailable = MutableStateFlow(true)
 
+    private val _showSwipeHint = MutableStateFlow(!settingsRepository.hasSeenSwipeHint())
+    val showSwipeHint: StateFlow<Boolean> = _showSwipeHint.asStateFlow()
+
     init {
         viewModelScope.launch {
             settingsRepository.languageContentState.collect { langCode ->
@@ -88,5 +91,10 @@ class LessonViewModel(
 
     fun setCurrentIndex(index: Int) {
         _currentIndex.value = index
+    }
+
+    fun onSwipeHintSeen() {
+        _showSwipeHint.value = false
+        settingsRepository.setSeenSwipeHint()
     }
 }

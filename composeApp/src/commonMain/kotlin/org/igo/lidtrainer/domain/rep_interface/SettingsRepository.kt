@@ -21,4 +21,7 @@ interface SettingsRepository {
 
     val showCorrectImmediatelyState: StateFlow<Boolean>
     fun setShowCorrectImmediately(enabled: Boolean)
+
+    fun hasSeenSwipeHint(): Boolean
+    fun setSeenSwipeHint()
 }

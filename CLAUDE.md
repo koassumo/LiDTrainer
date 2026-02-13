@@ -276,7 +276,7 @@ The app has **two separate language settings** stored in `SettingsRepository`:
 
 1. **LanguageSelectScreen** — First launch: choose native language for quiz content. Auto-detects system language and pre-selects it. On continue, sets both UI language and content language to the same value.
 2. **DashboardScreen** — Statistics, "Study questions" button navigating to LessonScreen
-3. **LessonScreen** — Question cards with German text + native language translation, 4 answer options with color feedback (green/red), navigation between questions
+3. **LessonScreen** — Question cards with German text + native language translation, 4 answer options with color feedback (green/red). Navigation via **horizontal swipe** (`HorizontalPager`). Translation toggle (Switch) visible only when content language ≠ "de". TopBar shows `"X / N"` counter. Includes a one-time swipe hint (animated circle button + page nudge) that shows once the user finds the correct answer on any card and disappears permanently after the first real swipe — flag persisted in `SettingsRepository.hasSeenSwipeHint()`.
 4. **SettingsScreen** — Three settings: Theme (System/Light/Dark), UI Language (System/EN/RU/DE), Content Language (EN/RU/DE). Uses local sub-navigation with AnimatedContent.
 
 ## Data Model
@@ -322,7 +322,7 @@ SQLDelight schema at `commonMain/sqldelight/org/igo/lidtrainer/db/Note.sq`
 - [x] LanguageSelectScreen (first launch flow with system language detection)
 - [x] SettingsScreen (theme + UI language + content language switching)
 - [x] DashboardScreen (statistics + navigation to LessonScreen)
-- [x] LessonScreen (question cards with answer feedback)
+- [x] LessonScreen (HorizontalPager swipe navigation + answer feedback + one-time swipe hint)
 - [x] UpdateAppLanguage + UpdateSystemBarsTheme (expect/actual for locale and status bar)
 - [x] System language detection (getSystemLanguageCode via Platform.kt)
 
