@@ -9,6 +9,11 @@ interface AppStrings {
     val languageSelectPrompt: String
     val languageSelectContinue: String
 
+    // Bundesland Select Screen
+    val bundeslandSelectTitle: String
+    val bundeslandSelectPrompt: String
+    val bundeslandSection: String
+
     // Dashboard Screen
     val dashboardTitle: String
     val studyQuestions: String

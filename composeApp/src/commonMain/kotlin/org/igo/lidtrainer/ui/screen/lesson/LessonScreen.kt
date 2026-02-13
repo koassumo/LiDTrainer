@@ -11,10 +11,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import org.igo.lidtrainer.ui.common.CommonButton
@@ -44,7 +49,7 @@ fun LessonScreen(
     val totalCount = notes.size
 
     topBar.title = if (totalCount > 0) {
-        "${strings.questionNumber} ${currentIndex + 1} / $totalCount"
+        "${currentIndex + 1} / $totalCount"
     } else {
         strings.lessonTitle
     }
@@ -55,6 +60,7 @@ fun LessonScreen(
         return
     }
 
+    var showTranslation by rememberSaveable { mutableStateOf(false) }
     val noteClickedSet = clickedAnswers[currentNote.id] ?: emptySet()
 
     Column(
@@ -66,12 +72,22 @@ fun LessonScreen(
             )
             .verticalScroll(rememberScrollState())
     ) {
-        // Номер вопроса
-        Text(
-            text = "Frage ${currentNote.questionNumber}",
-            style = MaterialTheme.typography.titleMedium,
-            color = MaterialTheme.colorScheme.primary
-        )
+        // Номер вопроса + переключатель перевода
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "Frage ${currentNote.questionNumber}",
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.primary
+            )
+            Switch(
+                checked = showTranslation,
+                onCheckedChange = { showTranslation = it }
+            )
+        }
 
         Spacer(Modifier.height(Dimens.SpaceSmall))
 
@@ -82,7 +98,7 @@ fun LessonScreen(
         )
 
         // Перевод на родном языке
-        if (currentNote.questionTextNative.isNotBlank()) {
+        if (showTranslation && currentNote.questionTextNative.isNotBlank()) {
             Spacer(Modifier.height(Dimens.SpaceSmall))
             Text(
                 text = currentNote.questionTextNative,
@@ -101,6 +117,7 @@ fun LessonScreen(
             textNative = currentNote.answer1Native,
             isClicked = 1 in noteClickedSet,
             isCorrect = currentNote.correctAnswerIndex == 1,
+            showTranslation = showTranslation,
             onClick = { viewModel.onAnswerClick(1) }
         )
         Spacer(Modifier.height(Dimens.SpaceSmall))
@@ -111,6 +128,7 @@ fun LessonScreen(
             textNative = currentNote.answer2Native,
             isClicked = 2 in noteClickedSet,
             isCorrect = currentNote.correctAnswerIndex == 2,
+            showTranslation = showTranslation,
             onClick = { viewModel.onAnswerClick(2) }
         )
         Spacer(Modifier.height(Dimens.SpaceSmall))
@@ -121,6 +139,7 @@ fun LessonScreen(
             textNative = currentNote.answer3Native,
             isClicked = 3 in noteClickedSet,
             isCorrect = currentNote.correctAnswerIndex == 3,
+            showTranslation = showTranslation,
             onClick = { viewModel.onAnswerClick(3) }
         )
         Spacer(Modifier.height(Dimens.SpaceSmall))
@@ -131,6 +150,7 @@ fun LessonScreen(
             textNative = currentNote.answer4Native,
             isClicked = 4 in noteClickedSet,
             isCorrect = currentNote.correctAnswerIndex == 4,
+            showTranslation = showTranslation,
             onClick = { viewModel.onAnswerClick(4) }
         )
 
@@ -166,6 +186,7 @@ private fun AnswerCard(
     textNative: String,
     isClicked: Boolean,
     isCorrect: Boolean,
+    showTranslation: Boolean,
     onClick: () -> Unit
 ) {
     val containerColor = when {
@@ -196,7 +217,7 @@ private fun AnswerCard(
             style = MaterialTheme.typography.bodyMedium,
             color = textColor
         )
-        if (textNative.isNotBlank() && isClicked) {
+        if (textNative.isNotBlank() && showTranslation) {
             Spacer(Modifier.height(Dimens.SpaceSmall / 2))
             Text(
                 text = textNative,

@@ -26,6 +26,7 @@ import org.igo.lidtrainer.ui.common.TopBarState
 import org.igo.lidtrainer.ui.common.exitApp
 import org.igo.lidtrainer.ui.navigation.Destinations
 import org.igo.lidtrainer.ui.screen.dashboard.DashboardScreen
+import org.igo.lidtrainer.ui.screen.bundeslandselect.BundeslandSelectScreen
 import org.igo.lidtrainer.ui.screen.languageselect.LanguageSelectScreen
 import org.igo.lidtrainer.ui.screen.lesson.LessonScreen
 import org.igo.lidtrainer.ui.screen.lesson.LessonViewModel
@@ -64,7 +65,7 @@ fun MainScreen() {
                     navigateUp = topBarState.onNavigateBack,
                     backButtonDescription = strings.backButtonTooltip,
                     actions = {
-                        if (currentRoute != Destinations.SETTINGS && currentRoute != Destinations.LANGUAGE_SELECT) {
+                        if (currentRoute != Destinations.SETTINGS && currentRoute != Destinations.LANGUAGE_SELECT && currentRoute != Destinations.BUNDESLAND_SELECT) {
                             IconButton(
                                 onClick = { viewModel.navigateTo(Destinations.SETTINGS) }
                             ) {
@@ -89,6 +90,14 @@ fun MainScreen() {
                             onLanguageSelected = { code ->
                                 viewModel.onLanguageSelected(code)
                             }
+                        )
+                    }
+                    Destinations.BUNDESLAND_SELECT -> {
+                        BundeslandSelectScreen(
+                            onBundeslandSelected = { code ->
+                                viewModel.onBundeslandSelected(code)
+                            },
+                            onNavigateBack = { viewModel.navigateBack() }
                         )
                     }
                     Destinations.DASHBOARD -> {

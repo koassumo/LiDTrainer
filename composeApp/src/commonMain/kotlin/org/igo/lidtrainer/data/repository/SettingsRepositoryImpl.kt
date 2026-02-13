@@ -62,9 +62,26 @@ class SettingsRepositoryImpl(
         return settings.getString(KEY_LANGUAGE_CONTENT, "")
     }
 
+    private val _bundeslandState = MutableStateFlow(getCurrentBundesland())
+    override val bundeslandState: StateFlow<String> = _bundeslandState.asStateFlow()
+
+    override fun setBundesland(code: String) {
+        settings.putString(KEY_BUNDESLAND, code)
+        _bundeslandState.value = code
+    }
+
+    override fun isBundeslandSelected(): Boolean {
+        return _bundeslandState.value.isNotEmpty()
+    }
+
+    private fun getCurrentBundesland(): String {
+        return settings.getString(KEY_BUNDESLAND, "")
+    }
+
     companion object {
         private const val KEY_THEME = "app_theme_key"
         private const val KEY_LANGUAGE = "app_language_key"
         private const val KEY_LANGUAGE_CONTENT = "language_content_code"
+        private const val KEY_BUNDESLAND = "bundesland_key"
     }
 }

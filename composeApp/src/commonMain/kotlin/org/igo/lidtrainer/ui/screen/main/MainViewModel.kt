@@ -33,16 +33,16 @@ class MainViewModel(
 
     private fun determineInitialRoute() {
         viewModelScope.launch {
-            if (settingsRepository.isLanguageContentSelected()) {
-                // Язык выбран — загружаем данные и идём в Dashboard
-                _currentRoute.value = Destinations.DASHBOARD
-                navigationStack.add(Destinations.DASHBOARD)
-                loadInitialData()
-            } else {
-                // Первый запуск — показываем выбор языка
-                _currentRoute.value = Destinations.LANGUAGE_SELECT
-                navigationStack.add(Destinations.LANGUAGE_SELECT)
+            val route = when {
+                !settingsRepository.isLanguageContentSelected() -> Destinations.LANGUAGE_SELECT
+                !settingsRepository.isBundeslandSelected() -> Destinations.BUNDESLAND_SELECT
+                else -> {
+                    loadInitialData()
+                    Destinations.DASHBOARD
+                }
             }
+            _currentRoute.value = route
+            navigationStack.add(route)
         }
     }
 
@@ -64,7 +64,6 @@ class MainViewModel(
     fun onLanguageSelected(code: String) {
         viewModelScope.launch {
             settingsRepository.setLanguageContentCode(code)
-            // Устанавливаем и UI язык при первом запуске
             val uiLanguage = when (code) {
                 "en" -> AppLanguageConfig.EN
                 "ru" -> AppLanguageConfig.RU
@@ -72,6 +71,16 @@ class MainViewModel(
                 else -> AppLanguageConfig.EN
             }
             settingsRepository.setLanguage(uiLanguage)
+            _currentRoute.value = Destinations.BUNDESLAND_SELECT
+            navigationStack.clear()
+            navigationStack.add(Destinations.LANGUAGE_SELECT)
+            navigationStack.add(Destinations.BUNDESLAND_SELECT)
+        }
+    }
+
+    fun onBundeslandSelected(code: String) {
+        viewModelScope.launch {
+            settingsRepository.setBundesland(code)
             loadInitialData()
             navigateTo(Destinations.DASHBOARD)
         }

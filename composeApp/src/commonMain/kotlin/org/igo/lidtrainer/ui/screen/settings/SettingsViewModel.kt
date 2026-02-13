@@ -36,6 +36,12 @@ class SettingsViewModel(
                 _state.update { it.copy(selectedLanguageContent = newCode) }
             }
         }
+
+        viewModelScope.launch {
+            repository.bundeslandState.collect { newBundesland ->
+                _state.update { it.copy(selectedBundesland = newBundesland) }
+            }
+        }
     }
 
     fun updateTheme(newTheme: AppThemeConfig) {
@@ -48,5 +54,9 @@ class SettingsViewModel(
 
     fun updateLanguageContent(newCode: String) {
         repository.setLanguageContentCode(newCode)
+    }
+
+    fun updateBundesland(code: String) {
+        repository.setBundesland(code)
     }
 }

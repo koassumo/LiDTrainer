@@ -6,6 +6,11 @@
     <string name="language_select_prompt">Wählen Sie Ihre Muttersprache</string>
     <string name="language_select_continue">Weiter</string>
 
+    <!-- Bundesland Select Screen -->
+    <string name="bundesland_select_title">Bundesland wählen</string>
+    <string name="bundesland_select_prompt">In welchem Bundesland leben Sie?</string>
+    <string name="bundesland_section">Bundesland</string>
+
     <!-- Dashboard Screen -->
     <string name="dashboard_title">Übersicht</string>
     <string name="study_questions">Fragen lernen</string>

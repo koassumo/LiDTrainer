@@ -6,6 +6,11 @@
     <string name="language_select_prompt">Выберите ваш родной язык</string>
     <string name="language_select_continue">Продолжить</string>
 
+    <!-- Bundesland Select Screen -->
+    <string name="bundesland_select_title">Выберите землю</string>
+    <string name="bundesland_select_prompt">В какой земле вы проживаете?</string>
+    <string name="bundesland_section">Bundesland</string>
+
     <!-- Dashboard Screen -->
     <string name="dashboard_title">Главная</string>
     <string name="study_questions">Изучать вопросы</string>

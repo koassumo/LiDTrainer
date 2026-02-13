@@ -35,6 +35,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import org.igo.lidtrainer.domain.model.Bundesland
 import org.igo.lidtrainer.ui.common.AppBackHandler
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
@@ -47,6 +48,7 @@ private sealed interface SettingsPage {
     data object ThemeSelection : SettingsPage
     data object LanguageSelection : SettingsPage
     data object LanguageContentSelection : SettingsPage
+    data object BundeslandSelection : SettingsPage
 }
 
 @Composable
@@ -85,6 +87,11 @@ fun SettingsScreen(
             topBar.canNavigateBack = true
             topBar.onNavigateBack = { currentPage = SettingsPage.MainList }
         }
+        SettingsPage.BundeslandSelection -> {
+            topBar.title = strings.bundeslandSection
+            topBar.canNavigateBack = true
+            topBar.onNavigateBack = { currentPage = SettingsPage.MainList }
+        }
     }
 
     Surface(modifier = Modifier.fillMaxSize()) {
@@ -119,9 +126,11 @@ fun SettingsScreen(
                         currentTheme = state.selectedTheme,
                         currentLanguage = state.selectedLanguage,
                         currentLanguageContent = state.selectedLanguageContent,
+                        currentBundesland = state.selectedBundesland,
                         onThemeClick = { currentPage = SettingsPage.ThemeSelection },
                         onLanguageClick = { currentPage = SettingsPage.LanguageSelection },
-                        onLanguageContentClick = { currentPage = SettingsPage.LanguageContentSelection }
+                        onLanguageContentClick = { currentPage = SettingsPage.LanguageContentSelection },
+                        onBundeslandClick = { currentPage = SettingsPage.BundeslandSelection }
                     )
                 }
 
@@ -170,6 +179,17 @@ fun SettingsScreen(
                         }
                     )
                 }
+
+                SettingsPage.BundeslandSelection -> {
+                    SelectionScreen(
+                        options = Bundesland.entries.map { it.name to it.displayName },
+                        selectedOption = state.selectedBundesland,
+                        onOptionSelected = { newCode ->
+                            viewModel.updateBundesland(newCode)
+                            currentPage = SettingsPage.MainList
+                        }
+                    )
+                }
             }
         }
     }
@@ -180,9 +200,11 @@ private fun SettingsMainList(
     currentTheme: AppThemeConfig,
     currentLanguage: AppLanguageConfig,
     currentLanguageContent: String,
+    currentBundesland: String,
     onThemeClick: () -> Unit,
     onLanguageClick: () -> Unit,
     onLanguageContentClick: () -> Unit,
+    onBundeslandClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val strings = LocalAppStrings.current
@@ -229,6 +251,14 @@ private fun SettingsMainList(
                 else -> currentLanguageContent
             },
             onClick = onLanguageContentClick
+        )
+
+        HorizontalDivider()
+
+        SettingsMenuItem(
+            title = strings.bundeslandSection,
+            currentValue = Bundesland.entries.find { it.name == currentBundesland }?.displayName ?: currentBundesland,
+            onClick = onBundeslandClick
         )
 
         HorizontalDivider()

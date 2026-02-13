@@ -14,4 +14,8 @@ interface SettingsRepository {
     val languageContentState: StateFlow<String>
     fun setLanguageContentCode(code: String)
     fun isLanguageContentSelected(): Boolean
+
+    val bundeslandState: StateFlow<String>
+    fun setBundesland(code: String)
+    fun isBundeslandSelected(): Boolean
 }
