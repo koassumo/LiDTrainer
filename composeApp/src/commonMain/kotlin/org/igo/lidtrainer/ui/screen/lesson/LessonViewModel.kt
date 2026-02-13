@@ -64,9 +64,8 @@ class LessonViewModel(
         }
     }
 
-    fun onAnswerClick(answerIndex: Int) {
-        val currentNote = _notes.value.getOrNull(_currentIndex.value) ?: return
-        val noteId = currentNote.id
+    fun onAnswerClick(answerIndex: Int, noteId: Long) {
+        val note = _notes.value.find { it.id == noteId } ?: return
 
         // Добавляем ответ в набор нажатых
         val currentClicked = _clickedAnswers.value.toMutableMap()
@@ -75,7 +74,7 @@ class LessonViewModel(
         _clickedAnswers.value = currentClicked
 
         // Сохраняем в БД если правильный ответ
-        val isCorrect = answerIndex == currentNote.correctAnswerIndex
+        val isCorrect = answerIndex == note.correctAnswerIndex
         if (isCorrect) {
             viewModelScope.launch {
                 noteRepository.updateUserAnswer(noteId, answerIndex, true)
@@ -87,15 +86,7 @@ class LessonViewModel(
         showTranslation.value = !showTranslation.value
     }
 
-    fun goToNext() {
-        if (_currentIndex.value < _notes.value.size - 1) {
-            _currentIndex.value++
-        }
-    }
-
-    fun goToPrevious() {
-        if (_currentIndex.value > 0) {
-            _currentIndex.value--
-        }
+    fun setCurrentIndex(index: Int) {
+        _currentIndex.value = index
     }
 }
