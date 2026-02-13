@@ -335,3 +335,8 @@ val CorrectAnswerBackground = Green50
 val CorrectAnswerText = Green900
 val IncorrectAnswerBackground = Red50
 val IncorrectAnswerText = Red900
+
+// Цветная полоска слева в карточке ответа
+val AnswerStripDefault = Grey300
+val CorrectAnswerStrip = Green500
+val IncorrectAnswerStrip = Red500

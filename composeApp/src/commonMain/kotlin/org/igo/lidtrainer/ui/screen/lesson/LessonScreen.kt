@@ -10,9 +10,12 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -48,7 +51,13 @@ import kotlinx.coroutines.launch
 import org.igo.lidtrainer.ui.common.CommonCard
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.dp
+import org.igo.lidtrainer.ui.theme.AnswerStripDefault
 import org.igo.lidtrainer.ui.theme.CorrectAnswerBackground
+import org.igo.lidtrainer.ui.theme.CorrectAnswerStrip
+import org.igo.lidtrainer.ui.theme.IncorrectAnswerStrip
 import org.igo.lidtrainer.ui.theme.CorrectAnswerText
 import org.igo.lidtrainer.ui.theme.IncorrectAnswerBackground
 import org.igo.lidtrainer.ui.theme.IncorrectAnswerText
@@ -306,24 +315,49 @@ private fun AnswerCard(
         else -> IncorrectAnswerText
     }
 
+    val stripColor = when {
+        !isHighlighted -> AnswerStripDefault
+        isCorrect -> CorrectAnswerStrip
+        else -> IncorrectAnswerStrip
+    }
+
     CommonCard(
         containerColor = containerColor,
         borderColor = borderColor,
+        contentPadding = PaddingValues(0.dp),
         onClick = onClick
     ) {
-        Text(
-            text = "$index. $textDe",
-            style = MaterialTheme.typography.bodyMedium,
-            color = textColor
-        )
-        if (textNative.isNotBlank() && showTranslation) {
-            Spacer(Modifier.height(Dimens.SpaceSmall / 2))
-            Text(
-                text = textNative,
-                style = MaterialTheme.typography.bodySmall,
-                fontStyle = FontStyle.Italic,
-                color = textColor.copy(alpha = 0.7f)
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(IntrinsicSize.Min)
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth(0.1f)
+                    .fillMaxHeight()
+                    .background(stripColor)
             )
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(Dimens.CommonCardContentPadding)
+            ) {
+                Text(
+                    text = "$index. $textDe",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = textColor
+                )
+                if (textNative.isNotBlank() && showTranslation) {
+                    Spacer(Modifier.height(Dimens.SpaceSmall / 2))
+                    Text(
+                        text = textNative,
+                        style = MaterialTheme.typography.bodySmall,
+                        fontStyle = FontStyle.Italic,
+                        color = textColor.copy(alpha = 0.7f)
+                    )
+                }
+            }
         }
     }
 }
