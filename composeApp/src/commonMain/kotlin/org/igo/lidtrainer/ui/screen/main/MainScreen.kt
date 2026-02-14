@@ -62,6 +62,7 @@ fun MainScreen() {
             topBar = {
                 CommonTopBar(
                     title = topBarState.title,
+                    titleContent = topBarState.titleContent,
                     canNavigateBack = topBarState.canNavigateBack,
                     navigateUp = topBarState.onNavigateBack,
                     backButtonDescription = strings.backButtonTooltip,

@@ -8,6 +8,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.PaddingValues
@@ -32,6 +33,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -75,6 +77,7 @@ fun LessonScreen(
     val notes by viewModel.notes.collectAsState()
     val currentIndex by viewModel.currentIndex.collectAsState()
     val clickedAnswers by viewModel.clickedAnswers.collectAsState()
+    val firstAttemptResults by viewModel.firstAttemptResults.collectAsState()
     val showTranslation by viewModel.showTranslation.collectAsState()
     val showCorrectImmediately by viewModel.showCorrectImmediately.collectAsState()
     val isTranslationAvailable by viewModel.isTranslationAvailable.collectAsState()
@@ -85,8 +88,14 @@ fun LessonScreen(
     topBar.canNavigateBack = true
     topBar.onNavigateBack = onNavigateBack
 
+    // Сбрасываем titleContent при уходе с экрана
+    DisposableEffect(Unit) {
+        onDispose { topBar.titleContent = null }
+    }
+
     if (totalCount == 0) {
         topBar.title = strings.lessonTitle
+        topBar.titleContent = null
         return
     }
 
@@ -115,7 +124,52 @@ fun LessonScreen(
     }
 
     // Update top bar title from pager
-    topBar.title = "${pagerState.currentPage + 1} / $totalCount"
+    val currentPageNumber = pagerState.currentPage + 1
+    val currentNoteForTitle = notes.getOrNull(pagerState.currentPage)
+    val firstAttemptResult = currentNoteForTitle?.let { firstAttemptResults[it.id] }
+
+    val badgeColor = when (firstAttemptResult) {
+        true -> CorrectAnswerBackground
+        false -> IncorrectAnswerBackground
+        null -> MaterialTheme.colorScheme.surfaceVariant
+    }
+    val badgeTextColor = when (firstAttemptResult) {
+        true -> CorrectAnswerText
+        false -> IncorrectAnswerText
+        null -> MaterialTheme.colorScheme.onSurfaceVariant
+    }
+
+    topBar.titleContent = {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .background(
+                        color = badgeColor,
+                        shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
+                    )
+                    .padding(
+                        horizontal = Dimens.SpaceSmall,
+                        vertical = Dimens.SpaceSmall / 2
+                    )
+            ) {
+                Text(
+                    text = "$currentPageNumber",
+                    style = MaterialTheme.typography.titleMedium,
+                    color = badgeTextColor
+                )
+            }
+            Text(
+                text = " / $totalCount",
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+        }
+    }
 
     // Подсказка: текущая карточка + правильный ответ найден + пользователь ещё ни разу не свайпнул
     val currentNote = notes.getOrNull(pagerState.currentPage)

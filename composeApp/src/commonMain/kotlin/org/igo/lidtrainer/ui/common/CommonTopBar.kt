@@ -29,20 +29,25 @@ fun CommonTopBar(
     navigateUp: () -> Unit = {},
     modifier: Modifier = Modifier,
     backButtonDescription: String = "Back",
+    titleContent: @Composable (() -> Unit)? = null,
     actions: @Composable RowScope.() -> Unit = {},
     windowInsets: WindowInsets = TopAppBarDefaults.windowInsets
 ) {
     Column(modifier = modifier) {
         CenterAlignedTopAppBar(
             title = {
-                Text(
-                    text = title,
-                    style = MaterialTheme.typography.titleLarge,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(start = 0.dp),
-                    textAlign = TextAlign.Start
-                )
+                if (titleContent != null) {
+                    titleContent()
+                } else {
+                    Text(
+                        text = title,
+                        style = MaterialTheme.typography.titleLarge,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(start = 0.dp),
+                        textAlign = TextAlign.Start
+                    )
+                }
             },
             navigationIcon = {
                 if (canNavigateBack) {

@@ -26,6 +26,10 @@ class LessonViewModel(
     private val _clickedAnswers = MutableStateFlow<Map<Long, Set<Int>>>(emptyMap())
     val clickedAnswers: StateFlow<Map<Long, Set<Int>>> = _clickedAnswers.asStateFlow()
 
+    // Map<noteId, Boolean> — результат первой попытки (true = правильно)
+    private val _firstAttemptResults = MutableStateFlow<Map<Long, Boolean>>(emptyMap())
+    val firstAttemptResults: StateFlow<Map<Long, Boolean>> = _firstAttemptResults.asStateFlow()
+
     val showTranslation = MutableStateFlow(false)
 
     val showCorrectImmediately: StateFlow<Boolean> = settingsRepository.showCorrectImmediatelyState
@@ -70,6 +74,15 @@ class LessonViewModel(
     fun onAnswerClick(answerIndex: Int, noteId: Long) {
         val note = _notes.value.find { it.id == noteId } ?: return
 
+        val isCorrect = answerIndex == note.correctAnswerIndex
+
+        // Запоминаем результат первой попытки (не меняется в пределах урока)
+        if (noteId !in _firstAttemptResults.value) {
+            val results = _firstAttemptResults.value.toMutableMap()
+            results[noteId] = isCorrect
+            _firstAttemptResults.value = results
+        }
+
         // Добавляем ответ в набор нажатых
         val currentClicked = _clickedAnswers.value.toMutableMap()
         val existing: Set<Int> = currentClicked[noteId] ?: emptySet()
@@ -77,7 +90,6 @@ class LessonViewModel(
         _clickedAnswers.value = currentClicked
 
         // Сохраняем в БД если правильный ответ
-        val isCorrect = answerIndex == note.correctAnswerIndex
         if (isCorrect) {
             viewModelScope.launch {
                 noteRepository.updateUserAnswer(noteId, answerIndex, true)
