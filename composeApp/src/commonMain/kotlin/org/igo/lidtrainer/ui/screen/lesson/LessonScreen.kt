@@ -9,6 +9,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -36,7 +37,10 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
@@ -60,6 +64,7 @@ import androidx.compose.ui.unit.IntOffset
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import org.igo.lidtrainer.domain.model.LessonFilter
 import org.igo.lidtrainer.domain.model.Note
 import org.igo.lidtrainer.ui.common.CommonCard
 import org.igo.lidtrainer.ui.common.Dimens
@@ -85,8 +90,8 @@ fun LessonScreen(
 
     val notes by viewModel.notes.collectAsState()
     val currentIndex by viewModel.currentIndex.collectAsState()
+    val lessonFilter by viewModel.lessonFilter.collectAsState()
     val clickedAnswers by viewModel.clickedAnswers.collectAsState()
-    val firstAttemptResults by viewModel.firstAttemptResults.collectAsState()
     val showTranslation by viewModel.showTranslation.collectAsState()
     val showCorrectImmediately by viewModel.showCorrectImmediately.collectAsState()
     val isTranslationAvailable by viewModel.isTranslationAvailable.collectAsState()
@@ -135,14 +140,13 @@ fun LessonScreen(
     // Update top bar title from pager
     val currentPageNumber = pagerState.currentPage + 1
     val currentNoteForTitle = notes.getOrNull(pagerState.currentPage)
-    val firstAttemptResult = currentNoteForTitle?.let { firstAttemptResults[it.id] }
 
-    val badgeColor = when (firstAttemptResult) {
+    val badgeColor = when (currentNoteForTitle?.isAnsweredCorrectly) {
         true -> CorrectAnswerBackground
         false -> IncorrectAnswerBackground
         null -> MaterialTheme.colorScheme.surfaceVariant
     }
-    val badgeTextColor = when (firstAttemptResult) {
+    val badgeTextColor = when (currentNoteForTitle?.isAnsweredCorrectly) {
         true -> CorrectAnswerText
         false -> IncorrectAnswerText
         null -> MaterialTheme.colorScheme.onSurfaceVariant
@@ -158,6 +162,13 @@ fun LessonScreen(
                 .fillMaxWidth()
                 .clickable { showQuestionGrid = true }
         ) {
+            Icon(
+                imageVector = Icons.Default.ArrowDropDown,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.size(Dimens.SpaceMedium)
+            )
+            Spacer(Modifier.width(Dimens.SpaceSmall / 2))
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
@@ -178,13 +189,8 @@ fun LessonScreen(
             }
             Text(
                 text = " / $totalCount",
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onSurface
-            )
-            Icon(
-                imageVector = Icons.Default.ArrowDropDown,
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
     }
@@ -193,7 +199,7 @@ fun LessonScreen(
         QuestionGridBottomSheet(
             notes = notes,
             currentPage = pagerState.currentPage,
-            firstAttemptResults = firstAttemptResults,
+            lessonFilter = lessonFilter,
             onQuestionSelected = { index ->
                 showQuestionGrid = false
                 viewModel.setCurrentIndex(index)
@@ -273,32 +279,39 @@ fun LessonScreen(
                     .background(MaterialTheme.colorScheme.surface)
                     .verticalScroll(rememberScrollState())
             ) {
-                // Переключатель перевода
-                if (isTranslationAvailable) {
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(horizontal = Dimens.ScreenPaddingSides)
-                            .padding(top = Dimens.ScreenPaddingTop),
-                        horizontalArrangement = Arrangement.End,
-                        verticalAlignment = Alignment.CenterVertically
+                // Переключатель перевода + звёздочка
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = Dimens.ScreenPaddingSides)
+                        .padding(top = Dimens.ScreenPaddingTop),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    IconButton(
+                        onClick = { viewModel.toggleFavorite(currentNote.id) }
                     ) {
+                        Icon(
+                            imageVector = if (currentNote.isFavorite) Icons.Default.Star else Icons.Default.StarBorder,
+                            contentDescription = null,
+                            tint = if (currentNote.isFavorite) MaterialTheme.colorScheme.primary
+                                   else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    if (isTranslationAvailable && lessonFilter != LessonFilter.PRACTICE_TEST) {
                         Switch(
                             checked = showTranslation,
                             onCheckedChange = { viewModel.toggleTranslation() }
                         )
                     }
-                    Spacer(Modifier.height(Dimens.SpaceSmall))
                 }
+                Spacer(Modifier.height(Dimens.SpaceSmall))
 
                 // Текст вопроса на немецком
                 Text(
                     text = currentNote.questionTextDe,
                     style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier.padding(
-                        horizontal = Dimens.ScreenPaddingSides,
-                        vertical = if (!isTranslationAvailable) Dimens.ScreenPaddingTop else 0.dp
-                    )
+                    modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
                 )
 
                 // Перевод на родном языке
@@ -467,62 +480,100 @@ private fun AnswerCard(
 private fun QuestionGridBottomSheet(
     notes: List<Note>,
     currentPage: Int,
-    firstAttemptResults: Map<Long, Boolean>,
+    lessonFilter: LessonFilter,
     onQuestionSelected: (Int) -> Unit,
     onDismiss: () -> Unit
 ) {
+    val strings = LocalAppStrings.current
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+
+    // Разделяем на секции: пара (заголовок, список (originalIndex, note))
+    val sections = remember(notes, lessonFilter) {
+        when (lessonFilter) {
+            LessonFilter.GENERAL -> listOf(
+                strings.generalQuestions to notes.mapIndexed { i, n -> i to n }
+            )
+            LessonFilter.REGIONAL -> listOf(
+                strings.regionalQuestions to notes.mapIndexed { i, n -> i to n }
+            )
+            LessonFilter.ALL, LessonFilter.FAVORITES, LessonFilter.PRACTICE_TEST -> {
+                val general = notes.mapIndexedNotNull { i, n ->
+                    if (n.category == "GENERAL") i to n else null
+                }
+                val regional = notes.mapIndexedNotNull { i, n ->
+                    if (n.category != "GENERAL") i to n else null
+                }
+                buildList {
+                    if (general.isNotEmpty()) add(strings.generalQuestions to general)
+                    if (regional.isNotEmpty()) add(strings.regionalQuestions to regional)
+                }
+            }
+        }
+    }
 
     ModalBottomSheet(
         onDismissRequest = onDismiss,
-        sheetState = sheetState,
-        modifier = Modifier.fillMaxHeight()
+        sheetState = sheetState
     ) {
         LazyVerticalGrid(
             columns = GridCells.Fixed(8),
             contentPadding = PaddingValues(Dimens.SpaceMedium),
             horizontalArrangement = Arrangement.spacedBy(Dimens.SpaceSmall),
             verticalArrangement = Arrangement.spacedBy(Dimens.SpaceSmall),
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier.fillMaxWidth().fillMaxHeight(0.85f)
         ) {
-            items(notes.size) { index ->
-                val note = notes[index]
-                val result = firstAttemptResults[note.id]
-                val isCurrent = index == currentPage
-
-                val bgColor = when (result) {
-                    true -> CorrectAnswerBackground
-                    false -> IncorrectAnswerBackground
-                    null -> MaterialTheme.colorScheme.surfaceVariant
-                }
-                val txtColor = when (result) {
-                    true -> CorrectAnswerText
-                    false -> IncorrectAnswerText
-                    null -> MaterialTheme.colorScheme.onSurfaceVariant
-                }
-
-                Box(
-                    contentAlignment = Alignment.Center,
-                    modifier = Modifier
-                        .aspectRatio(1f)
-                        .background(
-                            color = bgColor,
-                            shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
-                        )
-                        .then(
-                            if (isCurrent) Modifier.border(
-                                width = 2.dp,
-                                color = MaterialTheme.colorScheme.primary,
-                                shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
-                            ) else Modifier
-                        )
-                        .clickable { onQuestionSelected(index) }
-                ) {
+            sections.forEach { (title, indexedNotes) ->
+                // Заголовок секции на всю ширину
+                item(span = { GridItemSpan(maxLineSpan) }) {
                     Text(
-                        text = "${index + 1}",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = txtColor
+                        text = title,
+                        style = MaterialTheme.typography.titleSmall,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.padding(
+                            top = Dimens.SpaceSmall,
+                            bottom = Dimens.SpaceSmall / 2
+                        )
                     )
+                }
+
+                items(indexedNotes.size) { i ->
+                    val (originalIndex, note) = indexedNotes[i]
+                    val isCurrent = originalIndex == currentPage
+
+                    val bgColor = when (note.isAnsweredCorrectly) {
+                        true -> CorrectAnswerBackground
+                        false -> IncorrectAnswerBackground
+                        null -> MaterialTheme.colorScheme.surfaceVariant
+                    }
+                    val txtColor = when (note.isAnsweredCorrectly) {
+                        true -> CorrectAnswerText
+                        false -> IncorrectAnswerText
+                        null -> MaterialTheme.colorScheme.onSurfaceVariant
+                    }
+
+                    Box(
+                        contentAlignment = Alignment.Center,
+                        modifier = Modifier
+                            .aspectRatio(1f)
+                            .background(
+                                color = bgColor,
+                                shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
+                            )
+                            .then(
+                                if (isCurrent) Modifier.border(
+                                    width = 2.dp,
+                                    color = MaterialTheme.colorScheme.primary,
+                                    shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
+                                ) else Modifier
+                            )
+                            .clickable { onQuestionSelected(originalIndex) }
+                    ) {
+                        Text(
+                            text = "${note.questionNumber}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = txtColor
+                        )
+                    }
                 }
             }
         }

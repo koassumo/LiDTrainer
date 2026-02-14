@@ -17,6 +17,10 @@ interface AppStrings {
     // Dashboard Screen
     val dashboardTitle: String
     val studyQuestions: String
+    val allQuestions: String
+    val generalQuestions: String
+    val regionalQuestions: String
+    val favorites: String
     val practiceTest: String
     val questionsAnswered: String
     val correctAnswers: String

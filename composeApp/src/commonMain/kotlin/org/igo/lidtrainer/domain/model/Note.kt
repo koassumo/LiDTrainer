@@ -27,5 +27,6 @@ data class Note(
     // User progress
     val userAnswerIndex: Int?,
     val isAnsweredCorrectly: Boolean?,
-    val lastAnsweredAt: Long?
+    val lastAnsweredAt: Long?,
+    val isFavorite: Boolean = false
 )

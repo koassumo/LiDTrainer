@@ -25,6 +25,7 @@ import org.igo.lidtrainer.ui.common.LocalTopBarState
 import org.igo.lidtrainer.ui.common.TopBarState
 import org.igo.lidtrainer.ui.common.exitApp
 import org.igo.lidtrainer.ui.navigation.Destinations
+import org.igo.lidtrainer.domain.model.LessonFilter
 import org.igo.lidtrainer.ui.screen.dashboard.DashboardScreen
 import org.igo.lidtrainer.ui.screen.bundeslandselect.BundeslandSelectScreen
 import org.igo.lidtrainer.ui.screen.languageselect.LanguageSelectScreen
@@ -43,6 +44,9 @@ fun MainScreen() {
 
     val currentRoute by viewModel.currentRoute.collectAsState()
     val totalQuestions by viewModel.totalQuestions.collectAsState()
+    val generalCount by viewModel.generalCount.collectAsState()
+    val regionalCount by viewModel.regionalCount.collectAsState()
+    val favoritesCount by viewModel.favoritesCount.collectAsState()
     var showExitDialog by remember { mutableStateOf(false) }
     val snackbarHostState = remember { SnackbarHostState() }
     val topBarState = remember { TopBarState() }
@@ -105,7 +109,27 @@ fun MainScreen() {
                     Destinations.DASHBOARD -> {
                         DashboardScreen(
                             totalQuestions = totalQuestions,
-                            onAllQuestionsClick = {
+                            generalCount = generalCount,
+                            regionalCount = regionalCount,
+                            favoritesCount = favoritesCount,
+                            onAllClick = {
+                                lessonViewModel.setFilter(LessonFilter.ALL)
+                                viewModel.navigateTo(Destinations.LESSON)
+                            },
+                            onGeneralClick = {
+                                lessonViewModel.setFilter(LessonFilter.GENERAL)
+                                viewModel.navigateTo(Destinations.LESSON)
+                            },
+                            onRegionalClick = {
+                                lessonViewModel.setFilter(LessonFilter.REGIONAL)
+                                viewModel.navigateTo(Destinations.LESSON)
+                            },
+                            onFavoritesClick = {
+                                lessonViewModel.setFilter(LessonFilter.FAVORITES)
+                                viewModel.navigateTo(Destinations.LESSON)
+                            },
+                            onPracticeTestClick = {
+                                lessonViewModel.setFilter(LessonFilter.PRACTICE_TEST)
                                 viewModel.navigateTo(Destinations.LESSON)
                             }
                         )

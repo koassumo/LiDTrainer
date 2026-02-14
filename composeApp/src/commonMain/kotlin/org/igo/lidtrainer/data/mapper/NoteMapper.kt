@@ -41,7 +41,8 @@ fun mergePreNotes(dePreNote: PreNote, nativePreNote: PreNote?): Note {
         imageUrl = dePreNote.imageUrl,
         userAnswerIndex = null,
         isAnsweredCorrectly = null,
-        lastAnsweredAt = null
+        lastAnsweredAt = null,
+        isFavorite = false
     )
 }
 
@@ -65,6 +66,7 @@ fun NoteEntity.mapToNote(): Note {
         imageUrl = this.imageUrl,
         userAnswerIndex = this.userAnswerIndex?.toInt(),
         isAnsweredCorrectly = this.isAnsweredCorrectly?.let { it == 1L },
-        lastAnsweredAt = this.lastAnsweredAt
+        lastAnsweredAt = this.lastAnsweredAt,
+        isFavorite = this.isFavorite == 1L
     )
 }

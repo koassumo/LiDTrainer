@@ -2,11 +2,14 @@ package org.igo.lidtrainer.ui.screen.lesson
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import org.igo.lidtrainer.domain.model.LessonFilter
 import org.igo.lidtrainer.domain.model.Note
 import org.igo.lidtrainer.domain.rep_interface.NoteRepository
 import org.igo.lidtrainer.domain.rep_interface.SettingsRepository
@@ -22,13 +25,9 @@ class LessonViewModel(
     private val _currentIndex = MutableStateFlow(0)
     val currentIndex: StateFlow<Int> = _currentIndex.asStateFlow()
 
-    // Map<noteId, Set<clickedAnswerIndexes>> — какие ответы нажаты для каждой карточки
+    // Map<noteId, Set<clickedAnswerIndexes>> — какие ответы нажаты в текущей сессии
     private val _clickedAnswers = MutableStateFlow<Map<Long, Set<Int>>>(emptyMap())
     val clickedAnswers: StateFlow<Map<Long, Set<Int>>> = _clickedAnswers.asStateFlow()
-
-    // Map<noteId, Boolean> — результат первой попытки (true = правильно)
-    private val _firstAttemptResults = MutableStateFlow<Map<Long, Boolean>>(emptyMap())
-    val firstAttemptResults: StateFlow<Map<Long, Boolean>> = _firstAttemptResults.asStateFlow()
 
     val showTranslation = MutableStateFlow(false)
 
@@ -39,6 +38,11 @@ class LessonViewModel(
 
     private val _showSwipeHint = MutableStateFlow(!settingsRepository.hasSeenSwipeHint())
     val showSwipeHint: StateFlow<Boolean> = _showSwipeHint.asStateFlow()
+
+    private val _lessonFilter = MutableStateFlow(LessonFilter.ALL)
+    val lessonFilter: StateFlow<LessonFilter> = _lessonFilter.asStateFlow()
+
+    private var loadNotesJob: Job? = null
 
     init {
         viewModelScope.launch {
@@ -51,20 +55,59 @@ class LessonViewModel(
         loadNotes()
     }
 
+    fun setFilter(filter: LessonFilter) {
+        _lessonFilter.value = filter
+        _currentIndex.value = 0
+        _clickedAnswers.value = emptyMap()
+        _notes.value = emptyList()
+        loadNotes()
+    }
+
     private fun loadNotes() {
-        viewModelScope.launch {
+        loadNotesJob?.cancel()
+        loadNotesJob = viewModelScope.launch {
             settingsRepository.bundeslandState.collectLatest { bundesland ->
-                if (bundesland.isNotEmpty()) {
-                    noteRepository.getNotesByBundesland(bundesland).collectLatest { notesList ->
-                        _notes.value = notesList
-                        // Сбрасываем индекс если он за пределами нового списка
-                        if (_currentIndex.value >= notesList.size) {
-                            _currentIndex.value = 0
+                val filter = _lessonFilter.value
+
+                if (filter == LessonFilter.PRACTICE_TEST) {
+                    // Одноразовая случайная выборка: 30 общих + 3 региональных
+                    val general = noteRepository.getNotesByCategory("GENERAL").first()
+                    val regional = if (bundesland.isNotEmpty()) {
+                        noteRepository.getNotesByRegional(bundesland).first()
+                    } else emptyList()
+                    val selected = general.shuffled().take(30) + regional.shuffled().take(3)
+                    _notes.value = selected
+                    return@collectLatest
+                }
+
+                val flow = when (filter) {
+                    LessonFilter.ALL -> {
+                        if (bundesland.isNotEmpty()) noteRepository.getNotesByBundesland(bundesland)
+                        else noteRepository.getAllNotes()
+                    }
+                    LessonFilter.GENERAL -> noteRepository.getNotesByCategory("GENERAL")
+                    LessonFilter.REGIONAL -> {
+                        if (bundesland.isNotEmpty()) noteRepository.getNotesByRegional(bundesland)
+                        else noteRepository.getNotesByCategory("GENERAL") // fallback
+                    }
+                    LessonFilter.FAVORITES -> {
+                        if (bundesland.isNotEmpty()) noteRepository.getFavoriteNotesByBundesland(bundesland)
+                        else noteRepository.getFavoriteNotes()
+                    }
+                    else -> noteRepository.getAllNotes()
+                }
+                flow.collectLatest { notesList ->
+                    _notes.value = notesList
+                    // Инициализируем clickedAnswers из БД для уже отвеченных вопросов
+                    val currentClicked = _clickedAnswers.value.toMutableMap()
+                    notesList.forEach { note ->
+                        if (note.userAnswerIndex != null && note.id !in currentClicked) {
+                            currentClicked[note.id] = setOf(note.userAnswerIndex)
                         }
                     }
-                } else {
-                    noteRepository.getAllNotes().collectLatest { notesList ->
-                        _notes.value = notesList
+                    _clickedAnswers.value = currentClicked
+                    if (_currentIndex.value >= notesList.size) {
+                        _currentIndex.value = 0
                     }
                 }
             }
@@ -76,24 +119,23 @@ class LessonViewModel(
 
         val isCorrect = answerIndex == note.correctAnswerIndex
 
-        // Запоминаем результат первой попытки (не меняется в пределах урока)
-        if (noteId !in _firstAttemptResults.value) {
-            val results = _firstAttemptResults.value.toMutableMap()
-            results[noteId] = isCorrect
-            _firstAttemptResults.value = results
-        }
-
         // Добавляем ответ в набор нажатых
         val currentClicked = _clickedAnswers.value.toMutableMap()
         val existing: Set<Int> = currentClicked[noteId] ?: emptySet()
         currentClicked[noteId] = existing + answerIndex
         _clickedAnswers.value = currentClicked
 
-        // Сохраняем в БД если правильный ответ
-        if (isCorrect) {
+        // Сохраняем в БД при первом ответе (ещё не было ответа в БД)
+        if (note.userAnswerIndex == null) {
             viewModelScope.launch {
-                noteRepository.updateUserAnswer(noteId, answerIndex, true)
+                noteRepository.updateUserAnswer(noteId, answerIndex, isCorrect)
             }
+        }
+    }
+
+    fun toggleFavorite(noteId: Long) {
+        viewModelScope.launch {
+            noteRepository.toggleFavorite(noteId)
         }
     }
 

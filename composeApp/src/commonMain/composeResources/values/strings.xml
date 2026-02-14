@@ -14,6 +14,10 @@
     <!-- Dashboard Screen -->
     <string name="dashboard_title">Dashboard</string>
     <string name="study_questions">Study Questions</string>
+    <string name="all_questions">All Questions</string>
+    <string name="general_questions">General Questions</string>
+    <string name="regional_questions">Regional Questions</string>
+    <string name="favorites">Favorites</string>
     <string name="practice_test">Practice Test</string>
     <string name="questions_answered">Questions answered</string>
     <string name="correct_answers">Correct</string>

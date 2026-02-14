@@ -24,6 +24,15 @@ class MainViewModel(
     private val _totalQuestions = MutableStateFlow(0L)
     val totalQuestions: StateFlow<Long> = _totalQuestions.asStateFlow()
 
+    private val _generalCount = MutableStateFlow(0L)
+    val generalCount: StateFlow<Long> = _generalCount.asStateFlow()
+
+    private val _regionalCount = MutableStateFlow(0L)
+    val regionalCount: StateFlow<Long> = _regionalCount.asStateFlow()
+
+    private val _favoritesCount = MutableStateFlow(0L)
+    val favoritesCount: StateFlow<Long> = _favoritesCount.asStateFlow()
+
     // Стек навигации для правильной обработки "Назад"
     private val navigationStack = mutableListOf<String>()
 
@@ -64,6 +73,15 @@ class MainViewModel(
             noteRepository.getStatistics()
         }
         _totalQuestions.value = stats.totalCount
+        _generalCount.value = noteRepository.countGeneralNotes()
+        _regionalCount.value = if (bundesland.isNotEmpty()) {
+            noteRepository.countRegionalNotes(bundesland)
+        } else 0L
+        _favoritesCount.value = if (bundesland.isNotEmpty()) {
+            noteRepository.countFavoritesByBundesland(bundesland)
+        } else {
+            noteRepository.countFavorites()
+        }
     }
 
     fun onLanguageSelected(code: String) {
@@ -99,6 +117,7 @@ class MainViewModel(
         if (route in mainTabs) {
             navigationStack.clear()
             navigationStack.add(Destinations.DASHBOARD)
+            viewModelScope.launch { updateStatistics() }
         } else {
             if (_currentRoute.value != route) {
                 navigationStack.add(_currentRoute.value)
@@ -109,10 +128,14 @@ class MainViewModel(
     }
 
     fun navigateBack() {
-        if (navigationStack.isNotEmpty()) {
-            _currentRoute.value = navigationStack.removeLast()
+        val target = if (navigationStack.isNotEmpty()) {
+            navigationStack.removeLast()
         } else {
-            _currentRoute.value = Destinations.DASHBOARD
+            Destinations.DASHBOARD
+        }
+        _currentRoute.value = target
+        if (target == Destinations.DASHBOARD) {
+            viewModelScope.launch { updateStatistics() }
         }
     }
 }

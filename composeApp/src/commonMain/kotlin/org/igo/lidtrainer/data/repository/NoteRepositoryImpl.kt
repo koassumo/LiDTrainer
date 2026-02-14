@@ -51,6 +51,33 @@ class NoteRepositoryImpl(
             .map { entities -> entities.map { it.mapToNote() } }
     }
 
+    override fun getNotesByRegional(bundesland: String): Flow<List<Note>> {
+        return queries.getNotesByRegional(bundesland)
+            .asFlow()
+            .mapToList(Dispatchers.IO)
+            .map { entities -> entities.map { it.mapToNote() } }
+    }
+
+    override fun getFavoriteNotes(): Flow<List<Note>> {
+        return queries.getFavoriteNotes()
+            .asFlow()
+            .mapToList(Dispatchers.IO)
+            .map { entities -> entities.map { it.mapToNote() } }
+    }
+
+    override fun getFavoriteNotesByBundesland(bundesland: String): Flow<List<Note>> {
+        return queries.getFavoriteNotesByBundesland(bundesland)
+            .asFlow()
+            .mapToList(Dispatchers.IO)
+            .map { entities -> entities.map { it.mapToNote() } }
+    }
+
+    override suspend fun toggleFavorite(noteId: Long) {
+        withContext(Dispatchers.IO) {
+            queries.toggleFavorite(noteId)
+        }
+    }
+
     override suspend fun insertNotes(notes: List<Note>) {
         withContext(Dispatchers.IO) {
             db.transaction {
@@ -74,7 +101,8 @@ class NoteRepositoryImpl(
                         imageUrl = note.imageUrl,
                         userAnswerIndex = note.userAnswerIndex?.toLong(),
                         isAnsweredCorrectly = note.isAnsweredCorrectly?.let { if (it) 1L else 0L },
-                        lastAnsweredAt = note.lastAnsweredAt
+                        lastAnsweredAt = note.lastAnsweredAt,
+                        isFavorite = if (note.isFavorite) 1L else 0L
                     )
                 }
             }
@@ -139,6 +167,30 @@ class NoteRepositoryImpl(
                 answeredCount = queries.countAnsweredByBundesland(bundesland).executeAsOne(),
                 correctCount = queries.countCorrectByBundesland(bundesland).executeAsOne()
             )
+        }
+    }
+
+    override suspend fun countGeneralNotes(): Long {
+        return withContext(Dispatchers.IO) {
+            queries.countGeneralNotes().executeAsOne()
+        }
+    }
+
+    override suspend fun countRegionalNotes(bundesland: String): Long {
+        return withContext(Dispatchers.IO) {
+            queries.countRegionalNotes(bundesland).executeAsOne()
+        }
+    }
+
+    override suspend fun countFavorites(): Long {
+        return withContext(Dispatchers.IO) {
+            queries.countFavorites().executeAsOne()
+        }
+    }
+
+    override suspend fun countFavoritesByBundesland(bundesland: String): Long {
+        return withContext(Dispatchers.IO) {
+            queries.countFavoritesByBundesland(bundesland).executeAsOne()
         }
     }
 }

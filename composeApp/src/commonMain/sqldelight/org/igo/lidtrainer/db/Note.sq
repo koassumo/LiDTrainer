@@ -17,13 +17,14 @@ CREATE TABLE noteEntity (
     imageUrl TEXT,
     userAnswerIndex INTEGER,
     isAnsweredCorrectly INTEGER,
-    lastAnsweredAt INTEGER
+    lastAnsweredAt INTEGER,
+    isFavorite INTEGER NOT NULL DEFAULT 0
 );
 
 -- Get all notes ordered by question number
 getAllNotes:
 SELECT * FROM noteEntity
-ORDER BY questionNumber ASC;
+ORDER BY id ASC;
 
 -- Get note by ID
 getNoteById:
@@ -39,7 +40,31 @@ WHERE questionNumber = ?;
 getNotesByCategory:
 SELECT * FROM noteEntity
 WHERE category = ?
-ORDER BY questionNumber ASC;
+ORDER BY id ASC;
+
+-- Get favorite notes
+getFavoriteNotes:
+SELECT * FROM noteEntity
+WHERE isFavorite = 1
+ORDER BY id ASC;
+
+-- Get favorite notes by GENERAL + specific bundesland category
+getFavoriteNotesByBundesland:
+SELECT * FROM noteEntity
+WHERE isFavorite = 1 AND (category = 'GENERAL' OR category = ?)
+ORDER BY id ASC;
+
+-- Get non-GENERAL notes by bundesland (regional only)
+getNotesByRegional:
+SELECT * FROM noteEntity
+WHERE category != 'GENERAL' AND category = ?
+ORDER BY id ASC;
+
+-- Toggle favorite
+toggleFavorite:
+UPDATE noteEntity
+SET isFavorite = CASE WHEN isFavorite = 1 THEN 0 ELSE 1 END
+WHERE id = ?;
 
 -- Insert or replace a note
 insertNote:
@@ -48,9 +73,10 @@ INSERT OR REPLACE INTO noteEntity(
     questionTextDe, answer1De, answer2De, answer3De, answer4De,
     langNative, questionTextNative, answer1Native, answer2Native, answer3Native, answer4Native,
     correctAnswerIndex, category, imageUrl,
-    userAnswerIndex, isAnsweredCorrectly, lastAnsweredAt
+    userAnswerIndex, isAnsweredCorrectly, lastAnsweredAt,
+    isFavorite
 )
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
 
 -- Update user answer for a specific note
 updateUserAnswer:
@@ -100,7 +126,7 @@ WHERE isAnsweredCorrectly = 1;
 getNotesByBundesland:
 SELECT * FROM noteEntity
 WHERE category = 'GENERAL' OR category = ?
-ORDER BY questionNumber ASC;
+ORDER BY id ASC;
 
 -- Count notes by GENERAL + specific bundesland category
 countNotesByBundesland:
@@ -116,3 +142,23 @@ WHERE (category = 'GENERAL' OR category = ?) AND userAnswerIndex IS NOT NULL;
 countCorrectByBundesland:
 SELECT COUNT(*) FROM noteEntity
 WHERE (category = 'GENERAL' OR category = ?) AND isAnsweredCorrectly = 1;
+
+-- Count GENERAL notes
+countGeneralNotes:
+SELECT COUNT(*) FROM noteEntity
+WHERE category = 'GENERAL';
+
+-- Count regional notes by bundesland
+countRegionalNotes:
+SELECT COUNT(*) FROM noteEntity
+WHERE category != 'GENERAL' AND category = ?;
+
+-- Count favorite notes by GENERAL + specific bundesland
+countFavoritesByBundesland:
+SELECT COUNT(*) FROM noteEntity
+WHERE isFavorite = 1 AND (category = 'GENERAL' OR category = ?);
+
+-- Count all favorite notes
+countFavorites:
+SELECT COUNT(*) FROM noteEntity
+WHERE isFavorite = 1;
