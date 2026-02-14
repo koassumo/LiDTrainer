@@ -5,6 +5,15 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -51,11 +60,11 @@ import androidx.compose.ui.unit.IntOffset
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import org.igo.lidtrainer.domain.model.Note
 import org.igo.lidtrainer.ui.common.CommonCard
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
 import androidx.compose.foundation.layout.IntrinsicSize
-import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import org.igo.lidtrainer.ui.theme.AnswerStripDefault
 import org.igo.lidtrainer.ui.theme.CorrectAnswerBackground
@@ -139,11 +148,15 @@ fun LessonScreen(
         null -> MaterialTheme.colorScheme.onSurfaceVariant
     }
 
+    var showQuestionGrid by remember { mutableStateOf(false) }
+
     topBar.titleContent = {
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable { showQuestionGrid = true }
         ) {
             Box(
                 contentAlignment = Alignment.Center,
@@ -168,7 +181,25 @@ fun LessonScreen(
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onSurface
             )
+            Icon(
+                imageVector = Icons.Default.ArrowDropDown,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
         }
+    }
+
+    if (showQuestionGrid) {
+        QuestionGridBottomSheet(
+            notes = notes,
+            currentPage = pagerState.currentPage,
+            firstAttemptResults = firstAttemptResults,
+            onQuestionSelected = { index ->
+                showQuestionGrid = false
+                viewModel.setCurrentIndex(index)
+            },
+            onDismiss = { showQuestionGrid = false }
+        )
     }
 
     // Подсказка: текущая карточка + правильный ответ найден + пользователь ещё ни разу не свайпнул
@@ -426,6 +457,73 @@ private fun AnswerCard(
                     }
                 }
                 HorizontalDivider(color = borderColor)
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun QuestionGridBottomSheet(
+    notes: List<Note>,
+    currentPage: Int,
+    firstAttemptResults: Map<Long, Boolean>,
+    onQuestionSelected: (Int) -> Unit,
+    onDismiss: () -> Unit
+) {
+    val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+
+    ModalBottomSheet(
+        onDismissRequest = onDismiss,
+        sheetState = sheetState,
+        modifier = Modifier.fillMaxHeight()
+    ) {
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(8),
+            contentPadding = PaddingValues(Dimens.SpaceMedium),
+            horizontalArrangement = Arrangement.spacedBy(Dimens.SpaceSmall),
+            verticalArrangement = Arrangement.spacedBy(Dimens.SpaceSmall),
+            modifier = Modifier.fillMaxSize()
+        ) {
+            items(notes.size) { index ->
+                val note = notes[index]
+                val result = firstAttemptResults[note.id]
+                val isCurrent = index == currentPage
+
+                val bgColor = when (result) {
+                    true -> CorrectAnswerBackground
+                    false -> IncorrectAnswerBackground
+                    null -> MaterialTheme.colorScheme.surfaceVariant
+                }
+                val txtColor = when (result) {
+                    true -> CorrectAnswerText
+                    false -> IncorrectAnswerText
+                    null -> MaterialTheme.colorScheme.onSurfaceVariant
+                }
+
+                Box(
+                    contentAlignment = Alignment.Center,
+                    modifier = Modifier
+                        .aspectRatio(1f)
+                        .background(
+                            color = bgColor,
+                            shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
+                        )
+                        .then(
+                            if (isCurrent) Modifier.border(
+                                width = 2.dp,
+                                color = MaterialTheme.colorScheme.primary,
+                                shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
+                            ) else Modifier
+                        )
+                        .clickable { onQuestionSelected(index) }
+                ) {
+                    Text(
+                        text = "${index + 1}",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = txtColor
+                    )
+                }
             }
         }
     }
