@@ -26,6 +26,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
@@ -184,16 +185,16 @@ fun LessonScreen(
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(
-                        horizontal = Dimens.ScreenPaddingSides,
-                        vertical = Dimens.ScreenPaddingTop
-                    )
+                    .background(MaterialTheme.colorScheme.surface)
                     .verticalScroll(rememberScrollState())
             ) {
                 // Переключатель перевода
                 if (isTranslationAvailable) {
                     Row(
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = Dimens.ScreenPaddingSides)
+                            .padding(top = Dimens.ScreenPaddingTop),
                         horizontalArrangement = Arrangement.End,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
@@ -208,7 +209,11 @@ fun LessonScreen(
                 // Текст вопроса на немецком
                 Text(
                     text = currentNote.questionTextDe,
-                    style = MaterialTheme.typography.bodyLarge
+                    style = MaterialTheme.typography.bodyLarge,
+                    modifier = Modifier.padding(
+                        horizontal = Dimens.ScreenPaddingSides,
+                        vertical = if (!isTranslationAvailable) Dimens.ScreenPaddingTop else 0.dp
+                    )
                 )
 
                 // Перевод на родном языке
@@ -218,7 +223,8 @@ fun LessonScreen(
                         text = currentNote.questionTextNative,
                         style = MaterialTheme.typography.bodyMedium,
                         fontStyle = FontStyle.Italic,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
                     )
                 }
 
@@ -248,7 +254,6 @@ fun LessonScreen(
                         revealAll = revealAll,
                         onClick = { viewModel.onAnswerClick(i, currentNote.id) }
                     )
-                    if (i < 4) Spacer(Modifier.height(Dimens.SpaceSmall))
                 }
 
                 Spacer(Modifier.height(Dimens.ScreenPaddingBottom))
@@ -316,14 +321,16 @@ private fun AnswerCard(
     }
 
     val stripColor = when {
-        !isHighlighted -> AnswerStripDefault
+        !isHighlighted -> containerColor
         isCorrect -> CorrectAnswerStrip
         else -> IncorrectAnswerStrip
     }
 
     CommonCard(
         containerColor = containerColor,
-        borderColor = borderColor,
+        borderColor = null,
+        cornerRadius = 0.dp,
+        elevation = 0.dp,
         contentPadding = PaddingValues(0.dp),
         onClick = onClick
     ) {
@@ -332,31 +339,39 @@ private fun AnswerCard(
                 .fillMaxWidth()
                 .height(IntrinsicSize.Min)
         ) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth(0.1f)
-                    .fillMaxHeight()
-                    .background(stripColor)
-            )
             Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(Dimens.CommonCardContentPadding)
+                modifier = Modifier.fillMaxWidth(0.1f).fillMaxHeight()
             ) {
-                Text(
-                    text = "$index. $textDe",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = textColor
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .weight(1f)
+                        .background(stripColor)
                 )
-                if (textNative.isNotBlank() && showTranslation) {
-                    Spacer(Modifier.height(Dimens.SpaceSmall / 2))
+                HorizontalDivider(color = if (isHighlighted) borderColor else MaterialTheme.colorScheme.surface)
+            }
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                Column(
+                    modifier = Modifier.padding(Dimens.CommonCardContentPadding)
+                ) {
                     Text(
-                        text = textNative,
-                        style = MaterialTheme.typography.bodySmall,
-                        fontStyle = FontStyle.Italic,
-                        color = textColor.copy(alpha = 0.7f)
+                        text = "$index. $textDe",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = textColor
                     )
+                    if (textNative.isNotBlank() && showTranslation) {
+                        Spacer(Modifier.height(Dimens.SpaceSmall / 2))
+                        Text(
+                            text = textNative,
+                            style = MaterialTheme.typography.bodySmall,
+                            fontStyle = FontStyle.Italic,
+                            color = textColor.copy(alpha = 0.7f)
+                        )
+                    }
                 }
+                HorizontalDivider(color = borderColor)
             }
         }
     }
