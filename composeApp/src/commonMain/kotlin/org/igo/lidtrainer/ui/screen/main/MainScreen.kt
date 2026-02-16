@@ -71,6 +71,7 @@ fun MainScreen() {
                     navigateUp = topBarState.onNavigateBack,
                     backButtonDescription = strings.backButtonTooltip,
                     actions = {
+                        topBarState.extraActions?.invoke()
                         if (currentRoute != Destinations.SETTINGS && currentRoute != Destinations.LANGUAGE_SELECT && currentRoute != Destinations.BUNDESLAND_SELECT) {
                             IconButton(
                                 onClick = { viewModel.navigateTo(Destinations.SETTINGS) }
@@ -83,6 +84,9 @@ fun MainScreen() {
                         }
                     }
                 )
+            },
+            bottomBar = {
+                topBarState.bottomBarContent?.invoke()
             }
         ) { innerPadding ->
             Box(

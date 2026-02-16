@@ -330,13 +330,64 @@ val DarkMyCardBorder = Grey800
 val LightMyBarDivider = Grey200
 val DarkMyBarDivider = Grey800
 
-// Цвета для статуса ответа на вопрос
-val CorrectAnswerBackground = Green50
-val CorrectAnswerText = Green900
-val IncorrectAnswerBackground = Red50
-val IncorrectAnswerText = Red900
+// === Карточка ответа (Answer Card) ===
 
-// Цветная полоска слева в карточке ответа
-val AnswerStripDefault = Grey300
-val CorrectAnswerStrip = Green500
-val IncorrectAnswerStrip = Red500
+// Меняй здесь: фон карточки ответа (неотвеченная)
+val LightAnswerCardBackground = White
+val DarkAnswerCardBackground = BlueGrey800
+
+// Меняй здесь: цвет текста ответа (неотвеченная)
+val LightAnswerCardText = Grey800
+val DarkAnswerCardText = Grey200
+
+// Меняй здесь: фон правильного ответа
+val LightCorrectAnswerBackground = Green50
+val DarkCorrectAnswerBackground = Color(0xFF1B3A1B)
+
+// Меняй здесь: цвет текста правильного ответа
+val LightCorrectAnswerText = Green900
+val DarkCorrectAnswerText = Green300
+
+// Меняй здесь: фон неправильного ответа
+val LightIncorrectAnswerBackground = Red50
+val DarkIncorrectAnswerBackground = Color(0xFF3A1B1B)
+
+// Меняй здесь: цвет текста неправильного ответа
+val LightIncorrectAnswerText = Red900
+val DarkIncorrectAnswerText = Red300
+
+// Меняй здесь: цветная полоска слева (по умолчанию — совпадает с фоном карточки)
+val LightAnswerStripDefault = White
+val DarkAnswerStripDefault = BlueGrey800
+
+// Меняй здесь: полоска правильного ответа
+val LightCorrectAnswerStrip = Green500
+val DarkCorrectAnswerStrip = Green400
+
+// Меняй здесь: полоска неправильного ответа
+val LightIncorrectAnswerStrip = Red500
+val DarkIncorrectAnswerStrip = Red400
+
+// === Звёздочка избранного (Favorite Star) ===
+
+// Меняй здесь: цвет звёздочки (активная)
+val LightFavoriteStar = Amber500
+val DarkFavoriteStar = Amber400
+
+// === Кнопка-тоггл перевода (Translation Toggle) ===
+
+// Меняй здесь: фон включённого тоггла
+val LightTranslationToggleOnBackground = Indigo500
+val DarkTranslationToggleOnBackground = Indigo300
+
+// Меняй здесь: текст включённого тоггла
+val LightTranslationToggleOnText = White
+val DarkTranslationToggleOnText = White
+
+// Меняй здесь: фон выключенного тоггла
+val LightTranslationToggleOffBackground = Grey200
+val DarkTranslationToggleOffBackground = Grey700
+
+// Меняй здесь: текст выключенного тоггла
+val LightTranslationToggleOffText = Grey600
+val DarkTranslationToggleOffText = Grey400

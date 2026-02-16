@@ -39,6 +39,8 @@ class LessonViewModel(
     private val _showSwipeHint = MutableStateFlow(!settingsRepository.hasSeenSwipeHint())
     val showSwipeHint: StateFlow<Boolean> = _showSwipeHint.asStateFlow()
 
+    val contentLanguageCode: StateFlow<String> = settingsRepository.languageContentState
+
     private val _lessonFilter = MutableStateFlow(LessonFilter.ALL)
     val lessonFilter: StateFlow<LessonFilter> = _lessonFilter.asStateFlow()
 

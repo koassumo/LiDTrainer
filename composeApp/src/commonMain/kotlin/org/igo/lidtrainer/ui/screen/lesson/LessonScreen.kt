@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.rememberModalBottomSheetState
@@ -23,6 +22,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -43,7 +43,6 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -70,15 +69,24 @@ import org.igo.lidtrainer.ui.common.CommonCard
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
 import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import org.igo.lidtrainer.ui.theme.AnswerStripDefault
-import org.igo.lidtrainer.ui.theme.CorrectAnswerBackground
-import org.igo.lidtrainer.ui.theme.CorrectAnswerStrip
-import org.igo.lidtrainer.ui.theme.IncorrectAnswerStrip
-import org.igo.lidtrainer.ui.theme.CorrectAnswerText
-import org.igo.lidtrainer.ui.theme.IncorrectAnswerBackground
-import org.igo.lidtrainer.ui.theme.IncorrectAnswerText
+import org.igo.lidtrainer.ui.theme.answerCardBackground
+import org.igo.lidtrainer.ui.theme.answerCardText
+import org.igo.lidtrainer.ui.theme.answerStripDefault
+import org.igo.lidtrainer.ui.theme.correctAnswerBackground
+import org.igo.lidtrainer.ui.theme.correctAnswerStrip
+import org.igo.lidtrainer.ui.theme.correctAnswerText
+import org.igo.lidtrainer.ui.theme.incorrectAnswerBackground
+import org.igo.lidtrainer.ui.theme.incorrectAnswerStrip
+import org.igo.lidtrainer.ui.theme.incorrectAnswerText
 import org.igo.lidtrainer.ui.theme.LocalAppStrings
+import org.igo.lidtrainer.ui.theme.favoriteStar
+import org.igo.lidtrainer.ui.theme.myBarDivider
+import org.igo.lidtrainer.ui.theme.translationToggleOffBackground
+import org.igo.lidtrainer.ui.theme.translationToggleOffText
+import org.igo.lidtrainer.ui.theme.translationToggleOnBackground
+import org.igo.lidtrainer.ui.theme.translationToggleOnText
 
 @Composable
 fun LessonScreen(
@@ -96,15 +104,31 @@ fun LessonScreen(
     val showCorrectImmediately by viewModel.showCorrectImmediately.collectAsState()
     val isTranslationAvailable by viewModel.isTranslationAvailable.collectAsState()
     val showSwipeHint by viewModel.showSwipeHint.collectAsState()
+    val contentLanguageCode by viewModel.contentLanguageCode.collectAsState()
 
     val totalCount = notes.size
 
     topBar.canNavigateBack = true
     topBar.onNavigateBack = onNavigateBack
 
-    // Сбрасываем titleContent при уходе с экрана
+    // Кнопка-тоггл перевода в верхнем баре (левее шестерёнки настроек)
+    topBar.extraActions = if (isTranslationAvailable && lessonFilter != LessonFilter.PRACTICE_TEST) {
+        {
+            TranslationToggleButton(
+                languageCode = contentLanguageCode,
+                isEnabled = showTranslation,
+                onClick = { viewModel.toggleTranslation() }
+            )
+        }
+    } else null
+
+    // Сбрасываем при уходе с экрана
     DisposableEffect(Unit) {
-        onDispose { topBar.titleContent = null }
+        onDispose {
+            topBar.titleContent = null
+            topBar.extraActions = null
+            topBar.bottomBarContent = null
+        }
     }
 
     if (totalCount == 0) {
@@ -133,65 +157,71 @@ fun LessonScreen(
     // ViewModel → Pager (for programmatic navigation)
     LaunchedEffect(currentIndex) {
         if (pagerState.currentPage != currentIndex) {
-            pagerState.animateScrollToPage(currentIndex)
+            pagerState.scrollToPage(currentIndex)
         }
     }
 
-    // Update top bar title from pager
+    // Заголовок в верхнем баре — просто текст, без счётчика
+    topBar.title = strings.lessonTitle
+    topBar.titleContent = null
+
+    // Данные для нижнего бара (счётчик страниц)
     val currentPageNumber = pagerState.currentPage + 1
     val currentNoteForTitle = notes.getOrNull(pagerState.currentPage)
 
     val badgeColor = when (currentNoteForTitle?.isAnsweredCorrectly) {
-        true -> CorrectAnswerBackground
-        false -> IncorrectAnswerBackground
+        true -> MaterialTheme.colorScheme.correctAnswerBackground
+        false -> MaterialTheme.colorScheme.incorrectAnswerBackground
         null -> MaterialTheme.colorScheme.surfaceVariant
     }
     val badgeTextColor = when (currentNoteForTitle?.isAnsweredCorrectly) {
-        true -> CorrectAnswerText
-        false -> IncorrectAnswerText
+        true -> MaterialTheme.colorScheme.correctAnswerText
+        false -> MaterialTheme.colorScheme.incorrectAnswerText
         null -> MaterialTheme.colorScheme.onSurfaceVariant
     }
 
     var showQuestionGrid by remember { mutableStateOf(false) }
 
-    topBar.titleContent = {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center,
+    // Нижний бар со счётчиком страниц (через Scaffold bottomBar)
+    topBar.bottomBarContent = {
+        Column(
             modifier = Modifier
-                .fillMaxWidth()
-                .clickable { showQuestionGrid = true }
+                .background(MaterialTheme.colorScheme.surface)
+                .navigationBarsPadding()
         ) {
-            Icon(
-                imageVector = Icons.Default.ArrowDropDown,
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.size(Dimens.SpaceMedium)
-            )
-            Spacer(Modifier.width(Dimens.SpaceSmall / 2))
-            Box(
-                contentAlignment = Alignment.Center,
+            HorizontalDivider(color = MaterialTheme.colorScheme.myBarDivider)
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center,
                 modifier = Modifier
-                    .background(
-                        color = badgeColor,
-                        shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
-                    )
-                    .padding(
-                        horizontal = Dimens.SpaceSmall,
-                        vertical = Dimens.SpaceSmall / 2
-                    )
+                    .fillMaxWidth()
+                    .clickable { showQuestionGrid = true }
+                    .padding(vertical = Dimens.SpaceSmall)
             ) {
+                Box(
+                    contentAlignment = Alignment.Center,
+                    modifier = Modifier
+                        .background(
+                            color = badgeColor,
+                            shape = RoundedCornerShape(Dimens.SpaceSmall / 2)
+                        )
+                        .padding(
+                            horizontal = Dimens.SpaceSmall,
+                            vertical = Dimens.SpaceSmall / 2
+                        )
+                ) {
+                    Text(
+                        text = "$currentPageNumber",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = badgeTextColor
+                    )
+                }
                 Text(
-                    text = "$currentPageNumber",
-                    style = MaterialTheme.typography.titleMedium,
-                    color = badgeTextColor
+                    text = " / $totalCount",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
-            Text(
-                text = " / $totalCount",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
         }
     }
 
@@ -276,16 +306,16 @@ fun LessonScreen(
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(MaterialTheme.colorScheme.surface)
+                    .background(MaterialTheme.colorScheme.background)
                     .verticalScroll(rememberScrollState())
             ) {
-                // Переключатель перевода + звёздочка
+                // Звёздочка избранного (справа)
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = Dimens.ScreenPaddingSides)
                         .padding(top = Dimens.ScreenPaddingTop),
-                    horizontalArrangement = Arrangement.SpaceBetween,
+                    horizontalArrangement = Arrangement.Start,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     IconButton(
@@ -294,14 +324,8 @@ fun LessonScreen(
                         Icon(
                             imageVector = if (currentNote.isFavorite) Icons.Default.Star else Icons.Default.StarBorder,
                             contentDescription = null,
-                            tint = if (currentNote.isFavorite) MaterialTheme.colorScheme.primary
+                            tint = if (currentNote.isFavorite) MaterialTheme.colorScheme.favoriteStar
                                    else MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                    if (isTranslationAvailable && lessonFilter != LessonFilter.PRACTICE_TEST) {
-                        Switch(
-                            checked = showTranslation,
-                            onCheckedChange = { viewModel.toggleTranslation() }
                         )
                     }
                 }
@@ -329,29 +353,34 @@ fun LessonScreen(
                 Spacer(Modifier.height(Dimens.SpaceMedium))
 
                 // 4 варианта ответа
-                for (i in 1..4) {
-                    val textDe = when (i) {
-                        1 -> currentNote.answer1De
-                        2 -> currentNote.answer2De
-                        3 -> currentNote.answer3De
-                        else -> currentNote.answer4De
+                Column(
+                    modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides),
+                    verticalArrangement = Arrangement.spacedBy(Dimens.AnswerCardSpacing)
+                ) {
+                    for (i in 1..4) {
+                        val textDe = when (i) {
+                            1 -> currentNote.answer1De
+                            2 -> currentNote.answer2De
+                            3 -> currentNote.answer3De
+                            else -> currentNote.answer4De
+                        }
+                        val textNative = when (i) {
+                            1 -> currentNote.answer1Native
+                            2 -> currentNote.answer2Native
+                            3 -> currentNote.answer3Native
+                            else -> currentNote.answer4Native
+                        }
+                        AnswerCard(
+                            index = i,
+                            textDe = textDe,
+                            textNative = textNative,
+                            isClicked = i in noteClickedSet,
+                            isCorrect = currentNote.correctAnswerIndex == i,
+                            showTranslation = showTranslation,
+                            revealAll = revealAll,
+                            onClick = { viewModel.onAnswerClick(i, currentNote.id) }
+                        )
                     }
-                    val textNative = when (i) {
-                        1 -> currentNote.answer1Native
-                        2 -> currentNote.answer2Native
-                        3 -> currentNote.answer3Native
-                        else -> currentNote.answer4Native
-                    }
-                    AnswerCard(
-                        index = i,
-                        textDe = textDe,
-                        textNative = textNative,
-                        isClicked = i in noteClickedSet,
-                        isCorrect = currentNote.correctAnswerIndex == i,
-                        showTranslation = showTranslation,
-                        revealAll = revealAll,
-                        onClick = { viewModel.onAnswerClick(i, currentNote.id) }
-                    )
                 }
 
                 Spacer(Modifier.height(Dimens.ScreenPaddingBottom))
@@ -401,34 +430,28 @@ private fun AnswerCard(
     val isHighlighted = isClicked || revealAll
 
     val containerColor = when {
-        !isHighlighted -> MaterialTheme.colorScheme.surface
-        isCorrect -> CorrectAnswerBackground
-        else -> IncorrectAnswerBackground
+        !isHighlighted -> MaterialTheme.colorScheme.answerCardBackground
+        isCorrect -> MaterialTheme.colorScheme.correctAnswerBackground
+        else -> MaterialTheme.colorScheme.incorrectAnswerBackground
     }
 
     val textColor = when {
-        !isHighlighted -> MaterialTheme.colorScheme.onSurface
-        isCorrect -> CorrectAnswerText
-        else -> IncorrectAnswerText
-    }
-
-    val borderColor = when {
-        !isHighlighted -> MaterialTheme.colorScheme.outlineVariant
-        isCorrect -> CorrectAnswerText
-        else -> IncorrectAnswerText
+        !isHighlighted -> MaterialTheme.colorScheme.answerCardText
+        isCorrect -> MaterialTheme.colorScheme.correctAnswerText
+        else -> MaterialTheme.colorScheme.incorrectAnswerText
     }
 
     val stripColor = when {
-        !isHighlighted -> containerColor
-        isCorrect -> CorrectAnswerStrip
-        else -> IncorrectAnswerStrip
+        !isHighlighted -> MaterialTheme.colorScheme.answerStripDefault
+        isCorrect -> MaterialTheme.colorScheme.correctAnswerStrip
+        else -> MaterialTheme.colorScheme.incorrectAnswerStrip
     }
 
     CommonCard(
         containerColor = containerColor,
         borderColor = null,
-        cornerRadius = 0.dp,
-        elevation = 0.dp,
+        cornerRadius = Dimens.AnswerCardCornerRadius,
+        elevation = Dimens.CommonCardElevation,
         contentPadding = PaddingValues(0.dp),
         onClick = onClick
     ) {
@@ -437,41 +460,76 @@ private fun AnswerCard(
                 .fillMaxWidth()
                 .height(IntrinsicSize.Min)
         ) {
+            // Цветная полоска слева со скруглёнными углами только слева
+            Box(
+                modifier = Modifier
+                    .width(Dimens.AnswerCardStripWidth)
+                    .fillMaxHeight()
+                    .clip(RoundedCornerShape(
+                        topStart = Dimens.AnswerCardCornerRadius,
+                        bottomStart = Dimens.AnswerCardCornerRadius
+                    ))
+                    .background(stripColor)
+            )
             Column(
-                modifier = Modifier.fillMaxWidth(0.1f).fillMaxHeight()
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(Dimens.CommonCardContentPadding)
             ) {
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .weight(1f)
-                        .background(stripColor)
+                Text(
+                    text = "$index. $textDe",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = textColor
                 )
-                HorizontalDivider(color = if (isHighlighted) borderColor else MaterialTheme.colorScheme.surface)
-            }
-            Column(
-                modifier = Modifier.weight(1f)
-            ) {
-                Column(
-                    modifier = Modifier.padding(Dimens.CommonCardContentPadding)
-                ) {
+                if (textNative.isNotBlank() && showTranslation) {
+                    Spacer(Modifier.height(Dimens.SpaceSmall / 2))
                     Text(
-                        text = "$index. $textDe",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = textColor
+                        text = textNative,
+                        style = MaterialTheme.typography.bodySmall,
+                        fontStyle = FontStyle.Italic,
+                        color = textColor.copy(alpha = 0.7f)
                     )
-                    if (textNative.isNotBlank() && showTranslation) {
-                        Spacer(Modifier.height(Dimens.SpaceSmall / 2))
-                        Text(
-                            text = textNative,
-                            style = MaterialTheme.typography.bodySmall,
-                            fontStyle = FontStyle.Italic,
-                            color = textColor.copy(alpha = 0.7f)
-                        )
-                    }
                 }
-                HorizontalDivider(color = borderColor)
             }
         }
+    }
+}
+
+@Composable
+private fun TranslationToggleButton(
+    languageCode: String,
+    isEnabled: Boolean,
+    onClick: () -> Unit
+) {
+    val bgColor = if (isEnabled) {
+        MaterialTheme.colorScheme.translationToggleOnBackground
+    } else {
+        MaterialTheme.colorScheme.translationToggleOffBackground
+    }
+    val textColor = if (isEnabled) {
+        MaterialTheme.colorScheme.translationToggleOnText
+    } else {
+        MaterialTheme.colorScheme.translationToggleOffText
+    }
+
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .background(
+                color = bgColor,
+                shape = RoundedCornerShape(Dimens.TranslationToggleCornerRadius)
+            )
+            .clickable { onClick() }
+            .padding(
+                horizontal = Dimens.TranslationTogglePaddingHorizontal,
+                vertical = Dimens.TranslationTogglePaddingVertical
+            )
+    ) {
+        Text(
+            text = languageCode.uppercase(),
+            style = MaterialTheme.typography.labelMedium,
+            color = textColor
+        )
     }
 }
 
@@ -541,13 +599,13 @@ private fun QuestionGridBottomSheet(
                     val isCurrent = originalIndex == currentPage
 
                     val bgColor = when (note.isAnsweredCorrectly) {
-                        true -> CorrectAnswerBackground
-                        false -> IncorrectAnswerBackground
+                        true -> MaterialTheme.colorScheme.correctAnswerBackground
+                        false -> MaterialTheme.colorScheme.incorrectAnswerBackground
                         null -> MaterialTheme.colorScheme.surfaceVariant
                     }
                     val txtColor = when (note.isAnsweredCorrectly) {
-                        true -> CorrectAnswerText
-                        false -> IncorrectAnswerText
+                        true -> MaterialTheme.colorScheme.correctAnswerText
+                        false -> MaterialTheme.colorScheme.incorrectAnswerText
                         null -> MaterialTheme.colorScheme.onSurfaceVariant
                     }
 
@@ -569,7 +627,7 @@ private fun QuestionGridBottomSheet(
                             .clickable { onQuestionSelected(originalIndex) }
                     ) {
                         Text(
-                            text = "${note.questionNumber}",
+                            text = "${note.id}",
                             style = MaterialTheme.typography.bodySmall,
                             color = txtColor
                         )

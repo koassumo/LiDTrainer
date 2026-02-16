@@ -95,6 +95,54 @@ val ColorScheme.myBarDivider: Color
         else -> LightMyBarDivider
     }
 
+// === Карточка ответа (Answer Card) ===
+
+val ColorScheme.answerCardBackground: Color
+    get() = if (this == LightColors) LightAnswerCardBackground else DarkAnswerCardBackground
+
+val ColorScheme.answerCardText: Color
+    get() = if (this == LightColors) LightAnswerCardText else DarkAnswerCardText
+
+val ColorScheme.correctAnswerBackground: Color
+    get() = if (this == LightColors) LightCorrectAnswerBackground else DarkCorrectAnswerBackground
+
+val ColorScheme.correctAnswerText: Color
+    get() = if (this == LightColors) LightCorrectAnswerText else DarkCorrectAnswerText
+
+val ColorScheme.incorrectAnswerBackground: Color
+    get() = if (this == LightColors) LightIncorrectAnswerBackground else DarkIncorrectAnswerBackground
+
+val ColorScheme.incorrectAnswerText: Color
+    get() = if (this == LightColors) LightIncorrectAnswerText else DarkIncorrectAnswerText
+
+val ColorScheme.answerStripDefault: Color
+    get() = if (this == LightColors) LightAnswerStripDefault else DarkAnswerStripDefault
+
+val ColorScheme.correctAnswerStrip: Color
+    get() = if (this == LightColors) LightCorrectAnswerStrip else DarkCorrectAnswerStrip
+
+val ColorScheme.incorrectAnswerStrip: Color
+    get() = if (this == LightColors) LightIncorrectAnswerStrip else DarkIncorrectAnswerStrip
+
+// === Звёздочка избранного ===
+
+val ColorScheme.favoriteStar: Color
+    get() = if (this == LightColors) LightFavoriteStar else DarkFavoriteStar
+
+// === Кнопка-тоггл перевода ===
+
+val ColorScheme.translationToggleOnBackground: Color
+    get() = if (this == LightColors) LightTranslationToggleOnBackground else DarkTranslationToggleOnBackground
+
+val ColorScheme.translationToggleOnText: Color
+    get() = if (this == LightColors) LightTranslationToggleOnText else DarkTranslationToggleOnText
+
+val ColorScheme.translationToggleOffBackground: Color
+    get() = if (this == LightColors) LightTranslationToggleOffBackground else DarkTranslationToggleOffBackground
+
+val ColorScheme.translationToggleOffText: Color
+    get() = if (this == LightColors) LightTranslationToggleOffText else DarkTranslationToggleOffText
+
 @Composable
 fun LiDTrainerTheme(
     themeConfig: AppThemeConfig = AppThemeConfig.SYSTEM,

@@ -44,6 +44,27 @@ object Dimens {
     val SwipeHintIconSize = 28.dp
     val SwipeHintBottomPadding = 80.dp
 
+    // ==================== Answer Card ====================
+    // Меняй здесь: закругление углов карточки ответа
+    val AnswerCardCornerRadius = 12.dp
+    // Меняй здесь: ширина цветной полоски слева
+    val AnswerCardStripWidth = 10.dp
+    // Меняй здесь: отступы между карточками ответов
+    val AnswerCardSpacing = 8.dp
+
+    // ==================== Translation Toggle ====================
+    // Меняй здесь: закругление углов кнопки-тоггла перевода
+    val TranslationToggleCornerRadius = 8.dp
+    // Меняй здесь: горизонтальный отступ внутри кнопки-тоггла
+    val TranslationTogglePaddingHorizontal = 8.dp
+    // Меняй здесь: вертикальный отступ внутри кнопки-тоггла
+    val TranslationTogglePaddingVertical = 4.dp
+
+    // ==================== Dashboard Card ====================
+    val DashboardCardCornerRadius = 12.dp
+    val DashboardCardStripWidth = 10.dp
+    val DashboardCardSpacing = 8.dp
+
     // ==================== Other ====================
     val BorderWidthStandard = 1.dp
 
