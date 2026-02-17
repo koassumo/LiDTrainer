@@ -124,6 +124,11 @@ val ColorScheme.correctAnswerStrip: Color
 val ColorScheme.incorrectAnswerStrip: Color
     get() = if (this == LightColors) LightIncorrectAnswerStrip else DarkIncorrectAnswerStrip
 
+// === Цвет текста перевода ===
+
+val ColorScheme.translationText: Color
+    get() = if (this == LightColors) LightTranslationText else DarkTranslationText
+
 // === Звёздочка избранного ===
 
 val ColorScheme.favoriteStar: Color

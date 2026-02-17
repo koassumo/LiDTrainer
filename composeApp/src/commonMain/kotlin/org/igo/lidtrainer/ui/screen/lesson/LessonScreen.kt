@@ -57,7 +57,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.layout.onSizeChanged
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.IntOffset
 
 import kotlinx.coroutines.coroutineScope
@@ -86,6 +85,7 @@ import org.igo.lidtrainer.ui.theme.myBarDivider
 import org.igo.lidtrainer.ui.theme.translationToggleOffBackground
 import org.igo.lidtrainer.ui.theme.translationToggleOffText
 import org.igo.lidtrainer.ui.theme.translationToggleOnBackground
+import org.igo.lidtrainer.ui.theme.translationText
 import org.igo.lidtrainer.ui.theme.translationToggleOnText
 
 @Composable
@@ -334,7 +334,7 @@ fun LessonScreen(
                 // Текст вопроса на немецком
                 Text(
                     text = currentNote.questionTextDe,
-                    style = MaterialTheme.typography.bodyLarge,
+                    style = MaterialTheme.typography.bodyLarge.copy(fontSize = Dimens.QuizQuestionTextSize),
                     modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
                 )
 
@@ -343,9 +343,8 @@ fun LessonScreen(
                     Spacer(Modifier.height(Dimens.SpaceSmall))
                     Text(
                         text = currentNote.questionTextNative,
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontStyle = FontStyle.Italic,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        style = MaterialTheme.typography.bodyMedium.copy(fontSize = Dimens.QuizTranslationTextSize),
+                        color = MaterialTheme.colorScheme.translationText,
                         modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
                     )
                 }
@@ -441,6 +440,12 @@ private fun AnswerCard(
         else -> MaterialTheme.colorScheme.incorrectAnswerText
     }
 
+    val borderColor = when {
+        !isHighlighted -> null
+        isCorrect -> MaterialTheme.colorScheme.correctAnswerStrip
+        else -> MaterialTheme.colorScheme.incorrectAnswerStrip
+    }
+
     val stripColor = when {
         !isHighlighted -> MaterialTheme.colorScheme.answerStripDefault
         isCorrect -> MaterialTheme.colorScheme.correctAnswerStrip
@@ -449,7 +454,7 @@ private fun AnswerCard(
 
     CommonCard(
         containerColor = containerColor,
-        borderColor = null,
+        borderColor = borderColor,
         cornerRadius = Dimens.AnswerCardCornerRadius,
         elevation = Dimens.CommonCardElevation,
         contentPadding = PaddingValues(0.dp),
@@ -478,16 +483,15 @@ private fun AnswerCard(
             ) {
                 Text(
                     text = "$index. $textDe",
-                    style = MaterialTheme.typography.bodyMedium,
+                    style = MaterialTheme.typography.bodyMedium.copy(fontSize = Dimens.QuizAnswerTextSize),
                     color = textColor
                 )
                 if (textNative.isNotBlank() && showTranslation) {
                     Spacer(Modifier.height(Dimens.SpaceSmall / 2))
                     Text(
                         text = textNative,
-                        style = MaterialTheme.typography.bodySmall,
-                        fontStyle = FontStyle.Italic,
-                        color = textColor.copy(alpha = 0.7f)
+                        style = MaterialTheme.typography.bodySmall.copy(fontSize = Dimens.QuizTranslationTextSize),
+                        color = MaterialTheme.colorScheme.translationText
                     )
                 }
             }

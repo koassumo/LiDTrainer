@@ -268,7 +268,7 @@ val LightOnSecondary = White                       // onSecondary (текст/и
 val LightOnSecondaryContainer = Teal900            // onSecondaryContainer (текст выбранного Chip)
 
 // Background (фон экрана)
-val LightBackground = Grey100                      // background (самый нижний слой)
+val LightBackground = Grey200                      // background (самый нижний слой)
 val LightOnBackground = Black                      // onBackground (текст/иконки НА background)
 
 // Surface (поверхности)
@@ -367,6 +367,12 @@ val DarkCorrectAnswerStrip = Green400
 // Меняй здесь: полоска неправильного ответа
 val LightIncorrectAnswerStrip = Red500
 val DarkIncorrectAnswerStrip = Red400
+
+// === Цвет текста перевода (Translation Text) ===
+
+// Меняй здесь: цвет текста перевода вопроса/ответа
+val LightTranslationText = Blue700
+val DarkTranslationText = Blue300
 
 // === Звёздочка избранного (Favorite Star) ===
 

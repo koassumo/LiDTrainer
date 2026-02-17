@@ -138,13 +138,13 @@ private fun DashboardCard(
             ) {
                 Text(
                     text = text,
-                    style = MaterialTheme.typography.bodyMedium,
+                    style = MaterialTheme.typography.bodyMedium.copy(fontSize = Dimens.DashboardCardTextSize),
                     color = MaterialTheme.colorScheme.answerCardText,
                     modifier = Modifier.weight(1f)
                 )
                 Text(
                     text = "$count",
-                    style = MaterialTheme.typography.bodyMedium,
+                    style = MaterialTheme.typography.bodyMedium.copy(fontSize = Dimens.DashboardCardTextSize),
                     color = MaterialTheme.colorScheme.answerCardText
                 )
             }

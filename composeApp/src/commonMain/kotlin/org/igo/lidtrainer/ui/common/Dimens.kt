@@ -10,7 +10,7 @@ import androidx.compose.ui.unit.sp
 object Dimens {
 
     // ==================== Screen / Display ====================
-    val ScreenPaddingSides = 12.dp
+    val ScreenPaddingSides = 16.dp
     val ScreenPaddingTop = 16.dp
     val ScreenPaddingBottom = 16.dp
 
@@ -64,6 +64,7 @@ object Dimens {
     val DashboardCardCornerRadius = 12.dp
     val DashboardCardStripWidth = 10.dp
     val DashboardCardSpacing = 8.dp
+    val DashboardCardTextSize = 18.sp
 
     // ==================== Other ====================
     val BorderWidthStandard = 1.dp
@@ -71,4 +72,9 @@ object Dimens {
     // ==================== Text Sizes ====================
     val TextSizeTitle = 20.sp
     val TextSizeBody = 16.sp
+
+    // ==================== Quiz Text Sizes ====================
+    val QuizQuestionTextSize = 18.sp
+    val QuizAnswerTextSize = 18.sp
+    val QuizTranslationTextSize = 16.sp
 }
