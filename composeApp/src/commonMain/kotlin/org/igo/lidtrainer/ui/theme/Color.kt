@@ -252,64 +252,72 @@ val White = Color(0xFFFFFFFF)
 // НЕ переопределяй чужую роль (иначе поплывут стандартные компоненты).
 
 // ============================================================
-// СВЕТЛАЯ ТЕМА (Light Theme)
+// СВЕТЛАЯ ТЕМА (Light Theme) — Berlin Minimalist
 // ============================================================
 
-// Primary (основной брендовый цвет)
-val LightPrimary = Indigo500                       // primary (FilledButton, ProgressIndicator, курсор TextField)
-val LightPrimaryContainer = Indigo100              // primaryContainer (FilledTonalButton, InputChip)
+// Primary: Антрацит / «Schwarz» — холодный почти-чёрный с глубиной
+val LightPrimary = BlueGrey800                     // primary (FilledButton, ProgressIndicator, курсор TextField)
+val LightPrimaryContainer = BlueGrey100            // primaryContainer (FilledTonalButton, InputChip)
 val LightOnPrimary = White                         // onPrimary (текст/иконки НА primary)
-val LightOnPrimaryContainer = Indigo900            // onPrimaryContainer (текст/иконки НА primaryContainer)
+val LightOnPrimaryContainer = BlueGrey900          // onPrimaryContainer (текст/иконки НА primaryContainer)
 
-// Secondary (дополнительный цвет)
-val LightSecondary = Teal600                       // secondary (Snackbar action)
-val LightSecondaryContainer = Teal50               // secondaryContainer (фон выбранного FilterChip)
-val LightOnSecondary = White                       // onSecondary (текст/иконки НА secondary)
-val LightOnSecondaryContainer = Teal900            // onSecondaryContainer (текст выбранного Chip)
+// Secondary: Золото / «Gold» — тёплый янтарный акцент
+val LightSecondary = Amber700                      // secondary (Snackbar action, акцентные элементы)
+val LightSecondaryContainer = Amber100             // secondaryContainer (фон выбранного FilterChip)
+val LightOnSecondary = Black                       // onSecondary (чёрный текст на золоте — немецкий стиль)
+val LightOnSecondaryContainer = Amber900           // onSecondaryContainer (текст выбранного Chip)
 
 // Background (фон экрана)
-val LightBackground = Grey200                      // background (самый нижний слой)
+val LightBackground = Grey100                      // background (чуть теплее, контраст с белыми карточками)
 val LightOnBackground = Black                      // onBackground (текст/иконки НА background)
 
 // Surface (поверхности)
 val LightSurface = White                           // surface (Card, Sheet, Dialog, TopAppBar)
-val LightSurfaceContainer = White                  // surfaceContainer (NavigationBar)
+val LightSurfaceContainer = Grey50                 // surfaceContainer (NavigationBar)
 val LightOnSurface = Black                         // onSurface (основной текст/иконки)
 val LightOnSurfaceVariant = Grey700                // onSurfaceVariant (placeholder, подписи)
 
+// Surface Variant (фон бейджей, чипов — нейтральный серый, без фиолетового)
+val LightSurfaceVariant = Grey200                  // surfaceVariant
+val LightSurfaceContainerLow = Grey50              // surfaceContainerLow (BottomSheet)
+
 // Borders & Dividers
-val LightOutline = Indigo300                       // outline (OutlinedButton, OutlinedTextField)
+val LightOutline = Grey500                         // outline (OutlinedButton, OutlinedTextField)
 val LightOutlineVariant = Grey300                  // outlineVariant (HorizontalDivider, мягкие разделители)
 
 // ============================================================
-// ТЁМНАЯ ТЕМА (Dark Theme)
+// ТЁМНАЯ ТЕМА (Dark Theme) — Berlin Minimalist
 // ============================================================
 
-// Primary (основной брендовый цвет)
-val DarkPrimary = Indigo300                        // primary
-val DarkPrimaryContainer = Indigo800               // primaryContainer
-val DarkOnPrimary = White                          // onPrimary
-val DarkOnPrimaryContainer = Indigo100             // onPrimaryContainer
+// Primary: Светло-серый на тёмном фоне (мел на доске)
+val DarkPrimary = Grey200                          // primary
+val DarkPrimaryContainer = BlueGrey700             // primaryContainer
+val DarkOnPrimary = Black                          // onPrimary
+val DarkOnPrimaryContainer = White                 // onPrimaryContainer
 
-// Secondary (дополнительный цвет)
-val DarkSecondary = Teal300                        // secondary
-val DarkSecondaryContainer = Teal800               // secondaryContainer
-val DarkOnSecondary = Black                        // onSecondary
-val DarkOnSecondaryContainer = Teal100             // onSecondaryContainer
+// Secondary: Яркое золото
+val DarkSecondary = Amber400                       // secondary
+val DarkSecondaryContainer = Amber800              // secondaryContainer
+val DarkOnSecondary = Black                        // onSecondary (чёрный текст на золоте)
+val DarkOnSecondaryContainer = Amber100            // onSecondaryContainer
 
 // Background (фон экрана)
-val DarkBackground = Black                         // background
+val DarkBackground = Black                         // background (OLED-чёрный)
 val DarkOnBackground = White                       // onBackground
 
 // Surface (поверхности)
 val DarkSurface = BlueGrey900                      // surface
 val DarkSurfaceContainer = Grey900                 // surfaceContainer
 val DarkOnSurface = White                          // onSurface
-val DarkOnSurfaceVariant = Grey300                 // onSurfaceVariant
+val DarkOnSurfaceVariant = Grey400                 // onSurfaceVariant
+
+// Surface Variant
+val DarkSurfaceVariant = Grey800                   // surfaceVariant
+val DarkSurfaceContainerLow = BlueGrey800          // surfaceContainerLow (BottomSheet)
 
 // Borders & Dividers
-val DarkOutline = Grey700                          // outline
-val DarkOutlineVariant = Grey800                   // outlineVariant
+val DarkOutline = Grey600                          // outline
+val DarkOutlineVariant = Grey700                   // outlineVariant
 
 // ============================================================
 // ОБЩИЕ (используются в обеих темах)
@@ -327,7 +335,7 @@ val LightMyCardBorder = Grey400
 val DarkMyCardBorder = Grey800
 
 // Разделитель TopBar
-val LightMyBarDivider = Grey200
+val LightMyBarDivider = Grey300
 val DarkMyBarDivider = Grey800
 
 // === Карточка ответа (Answer Card) ===
@@ -340,55 +348,65 @@ val DarkAnswerCardBackground = BlueGrey800
 val LightAnswerCardText = Grey800
 val DarkAnswerCardText = Grey200
 
-// Меняй здесь: фон правильного ответа
-val LightCorrectAnswerBackground = Green50
-val DarkCorrectAnswerBackground = Color(0xFF1B3A1B)
+// Меняй здесь: фон правильного ответа (очень бледный зелёный)
+val LightCorrectAnswerBackground = Color(0xFFFAFCFA)   // почти белый, призрак зелёного
+val DarkCorrectAnswerBackground = Color(0xFF0D1A0D)     // едва заметный
 
-// Меняй здесь: цвет текста правильного ответа
-val LightCorrectAnswerText = Green900
-val DarkCorrectAnswerText = Green300
+// Меняй здесь: цвет текста правильного ответа (тёмно-серый с зеленоватым оттенком)
+val LightCorrectAnswerText = Color(0xFF3D5A3D)        // между Grey800 и Green
+val DarkCorrectAnswerText = Color(0xFFA8C0A8)          // приглушённый светло-зеленоватый
 
-// Меняй здесь: фон неправильного ответа
-val LightIncorrectAnswerBackground = Red50
-val DarkIncorrectAnswerBackground = Color(0xFF3A1B1B)
+// Меняй здесь: фон неправильного ответа (едва заметный розовый)
+val LightIncorrectAnswerBackground = Color(0xFFFDFAFA)  // почти белый, призрак розового
+val DarkIncorrectAnswerBackground = Color(0xFF1A0D0D)   // едва заметный
 
-// Меняй здесь: цвет текста неправильного ответа
-val LightIncorrectAnswerText = Red900
-val DarkIncorrectAnswerText = Red300
+// Меняй здесь: цвет текста неправильного ответа (тёмно-серый с красноватым оттенком)
+val LightIncorrectAnswerText = Color(0xFF5A3D3D)       // между Grey800 и Red
+val DarkIncorrectAnswerText = Color(0xFFC0A8A8)         // приглушённый светло-красноватый
 
-// Меняй здесь: цветная полоска слева (по умолчанию — совпадает с фоном карточки)
+// Меняй здесь: обводка невыбранной карточки (чуть темнее фона экрана)
+val LightAnswerCardBorder = Grey300
+val DarkAnswerCardBorder = Grey700
+
+// Меняй здесь: цветная полоска слева (по умолчанию — нейтральная, совпадает с фоном карточки)
 val LightAnswerStripDefault = White
 val DarkAnswerStripDefault = BlueGrey800
 
-// Меняй здесь: полоска правильного ответа
-val LightCorrectAnswerStrip = Green500
-val DarkCorrectAnswerStrip = Green400
+// Меняй здесь: полоска правильного ответа (мягче)
+val LightCorrectAnswerStrip = Green200
+val DarkCorrectAnswerStrip = Green700
 
 // Меняй здесь: полоска неправильного ответа
-val LightIncorrectAnswerStrip = Red500
-val DarkIncorrectAnswerStrip = Red400
+val LightIncorrectAnswerStrip = Red200
+val DarkIncorrectAnswerStrip = Red700
+
+// === Бейджи / квадратики (нижний бар + шторка) — между фоном и стикером ===
+val LightCorrectBadge = Color(0xFFDFECDF)     // между Green50 и Green100
+val DarkCorrectBadge = Color(0xFF1E3A1E)
+val LightIncorrectBadge = Color(0xFFF2DADA)    // светлый, но с чистой розовинкой
+val DarkIncorrectBadge = Color(0xFF3A1E1E)
 
 // === Цвет текста перевода (Translation Text) ===
 
-// Меняй здесь: цвет текста перевода вопроса/ответа
-val LightTranslationText = Blue700
-val DarkTranslationText = Blue300
+// Меняй здесь: цвет текста перевода вопроса/ответа (тёмный махагон — красное дерево)
+val LightTranslationText = Color(0xFF6D3B3B)         // тёмный коричнево-бордовый
+val DarkTranslationText = Color(0xFFC08080)           // приглушённый розово-коричневый для тёмной темы
 
 // === Звёздочка избранного (Favorite Star) ===
 
-// Меняй здесь: цвет звёздочки (активная)
-val LightFavoriteStar = Amber500
+// Меняй здесь: цвет звёздочки (активная) — совпадает с «Gold» темой
+val LightFavoriteStar = Amber600
 val DarkFavoriteStar = Amber400
 
 // === Кнопка-тоггл перевода (Translation Toggle) ===
 
-// Меняй здесь: фон включённого тоггла
-val LightTranslationToggleOnBackground = Indigo500
-val DarkTranslationToggleOnBackground = Indigo300
+// Меняй здесь: фон включённого тоггла (совпадает с цветом текста перевода)
+val LightTranslationToggleOnBackground = Color(0xFF6D3B3B)
+val DarkTranslationToggleOnBackground = Color(0xFFC08080)
 
 // Меняй здесь: текст включённого тоггла
 val LightTranslationToggleOnText = White
-val DarkTranslationToggleOnText = White
+val DarkTranslationToggleOnText = Black
 
 // Меняй здесь: фон выключенного тоггла
 val LightTranslationToggleOffBackground = Grey200

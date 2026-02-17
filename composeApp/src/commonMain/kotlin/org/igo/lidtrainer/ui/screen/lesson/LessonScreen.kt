@@ -70,9 +70,12 @@ import org.igo.lidtrainer.ui.common.LocalTopBarState
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
+import org.igo.lidtrainer.ui.theme.answerCardBorder
 import org.igo.lidtrainer.ui.theme.answerCardBackground
 import org.igo.lidtrainer.ui.theme.answerCardText
 import org.igo.lidtrainer.ui.theme.answerStripDefault
+import org.igo.lidtrainer.ui.theme.correctBadge
+import org.igo.lidtrainer.ui.theme.incorrectBadge
 import org.igo.lidtrainer.ui.theme.correctAnswerBackground
 import org.igo.lidtrainer.ui.theme.correctAnswerStrip
 import org.igo.lidtrainer.ui.theme.correctAnswerText
@@ -170,8 +173,8 @@ fun LessonScreen(
     val currentNoteForTitle = notes.getOrNull(pagerState.currentPage)
 
     val badgeColor = when (currentNoteForTitle?.isAnsweredCorrectly) {
-        true -> MaterialTheme.colorScheme.correctAnswerBackground
-        false -> MaterialTheme.colorScheme.incorrectAnswerBackground
+        true -> MaterialTheme.colorScheme.correctBadge
+        false -> MaterialTheme.colorScheme.incorrectBadge
         null -> MaterialTheme.colorScheme.surfaceVariant
     }
     val badgeTextColor = when (currentNoteForTitle?.isAnsweredCorrectly) {
@@ -440,11 +443,7 @@ private fun AnswerCard(
         else -> MaterialTheme.colorScheme.incorrectAnswerText
     }
 
-    val borderColor = when {
-        !isHighlighted -> null
-        isCorrect -> MaterialTheme.colorScheme.correctAnswerStrip
-        else -> MaterialTheme.colorScheme.incorrectAnswerStrip
-    }
+    val borderColor = MaterialTheme.colorScheme.answerCardBorder
 
     val stripColor = when {
         !isHighlighted -> MaterialTheme.colorScheme.answerStripDefault
@@ -603,8 +602,8 @@ private fun QuestionGridBottomSheet(
                     val isCurrent = originalIndex == currentPage
 
                     val bgColor = when (note.isAnsweredCorrectly) {
-                        true -> MaterialTheme.colorScheme.correctAnswerBackground
-                        false -> MaterialTheme.colorScheme.incorrectAnswerBackground
+                        true -> MaterialTheme.colorScheme.correctBadge
+                        false -> MaterialTheme.colorScheme.incorrectBadge
                         null -> MaterialTheme.colorScheme.surfaceVariant
                     }
                     val txtColor = when (note.isAnsweredCorrectly) {

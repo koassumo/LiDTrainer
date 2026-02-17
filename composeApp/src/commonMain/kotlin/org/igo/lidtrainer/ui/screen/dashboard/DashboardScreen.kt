@@ -27,6 +27,7 @@ import org.igo.lidtrainer.ui.common.CommonCard
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
 import org.igo.lidtrainer.ui.theme.LocalAppStrings
+import org.igo.lidtrainer.ui.theme.answerCardBorder
 import org.igo.lidtrainer.ui.theme.answerCardBackground
 import org.igo.lidtrainer.ui.theme.answerCardText
 import org.igo.lidtrainer.ui.theme.answerStripDefault
@@ -100,7 +101,7 @@ private fun DashboardCard(
 ) {
     CommonCard(
         containerColor = MaterialTheme.colorScheme.answerCardBackground,
-        borderColor = null,
+        borderColor = MaterialTheme.colorScheme.answerCardBorder,
         cornerRadius = Dimens.DashboardCardCornerRadius,
         contentPadding = PaddingValues(0.dp),
         onClick = onClick

@@ -48,7 +48,7 @@ object Dimens {
     // Меняй здесь: закругление углов карточки ответа
     val AnswerCardCornerRadius = 12.dp
     // Меняй здесь: ширина цветной полоски слева
-    val AnswerCardStripWidth = 10.dp
+    val AnswerCardStripWidth = 15.dp
     // Меняй здесь: отступы между карточками ответов
     val AnswerCardSpacing = 8.dp
 

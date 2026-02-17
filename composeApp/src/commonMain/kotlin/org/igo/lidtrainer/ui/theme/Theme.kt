@@ -34,7 +34,9 @@ private val LightColors = lightColorScheme(
     // Surface
     surface = LightSurface,
     onSurface = LightOnSurface,
+    surfaceVariant = LightSurfaceVariant,
     surfaceContainer = LightSurfaceContainer,
+    surfaceContainerLow = LightSurfaceContainerLow,
     onSurfaceVariant = LightOnSurfaceVariant,
 
     // Borders & Dividers
@@ -66,7 +68,9 @@ private val DarkColors = darkColorScheme(
     // Surface
     surface = DarkSurface,
     onSurface = DarkOnSurface,
+    surfaceVariant = DarkSurfaceVariant,
     surfaceContainer = DarkSurfaceContainer,
+    surfaceContainerLow = DarkSurfaceContainerLow,
     onSurfaceVariant = DarkOnSurfaceVariant,
 
     // Borders & Dividers
@@ -97,6 +101,9 @@ val ColorScheme.myBarDivider: Color
 
 // === Карточка ответа (Answer Card) ===
 
+val ColorScheme.answerCardBorder: Color
+    get() = if (this == LightColors) LightAnswerCardBorder else DarkAnswerCardBorder
+
 val ColorScheme.answerCardBackground: Color
     get() = if (this == LightColors) LightAnswerCardBackground else DarkAnswerCardBackground
 
@@ -123,6 +130,14 @@ val ColorScheme.correctAnswerStrip: Color
 
 val ColorScheme.incorrectAnswerStrip: Color
     get() = if (this == LightColors) LightIncorrectAnswerStrip else DarkIncorrectAnswerStrip
+
+// === Бейджи (нижний бар + шторка) ===
+
+val ColorScheme.correctBadge: Color
+    get() = if (this == LightColors) LightCorrectBadge else DarkCorrectBadge
+
+val ColorScheme.incorrectBadge: Color
+    get() = if (this == LightColors) LightIncorrectBadge else DarkIncorrectBadge
 
 // === Цвет текста перевода ===
 
