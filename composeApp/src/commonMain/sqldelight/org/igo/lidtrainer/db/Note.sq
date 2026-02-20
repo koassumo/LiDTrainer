@@ -15,6 +15,7 @@ CREATE TABLE noteEntity (
     correctAnswerIndex INTEGER NOT NULL,
     category TEXT NOT NULL,
     imageUrl TEXT,
+    imageAttribution TEXT,
     userAnswerIndex INTEGER,
     isAnsweredCorrectly INTEGER,
     lastAnsweredAt INTEGER,
@@ -72,11 +73,11 @@ INSERT OR REPLACE INTO noteEntity(
     id, questionNumber,
     questionTextDe, answer1De, answer2De, answer3De, answer4De,
     langNative, questionTextNative, answer1Native, answer2Native, answer3Native, answer4Native,
-    correctAnswerIndex, category, imageUrl,
+    correctAnswerIndex, category, imageUrl, imageAttribution,
     userAnswerIndex, isAnsweredCorrectly, lastAnsweredAt,
     isFavorite
 )
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
 
 -- Update user answer for a specific note
 updateUserAnswer:

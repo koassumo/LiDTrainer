@@ -11,5 +11,6 @@ data class PreNote(
     val answer4: String,
     val correctAnswerIndex: Int,
     val category: String,
-    val imageUrl: String?
+    val imageUrl: String?,
+    val imageAttribution: String?
 )

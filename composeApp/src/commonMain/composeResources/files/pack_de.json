@@ -13,7 +13,8 @@
       "answer4": "hier Meinungsfreiheit gilt.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@
       "answer4": "Sprachunterricht teilnimmt.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "answer4": "Die Gerichte machen die Gesetze.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 4,
@@ -49,7 +52,8 @@
       "answer4": "Selbstjustiz",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 5,
@@ -61,7 +65,8 @@
       "answer4": "Alle wahlberechtigten Personen müssen wählen.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 6,
@@ -73,7 +78,8 @@
       "answer4": "Grundgesetz",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 7,
@@ -85,7 +91,8 @@
       "answer4": "Wohnung",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 8,
@@ -97,7 +104,8 @@
       "answer4": "Alle sind vor dem Gesetz gleich.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 9,
@@ -109,7 +117,8 @@
       "answer4": "Meinungsfreiheit",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 10,
@@ -121,7 +130,8 @@
       "answer4": "die Geldstrafe",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 11,
@@ -133,7 +143,8 @@
       "answer4": "Verfassungsvertrag",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 12,
@@ -145,7 +156,8 @@
       "answer4": "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 13,
@@ -157,7 +169,8 @@
       "answer4": "alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 14,
@@ -169,7 +182,8 @@
       "answer4": "meine Meinung nur dann äußern darf, solange ich der Regierung nicht widerspreche.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 15,
@@ -181,7 +195,8 @@
       "answer4": "Arbeit im Ausland",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 16,
@@ -193,7 +208,8 @@
       "answer4": "bei Kritik am Staat",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 17,
@@ -205,7 +221,8 @@
       "answer4": "Ungleichbehandlung der Bürgerinnen und Bürger durch den Staat.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 18,
@@ -217,7 +234,8 @@
       "answer4": "Meinungsfreiheit",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 19,
@@ -229,7 +247,8 @@
       "answer4": "Man darf sich in der Öffentlichkeit nur leicht bekleidet bewegen.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 20,
@@ -241,7 +260,8 @@
       "answer4": "verfassungswidrig.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 21,
@@ -253,7 +273,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_021.webp"
+      "imageUrl": "image_021.webp",
+      "imageAttribution": "© Bundesregierung / gemeinfrei"
     },
     {
       "id": 22,
@@ -265,7 +286,8 @@
       "answer4": "Fürstentum",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 23,
@@ -277,7 +299,8 @@
       "answer4": "bei einer Firma oder Behörde beschäftigt.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 24,
@@ -289,7 +312,8 @@
       "answer4": "17",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 25,
@@ -301,7 +325,8 @@
       "answer4": "Sachsen-Anhalt",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 26,
@@ -313,7 +338,8 @@
       "answer4": "ein sozialer und sozialistischer Bundesstaat.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 27,
@@ -325,7 +351,8 @@
       "answer4": "eine Monarchie.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 28,
@@ -337,7 +364,8 @@
       "answer4": "die Verwaltung",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 29,
@@ -349,7 +377,8 @@
       "answer4": "Pferd",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 30,
@@ -361,7 +390,8 @@
       "answer4": "verschiedene Parteien",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 31,
@@ -373,7 +403,8 @@
       "answer4": "Fraktion.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 32,
@@ -385,7 +416,8 @@
       "answer4": "Rechtsprechung",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 33,
@@ -397,7 +429,8 @@
       "answer4": "bilden Staat und Religionsgemeinschaften eine Einheit.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 34,
@@ -409,7 +442,8 @@
       "answer4": "ein Sozialstaat",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 35,
@@ -421,7 +455,8 @@
       "answer4": "Vereinsbeiträgen",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 36,
@@ -433,7 +468,8 @@
       "answer4": "die Haftpflichtversicherung",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 37,
@@ -445,7 +481,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 38,
@@ -457,7 +494,8 @@
       "answer4": "Zentralstaat.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 39,
@@ -469,7 +507,8 @@
       "answer4": "eine eigene Regierung",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 40,
@@ -481,7 +520,8 @@
       "answer4": "Deutschland einig Vaterland …",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 41,
@@ -493,7 +533,8 @@
       "answer4": "um wirtschaftlichen Wettbewerb anzuregen",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 42,
@@ -505,7 +546,8 @@
       "answer4": "die Polizei",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 43,
@@ -517,7 +559,8 @@
       "answer4": "wenn ihr Programm eine neue Richtung vorschlägt",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 44,
@@ -529,7 +572,8 @@
       "answer4": "Bundestagsabgeordnete",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 45,
@@ -541,7 +585,8 @@
       "answer4": "Haftpflicht- und Feuerversicherung",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 46,
@@ -553,7 +598,8 @@
       "answer4": "Er produziert Autos und Busse.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 47,
@@ -565,7 +611,8 @@
       "answer4": "Er fördert Sportlerinnen und Sportler.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 48,
@@ -577,7 +624,8 @@
       "answer4": "die Regierung",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 49,
@@ -589,7 +637,8 @@
       "answer4": "die Universitäten",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 50,
@@ -601,7 +650,8 @@
       "answer4": "Planwirtschaft.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 51,
@@ -613,7 +663,8 @@
       "answer4": "jemand ein Verbrechen begeht und deshalb verhaftet wird.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 52,
@@ -625,7 +676,8 @@
       "answer4": "Bundesverfassungsgericht aus.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 53,
@@ -637,7 +689,8 @@
       "answer4": "Der Staat muss die Gesetze einhalten.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 54,
@@ -649,7 +702,8 @@
       "answer4": "Direktive",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 55,
@@ -661,7 +715,8 @@
       "answer4": "das Bundeskanzleramt in Berlin",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_55.webp"
+      "imageUrl": "image_55.webp",
+      "imageAttribution": null
     },
     {
       "id": 56,
@@ -673,7 +728,8 @@
       "answer4": "Auswärtiges Amt",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 57,
@@ -685,7 +741,8 @@
       "answer4": "eine Abgeordnete/ein Abgeordneter der stärksten Fraktion",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 58,
@@ -697,7 +754,8 @@
       "answer4": "die Bundestagspräsidentin/der Bundestagspräsident",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 59,
@@ -709,7 +767,8 @@
       "answer4": "vor etwa 1700 Jahren",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 60,
@@ -721,7 +780,8 @@
       "answer4": "Judikative.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 61,
@@ -733,7 +793,8 @@
       "answer4": "Die Staatsgewalt geht vom Volke aus.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 62,
@@ -745,7 +806,8 @@
       "answer4": "Bundestagswahl",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 63,
@@ -757,7 +819,8 @@
       "answer4": "die Ministerien",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 64,
@@ -769,7 +832,8 @@
       "answer4": "Bund, Länder und Kommunen.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 65,
@@ -781,7 +845,8 @@
       "answer4": "das Bundeskabinett zu bilden.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 66,
@@ -793,7 +858,8 @@
       "answer4": "Worms und Speyer",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 67,
@@ -805,7 +871,8 @@
       "answer4": "Schulpolitik",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 68,
@@ -817,7 +884,8 @@
       "answer4": "weil es nach dem Grundgesetz seine Aufgabe ist",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 69,
@@ -829,7 +897,8 @@
       "answer4": "Bezirksämter",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 70,
@@ -841,7 +910,8 @@
       "answer4": "Sie/Er schlägt die Kanzlerin/den Kanzler zur Wahl vor.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": "image_70.webp"
+      "imageUrl": "image_70.webp",
+      "imageAttribution": null
     },
     {
       "id": 71,
@@ -853,7 +923,8 @@
       "answer4": "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 72,
@@ -865,7 +936,8 @@
       "answer4": "Friedrich Merz",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 73,
@@ -877,7 +949,8 @@
       "answer4": "Die Linke und CDU/CSU.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 74,
@@ -889,7 +962,8 @@
       "answer4": "Bundesgerichtshof",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 75,
@@ -901,7 +975,8 @@
       "answer4": "Joachim Gauck",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 76,
@@ -913,7 +988,8 @@
       "answer4": "Christlich Demokratische Union",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 77,
@@ -925,7 +1001,8 @@
       "answer4": "die deutsche Armee",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 78,
@@ -937,7 +1014,8 @@
       "answer4": "Sozialgerechte Partei Deutschlands",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 79,
@@ -949,7 +1027,8 @@
       "answer4": "Freie Demokratische Partei",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 80,
@@ -961,7 +1040,8 @@
       "answer4": "Verwaltungsgericht",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 81,
@@ -973,7 +1053,8 @@
       "answer4": "der Bundestag",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 82,
@@ -985,7 +1066,8 @@
       "answer4": "die Bundeskanzlerin/der Bundeskanzler",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 83,
@@ -997,7 +1079,8 @@
       "answer4": "die Bundesregierung",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 84,
@@ -1009,7 +1092,8 @@
       "answer4": "überwacht die Einhaltung der Gesetze.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 85,
@@ -1021,7 +1105,8 @@
       "answer4": "die Parteimitglieder",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 86,
@@ -1033,7 +1118,8 @@
       "answer4": "das Bundesverfassungsgericht",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 87,
@@ -1045,7 +1131,8 @@
       "answer4": "die Bundestagspräsidentin/der Bundestagspräsident",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 88,
@@ -1057,7 +1144,8 @@
       "answer4": "schlägt die Regierungschefinnen/Regierungschefs der Länder vor.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 89,
@@ -1069,7 +1157,8 @@
       "answer4": "Opposition",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 90,
@@ -1081,7 +1170,8 @@
       "answer4": "die Bundesregierung.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 91,
@@ -1093,7 +1183,8 @@
       "answer4": "leichter, wenn es sich um ein reiches Bundesland handelt.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 92,
@@ -1105,7 +1196,8 @@
       "answer4": "Christlich Soziale Union",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 93,
@@ -1117,7 +1209,8 @@
       "answer4": "mehr Sitze erhält die Partei im Parlament.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 94,
@@ -1129,7 +1222,8 @@
       "answer4": "23",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 95,
@@ -1141,7 +1235,8 @@
       "answer4": "Religionspflicht",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 96,
@@ -1153,7 +1248,8 @@
       "answer4": "mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 97,
@@ -1165,7 +1261,8 @@
       "answer4": "Wohngeld",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 98,
@@ -1177,7 +1274,8 @@
       "answer4": "dürfen die Wählerinnen/Wähler dieser Abgeordneten noch einmal wählen.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 99,
@@ -1189,7 +1287,8 @@
       "answer4": "nur Arbeitgeberinnen/Arbeitgeber",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 100,
@@ -1201,7 +1300,8 @@
       "answer4": "die Pflegeversicherung",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 101,
@@ -1213,7 +1313,8 @@
       "answer4": "Arbeitgeberinnen und Arbeitgeber.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 102,
@@ -1225,7 +1326,8 @@
       "answer4": "Ehrentitel “Held der Deutschen Demokratischen Republik”",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 103,
@@ -1237,7 +1339,8 @@
       "answer4": "der Bundestagsfraktionen von CDU und SPD",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 104,
@@ -1249,7 +1352,8 @@
       "answer4": "Die Frau bekommt ein Kind und ihr Chef weiß das.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 105,
@@ -1261,7 +1365,8 @@
       "answer4": "Sie zählen die Stimmen nach dem Ende der Wahl.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 106,
@@ -1273,7 +1378,8 @@
       "answer4": "Sie zählen die Stimmen nach dem Ende der Wahl.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 107,
@@ -1285,7 +1391,8 @@
       "answer4": "8 Jahre",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 108,
@@ -1297,7 +1404,8 @@
       "answer4": "Bürgerin/Bürger der Bundesrepublik Deutschland ist und mindestens 21 Jahre alt ist.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 109,
@@ -1309,7 +1417,8 @@
       "answer4": "alle sechs Jahre",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 110,
@@ -1321,7 +1430,8 @@
       "answer4": "5 Jahre",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 111,
@@ -1333,7 +1443,8 @@
       "answer4": "der öffentliche Aufruf zur Vernichtung Israels",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 112,
@@ -1345,7 +1456,8 @@
       "answer4": "geschlechtsabhängig.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 113,
@@ -1357,7 +1469,8 @@
       "answer4": "die meisten Erststimmen für ihre Kanzlerkandidatin/ihren Kanzlerkandidaten erhalten hat.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 114,
@@ -1369,7 +1482,8 @@
       "answer4": "eine Last.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 115,
@@ -1381,7 +1495,8 @@
       "answer4": "Man muss zur Auszählung der Stimmen gehen.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 116,
@@ -1393,7 +1508,8 @@
       "answer4": "aktives Wahlrecht.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 117,
@@ -1405,7 +1521,8 @@
       "answer4": "6%",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 118,
@@ -1417,7 +1534,8 @@
       "answer4": "alle Menschen",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 119,
@@ -1429,7 +1547,8 @@
       "answer4": "Ich kann frei entscheiden, wo ich wählen gehen möchte.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 120,
@@ -1441,7 +1560,8 @@
       "answer4": "allgemeines Männerwahlrecht.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 121,
@@ -1453,7 +1573,8 @@
       "answer4": "Richtlinie.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 122,
@@ -1465,7 +1586,8 @@
       "answer4": "sicher, offen, freiwillig.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 123,
@@ -1477,7 +1599,8 @@
       "answer4": "Anwesenheitskontrolle im Bundesrat für Abstimmungen",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 124,
@@ -1489,7 +1612,8 @@
       "answer4": "der Bundespräsidentin/des Bundespräsidenten.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 125,
@@ -1501,7 +1625,8 @@
       "answer4": "den Armen mehr Macht zu geben.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 126,
@@ -1513,7 +1638,8 @@
       "answer4": "eine Benachrichtigung vom Pfarramt",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 127,
@@ -1525,7 +1651,8 @@
       "answer4": "die kleinen Parteien nicht so viel Geld haben, um die Politikerinnen und Politiker zu bezahlen.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 128,
@@ -1537,7 +1664,8 @@
       "answer4": "Ministerpräsidentinnen/Ministerpräsidenten.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 129,
@@ -1549,7 +1677,8 @@
       "answer4": "die Bundespräsidentin/der Bundespräsident.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 130,
@@ -1561,7 +1690,8 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 131,
@@ -1573,7 +1703,8 @@
       "answer4": "die/der Vorsitzende einer Partei.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 132,
@@ -1585,7 +1716,8 @@
       "answer4": "Sie arbeiten in einem Krankenhaus und verdienen dabei Geld.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 133,
@@ -1597,7 +1729,8 @@
       "answer4": "Kinder ab dem Alter von 14 Jahren dürfen wählen.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 134,
@@ -1609,7 +1742,8 @@
       "answer4": "Ich schreibe einen Brief an das Forstamt der Gemeinde.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 135,
@@ -1621,7 +1755,8 @@
       "answer4": "Arbeitnehmerinnen und Arbeitnehmer",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 136,
@@ -1633,7 +1768,8 @@
       "answer4": "Schwierigkeiten nach einem Verkehrsunfall.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 137,
@@ -1645,7 +1781,8 @@
       "answer4": "das Amtsgericht",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 138,
@@ -1657,7 +1794,8 @@
       "answer4": "die Arbeitgeberin/den Arbeitgeber bei der Polizei anzeigen",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 139,
@@ -1669,7 +1807,8 @@
       "answer4": "sein Auto falsch geparkt hat und es abgeschleppt wird.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 140,
@@ -1681,7 +1820,8 @@
       "answer4": "verteidigt die Angeklagte/den Angeklagten.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 141,
@@ -1693,7 +1833,8 @@
       "answer4": "eine Staatsanwältin/ein Staatsanwalt",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 142,
@@ -1705,7 +1846,8 @@
       "answer4": "betreut Jugendliche vor Gericht.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 143,
@@ -1717,7 +1859,8 @@
       "answer4": "Legislative.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 144,
@@ -1729,7 +1872,8 @@
       "answer4": "gesetzgebenden Gewalt.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 145,
@@ -1741,7 +1885,8 @@
       "answer4": "Legislative",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 146,
@@ -1753,7 +1898,8 @@
       "answer4": "Prozess",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 147,
@@ -1765,7 +1911,8 @@
       "answer4": "Gesetze erlassen",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 148,
@@ -1777,7 +1924,8 @@
       "answer4": "die Einhaltung von Gesetzen zu überwachen",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 149,
@@ -1789,7 +1937,8 @@
       "answer4": "gegen Juden Fußball spielen.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 150,
@@ -1801,7 +1950,8 @@
       "answer4": "eine Person, die Jura studiert hat.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 151,
@@ -1813,7 +1963,8 @@
       "answer4": "die USA",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 152,
@@ -1825,7 +1976,8 @@
       "answer4": "1945 bis 1989",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 153,
@@ -1837,7 +1989,8 @@
       "answer4": "Ende des Zweiten Weltkriegs in Europa",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 154,
@@ -1849,7 +2002,8 @@
       "answer4": "1961",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 155,
@@ -1861,7 +2015,8 @@
       "answer4": "1949 bis 1963",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 156,
@@ -1873,7 +2028,8 @@
       "answer4": "1936",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 157,
@@ -1885,7 +2041,8 @@
       "answer4": "ein Fürstentum.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 158,
@@ -1897,7 +2054,8 @@
       "answer4": "Räterepublik.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 159,
@@ -1909,7 +2067,8 @@
       "answer4": "Verfolgung von Juden",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 160,
@@ -1921,7 +2080,8 @@
       "answer4": "der Golfkrieg",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 161,
@@ -1933,7 +2093,8 @@
       "answer4": "der Entwicklung der Demokratie",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 162,
@@ -1945,7 +2106,8 @@
       "answer4": "das Attentat auf Hitler am 20. Juli 1944.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 163,
@@ -1957,7 +2119,8 @@
       "answer4": "1945",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 164,
@@ -1969,7 +2132,8 @@
       "answer4": "Hitler wird Reichspräsident und lässt alle Parteien verbieten.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 165,
@@ -1981,7 +2145,8 @@
       "answer4": "Willy Brandt",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 166,
@@ -1993,7 +2158,8 @@
       "answer4": "bei den Montagsdemonstrationen 1989 in der DDR",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 167,
@@ -2005,7 +2171,8 @@
       "answer4": "USA, Sowjetunion, Großbritannien, Frankreich",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 168,
@@ -2017,7 +2184,8 @@
       "answer4": "Japan",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 169,
@@ -2029,7 +2197,8 @@
       "answer4": "1951",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 170,
@@ -2041,7 +2210,8 @@
       "answer4": "den Schutz der Menschenwürde",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 171,
@@ -2053,7 +2223,8 @@
       "answer4": "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 172,
@@ -2065,7 +2236,8 @@
       "answer4": "sowjetischen Besatzungszone",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 173,
@@ -2077,7 +2249,8 @@
       "answer4": "des Warschauer Pakts.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 174,
@@ -2089,7 +2262,8 @@
       "answer4": "1956",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 175,
@@ -2101,7 +2275,8 @@
       "answer4": "6",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 176,
@@ -2113,7 +2288,8 @@
       "answer4": "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 177,
@@ -2125,7 +2301,8 @@
       "answer4": "Frankfurt/Oder",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 178,
@@ -2137,7 +2314,8 @@
       "answer4": "Die Sowjetunion unterbrach den gesamten Verkehr auf dem Landwege.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 179,
@@ -2149,7 +2327,8 @@
       "answer4": "durch eine Revolution in Deutschland",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 180,
@@ -2161,7 +2340,8 @@
       "answer4": "Gerhard Schröder.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 181,
@@ -2173,7 +2353,8 @@
       "answer4": "Er sprach ein Gebet am Grab des Unbekannten Soldaten.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": "image_181.webp"
+      "imageUrl": "image_181.webp",
+      "imageAttribution": null
     },
     {
       "id": 182,
@@ -2185,7 +2366,8 @@
       "answer4": "Kirche",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 183,
@@ -2197,7 +2379,8 @@
       "answer4": "80er Jahre",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 184,
@@ -2209,7 +2392,8 @@
       "answer4": "ein Vorschlag der UdSSR",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 185,
@@ -2221,7 +2405,8 @@
       "answer4": "Europas gegen die USA",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 186,
@@ -2233,7 +2418,8 @@
       "answer4": "9. November",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 187,
@@ -2245,7 +2431,8 @@
       "answer4": "DDR",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 188,
@@ -2257,7 +2444,8 @@
       "answer4": "1961",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 189,
@@ -2269,7 +2457,8 @@
       "answer4": "1990",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 190,
@@ -2281,7 +2470,8 @@
       "answer4": "Deutsche Demokratische Republik",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 191,
@@ -2293,7 +2483,8 @@
       "answer4": "1995",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 192,
@@ -2305,7 +2496,8 @@
       "answer4": "Hessen",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 193,
@@ -2317,7 +2509,8 @@
       "answer4": "nur mit dem Flugzeug erreichbar.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 194,
@@ -2329,7 +2522,8 @@
       "answer4": "Städte.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 195,
@@ -2341,7 +2535,8 @@
       "answer4": "Saarland",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 196,
@@ -2353,7 +2548,8 @@
       "answer4": "von einem religiösen Staat zu einem kommunistischen Staat.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 197,
@@ -2365,7 +2561,8 @@
       "answer4": "Bremen",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 198,
@@ -2377,7 +2574,8 @@
       "answer4": "Baden-Württemberg",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 199,
@@ -2389,7 +2587,8 @@
       "answer4": "das Ministerium für Volksbildung.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 200,
@@ -2401,7 +2600,8 @@
       "answer4": "Saarland",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 201,
@@ -2413,7 +2613,8 @@
       "answer4": "Sachsen, Thüringen, Hessen, Niedersachen, Brandenburg",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 202,
@@ -2425,7 +2626,8 @@
       "answer4": "zu den blockfreien Staaten",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 203,
@@ -2437,7 +2639,8 @@
       "answer4": "Kapitalismus",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 204,
@@ -2449,7 +2652,8 @@
       "answer4": "Die DDR hat die Bundesrepublik Deutschland besetzt.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 205,
@@ -2461,7 +2665,8 @@
       "answer4": "zur Europäischen Verteidigungsgemeinschaft.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 206,
@@ -2473,7 +2678,8 @@
       "answer4": "an bekannte jüdische Musiker",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 207,
@@ -2485,7 +2691,8 @@
       "answer4": "im Europabündnis",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 208,
@@ -2497,7 +2704,8 @@
       "answer4": "ein deutscher Sportverein während des Zweiten Weltkrieges",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 209,
@@ -2509,7 +2717,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": "image_209.webp"
+      "imageUrl": "image_209.webp",
+      "imageAttribution": null
     },
     {
       "id": 210,
@@ -2521,7 +2730,8 @@
       "answer4": "der erste Besuch Fidel Castros",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 211,
@@ -2533,7 +2743,8 @@
       "answer4": "Ludwig Erhard",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 212,
@@ -2545,7 +2756,8 @@
       "answer4": "Bundesbezirk Deutschland",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 213,
@@ -2557,7 +2769,8 @@
       "answer4": "90 Millionen",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 214,
@@ -2569,7 +2782,8 @@
       "answer4": "schwarz-gelb-rot",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 215,
@@ -2581,7 +2795,8 @@
       "answer4": "Helmut Schmidt",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 216,
@@ -2593,7 +2808,8 @@
       "answer4": "die Reichskrone",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_216.webp"
+      "imageUrl": "image_216.webp",
+      "imageAttribution": null
     },
     {
       "id": 217,
@@ -2605,7 +2821,8 @@
       "answer4": "1949 bis 1990",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 218,
@@ -2617,7 +2834,8 @@
       "answer4": "7",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 219,
@@ -2629,7 +2847,8 @@
       "answer4": "1990",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 220,
@@ -2641,7 +2860,8 @@
       "answer4": "an die Opfer des Nationalsozialismus (Tag der Befreiung des Vernichtungslagers Auschwitz)",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 221,
@@ -2653,7 +2873,8 @@
       "answer4": "Deutsche können in jedem Land mit dem Euro bezahlen.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 222,
@@ -2665,7 +2886,8 @@
       "answer4": "Schweiz",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 223,
@@ -2677,7 +2899,8 @@
       "answer4": "Griechenland",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 224,
@@ -2689,7 +2912,8 @@
       "answer4": "Euro Union",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 225,
@@ -2701,7 +2925,8 @@
       "answer4": "Österreich",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 226,
@@ -2713,7 +2938,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_226.webp"
+      "imageUrl": "image_226.webp",
+      "imageAttribution": null
     },
     {
       "id": 227,
@@ -2725,7 +2951,8 @@
       "answer4": "Schweden",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 228,
@@ -2737,7 +2964,8 @@
       "answer4": "Europäische Gemeinschaft",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 229,
@@ -2749,7 +2977,8 @@
       "answer4": "Luxemburg",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 230,
@@ -2761,7 +2990,8 @@
       "answer4": "8 Jahre.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 231,
@@ -2773,7 +3003,8 @@
       "answer4": "Der Begriff meint den Zusammenschluss europäischer Staaten zur EU.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 232,
@@ -2785,7 +3016,8 @@
       "answer4": "die europäische Verfassung",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 233,
@@ -2797,7 +3029,8 @@
       "answer4": "Portugal",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 234,
@@ -2809,7 +3042,8 @@
       "answer4": "Straßburg",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 235,
@@ -2821,7 +3055,8 @@
       "answer4": "einheitliche Feiertage in den Ländern der EU",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": "image_235.webp"
+      "imageUrl": "image_235.webp",
+      "imageAttribution": null
     },
     {
       "id": 236,
@@ -2833,7 +3068,8 @@
       "answer4": "27",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 237,
@@ -2845,7 +3081,8 @@
       "answer4": "Festlegung der Oder-Neiße-Linie als Ostgrenze",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 238,
@@ -2857,7 +3094,8 @@
       "answer4": "Bonn, Zürich und Mailand",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 239,
@@ -2869,7 +3107,8 @@
       "answer4": "durch die “Londoner Verträge”",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 240,
@@ -2881,7 +3120,8 @@
       "answer4": "2005",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 241,
@@ -2893,7 +3133,8 @@
       "answer4": "Sie muss das Arbeitsamt um Erlaubnis bitten.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 242,
@@ -2905,7 +3146,8 @@
       "answer4": "die Schulen",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 243,
@@ -2917,7 +3159,8 @@
       "answer4": "Maik und Sybille müssen einen neuen Verein gründen, weil nur Vereine demonstrieren dürfen.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 244,
@@ -2929,7 +3172,8 @@
       "answer4": "eine Gesellenprüfung",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 245,
@@ -2941,7 +3185,8 @@
       "answer4": "Anne (13 Jahre) und Tim (25 Jahre)",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 246,
@@ -2953,7 +3198,8 @@
       "answer4": "21",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 247,
@@ -2965,7 +3211,8 @@
       "answer4": "Wochenbett",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 248,
@@ -2977,7 +3224,8 @@
       "answer4": "der Schulen.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 249,
@@ -2989,7 +3237,8 @@
       "answer4": "die Schulen",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 250,
@@ -3001,7 +3250,8 @@
       "answer4": "Mitglied einer Partei ist.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 251,
@@ -3013,7 +3263,8 @@
       "answer4": "kann man dafür bestraft werden.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 252,
@@ -3025,7 +3276,8 @@
       "answer4": "darf eine Frau nicht wieder heiraten, wenn ihr Mann gestorben ist.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 253,
@@ -3037,7 +3289,8 @@
       "answer4": "beim Gewerbeamt",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 254,
@@ -3049,7 +3302,8 @@
       "answer4": "Die Ehegatten führen mindestens ein Jahr getrennt ihr eigenes Leben. Danach ist die Scheidung möglich.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 255,
@@ -3061,7 +3315,8 @@
       "answer4": "Gesundheitsamt.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 256,
@@ -3073,7 +3328,8 @@
       "answer4": "eine Gaststättenerlaubnis von der zuständigen Behörde",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 257,
@@ -3085,7 +3341,8 @@
       "answer4": "einer Privatuniversität.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 258,
@@ -3097,7 +3354,8 @@
       "answer4": "Es kontrolliert, ob das Kind einen Kindergarten besucht.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 259,
@@ -3109,7 +3367,8 @@
       "answer4": "Krankenversicherung.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 260,
@@ -3121,7 +3380,8 @@
       "answer4": "Anwesenheitspflicht.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 261,
@@ -3133,7 +3393,8 @@
       "answer4": "einer Privatuniversität.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 262,
@@ -3145,7 +3406,8 @@
       "answer4": "Es ist für alle Gesetz, benachteiligten Gruppen jährlich Geld zu spenden.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 263,
@@ -3157,7 +3419,8 @@
       "answer4": "werden nicht bestraft.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 264,
@@ -3169,7 +3432,8 @@
       "answer4": "an Pfingsten",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 265,
@@ -3181,7 +3445,8 @@
       "answer4": "zum Standesamt",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 266,
@@ -3193,7 +3458,8 @@
       "answer4": "um 22 Uhr",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 267,
@@ -3205,7 +3471,8 @@
       "answer4": "Sie suchen einen anderen Mann für die Tochter.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 268,
@@ -3217,7 +3484,8 @@
       "answer4": "Sie kann die Theorie-Prüfung vielleicht in ihrer Muttersprache machen. Es gibt mehr als zehn Sprachen zur Auswahl.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 269,
@@ -3229,7 +3497,8 @@
       "answer4": "einen Ferienpass.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 270,
@@ -3241,7 +3510,8 @@
       "answer4": "nur für Rentnerinnen und Rentner.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 271,
@@ -3253,7 +3523,8 @@
       "answer4": "Kürbisse vor die Tür stellen",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 272,
@@ -3265,7 +3536,8 @@
       "answer4": "Ein Mann ist mit zwei Frauen zur selben Zeit verheiratet.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 273,
@@ -3277,7 +3549,8 @@
       "answer4": "zum Jugendamt.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 274,
@@ -3289,7 +3562,8 @@
       "answer4": "die Meinungsfreiheit",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 275,
@@ -3301,7 +3575,8 @@
       "answer4": "die Unterstützung einer Anwältin/eines Anwalts",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 276,
@@ -3313,7 +3588,8 @@
       "answer4": "Ich kann mich bei der Behördenleiterin/beim Behördenleiter beschweren.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 277,
@@ -3325,7 +3601,8 @@
       "answer4": "Mutter ist.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 278,
@@ -3337,7 +3614,8 @@
       "answer4": "kein Englisch spricht.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 279,
@@ -3349,7 +3627,8 @@
       "answer4": "die Adresse des nächsten Ordnungsamtes.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 280,
@@ -3361,7 +3640,8 @@
       "answer4": "warten, bis ein anderer Bescheid kommt.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 281,
@@ -3373,7 +3653,8 @@
       "answer4": "Freizügigkeit",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 282,
@@ -3385,7 +3666,8 @@
       "answer4": "Lehrerin/Lehrer",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 283,
@@ -3397,7 +3679,8 @@
       "answer4": "Ich gehe mit der Rechnung zum Finanzamt.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 284,
@@ -3409,7 +3692,8 @@
       "answer4": "Alle müssen früher aufhören zu arbeiten, weil sich alles ändert.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 285,
@@ -3421,7 +3705,8 @@
       "answer4": "Umsatzsteuer",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 286,
@@ -3433,7 +3718,8 @@
       "answer4": "das Betriebsmanagement",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 287,
@@ -3445,7 +3731,8 @@
       "answer4": "die Versicherungspflicht",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 288,
@@ -3457,7 +3744,8 @@
       "answer4": "aus der christlichen Tradition",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 289,
@@ -3469,7 +3757,8 @@
       "answer4": "er keine Erfahrungen im Beruf hat.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 290,
@@ -3481,7 +3770,8 @@
       "answer4": "die Garantie verlängern",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 291,
@@ -3493,7 +3783,8 @@
       "answer4": "die Kirche für die Steuererklärung verantwortlich ist.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 292,
@@ -3505,7 +3796,8 @@
       "answer4": "Der Staat entscheidet, an welchen Gott die Menschen glauben.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 293,
@@ -3517,7 +3809,8 @@
       "answer4": "Raketen in die Luft schießen",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 294,
@@ -3529,7 +3822,8 @@
       "answer4": "bayerischer Brauch.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 295,
@@ -3541,7 +3835,8 @@
       "answer4": "der Islam",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 296,
@@ -3553,7 +3848,8 @@
       "answer4": "Allerheiligen.",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 297,
@@ -3565,7 +3861,8 @@
       "answer4": "Türkei",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 298,
@@ -3577,7 +3874,8 @@
       "answer4": "Nordkorea, Mexiko, Ägypten.",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 299,
@@ -3589,7 +3887,8 @@
       "answer4": "Schichtarbeiterinnen/Schichtarbeiter.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 300,
@@ -3601,7 +3900,8 @@
       "answer4": "Türkei",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 301,
@@ -3613,7 +3913,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "BADEN",
-      "imageUrl": "image_301.webp"
+      "imageUrl": "image_301.webp",
+      "imageAttribution": null
     },
     {
       "id": 302,
@@ -3625,7 +3926,8 @@
       "answer4": "Altötting",
       "correctAnswerIndex": 2,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 303,
@@ -3637,7 +3939,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 304,
@@ -3649,7 +3952,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 305,
@@ -3661,7 +3965,8 @@
       "answer4": "grün-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 306,
@@ -3673,7 +3978,8 @@
       "answer4": "bei den Kirchen",
       "correctAnswerIndex": 3,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 307,
@@ -3685,7 +3991,8 @@
       "answer4": "Mannheim.",
       "correctAnswerIndex": 2,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 308,
@@ -3697,7 +4004,8 @@
       "answer4": "4",
       "correctAnswerIndex": 2,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 309,
@@ -3709,7 +4017,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 310,
@@ -3721,7 +4030,8 @@
       "answer4": "Außenministerin/Außenminister",
       "correctAnswerIndex": 4,
       "category": "BADEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 311,
@@ -3733,7 +4043,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "BAYERN",
-      "imageUrl": "image_311.webp"
+      "imageUrl": "image_311.webp",
+      "imageAttribution": null
     },
     {
       "id": 312,
@@ -3745,7 +4056,8 @@
       "answer4": "Altötting",
       "correctAnswerIndex": 4,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 313,
@@ -3757,7 +4069,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 314,
@@ -3769,7 +4082,8 @@
       "answer4": "20",
       "correctAnswerIndex": 3,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 315,
@@ -3781,7 +4095,8 @@
       "answer4": "schwarz-gelb",
       "correctAnswerIndex": 2,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 316,
@@ -3793,7 +4108,8 @@
       "answer4": "bei den Kirchen",
       "correctAnswerIndex": 2,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 317,
@@ -3805,7 +4121,8 @@
       "answer4": "München.",
       "correctAnswerIndex": 4,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 318,
@@ -3817,7 +4134,8 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 319,
@@ -3829,7 +4147,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 320,
@@ -3841,7 +4160,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "BAYERN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 321,
@@ -3853,7 +4173,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": "image_321.webp"
+      "imageUrl": "image_321.webp",
+      "imageAttribution": null
     },
     {
       "id": 322,
@@ -3865,7 +4186,8 @@
       "answer4": "Mecklenburgische Seenplatte",
       "correctAnswerIndex": 3,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 323,
@@ -3877,7 +4199,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 324,
@@ -3889,7 +4212,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 325,
@@ -3901,7 +4225,8 @@
       "answer4": "schwarz-gold",
       "correctAnswerIndex": 2,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 326,
@@ -3913,7 +4238,8 @@
       "answer4": "bei der Landeszentrale für politische Bildung",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 327,
@@ -3925,7 +4251,8 @@
       "answer4": "Hessen",
       "correctAnswerIndex": 1,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 328,
@@ -3937,7 +4264,8 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 329,
@@ -3949,7 +4277,8 @@
       "answer4": "Regierende Bürgermeisterin/Regierender Bürgermeister",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 330,
@@ -3961,7 +4290,8 @@
       "answer4": "Justizsenatorin/Justizsenator",
       "correctAnswerIndex": 3,
       "category": "BERLIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 331,
@@ -3973,7 +4303,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "BRANDENBURG",
-      "imageUrl": "image_331.webp"
+      "imageUrl": "image_331.webp",
+      "imageAttribution": null
     },
     {
       "id": 332,
@@ -3985,7 +4316,8 @@
       "answer4": "Amberg-Sulzbach",
       "correctAnswerIndex": 1,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 333,
@@ -3997,7 +4329,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 334,
@@ -4009,7 +4342,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 335,
@@ -4021,7 +4355,8 @@
       "answer4": "schwarz-gelb",
       "correctAnswerIndex": 2,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 336,
@@ -4033,7 +4368,8 @@
       "answer4": "bei der Verbraucherzentrale",
       "correctAnswerIndex": 3,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 337,
@@ -4045,7 +4381,8 @@
       "answer4": "Frankfurt/Oder.",
       "correctAnswerIndex": 1,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 338,
@@ -4057,7 +4394,8 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 339,
@@ -4069,7 +4407,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 340,
@@ -4081,7 +4420,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "BRANDENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 341,
@@ -4093,7 +4433,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "BREMEN",
-      "imageUrl": "image_341.webp"
+      "imageUrl": "image_341.webp",
+      "imageAttribution": null
     },
     {
       "id": 342,
@@ -4105,7 +4446,8 @@
       "answer4": "Babelsberg",
       "correctAnswerIndex": 2,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 343,
@@ -4117,7 +4459,8 @@
       "answer4": "6",
       "correctAnswerIndex": 2,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 344,
@@ -4129,7 +4472,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 345,
@@ -4141,7 +4485,8 @@
       "answer4": "schwarz-gold",
       "correctAnswerIndex": 2,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 346,
@@ -4153,7 +4498,8 @@
       "answer4": "bei der Verbraucherzentrale",
       "correctAnswerIndex": 2,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 347,
@@ -4165,7 +4511,8 @@
       "answer4": "Erfurt",
       "correctAnswerIndex": 1,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 348,
@@ -4177,7 +4524,8 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 349,
@@ -4189,7 +4537,8 @@
       "answer4": "Regierende Bürgermeisterin/Regierender Bürgermeister",
       "correctAnswerIndex": 3,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 350,
@@ -4201,7 +4550,8 @@
       "answer4": "Innensenatorin/Innensenator",
       "correctAnswerIndex": 1,
       "category": "BREMEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 351,
@@ -4213,7 +4563,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": "image_351.webp"
+      "imageUrl": "image_351.webp",
+      "imageAttribution": null
     },
     {
       "id": 352,
@@ -4225,7 +4576,8 @@
       "answer4": "Mecklenburgische Seenplatte",
       "correctAnswerIndex": 1,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 353,
@@ -4237,7 +4589,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 354,
@@ -4249,7 +4602,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 355,
@@ -4261,7 +4615,8 @@
       "answer4": "schwarz-gelb",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 356,
@@ -4273,7 +4628,8 @@
       "answer4": "bei der Landeszentrale für politische Bildung",
       "correctAnswerIndex": 4,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 357,
@@ -4285,7 +4641,8 @@
       "answer4": "Thüringen",
       "correctAnswerIndex": 1,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 358,
@@ -4297,7 +4654,8 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 359,
@@ -4309,7 +4667,8 @@
       "answer4": "Oberbürgermeisterin/Oberbürgermeister",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 360,
@@ -4321,7 +4680,8 @@
       "answer4": "Innensenatorin/Innensenator",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 361,
@@ -4333,7 +4693,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "HESSEN",
-      "imageUrl": "image_361.webp"
+      "imageUrl": "image_361.webp",
+      "imageAttribution": null
     },
     {
       "id": 362,
@@ -4345,7 +4706,8 @@
       "answer4": "Main-Taunus-Kreis",
       "correctAnswerIndex": 4,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 363,
@@ -4357,7 +4719,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 364,
@@ -4369,7 +4732,8 @@
       "answer4": "20",
       "correctAnswerIndex": 3,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 365,
@@ -4381,7 +4745,8 @@
       "answer4": "grün-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 366,
@@ -4393,7 +4758,8 @@
       "answer4": "bei den Kirchen",
       "correctAnswerIndex": 1,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 367,
@@ -4405,7 +4771,8 @@
       "answer4": "Wiesbaden.",
       "correctAnswerIndex": 4,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 368,
@@ -4417,7 +4784,8 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 369,
@@ -4429,7 +4797,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 370,
@@ -4441,7 +4810,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "HESSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 371,
@@ -4453,7 +4823,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "MECKLENBURG",
-      "imageUrl": "image_371.webp"
+      "imageUrl": "image_371.webp",
+      "imageAttribution": null
     },
     {
       "id": 372,
@@ -4465,7 +4836,8 @@
       "answer4": "Rhein-Sieg-Kreis",
       "correctAnswerIndex": 2,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 373,
@@ -4477,7 +4849,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 374,
@@ -4489,7 +4862,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 375,
@@ -4501,7 +4875,8 @@
       "answer4": "schwarz-gelb",
       "correctAnswerIndex": 2,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 376,
@@ -4513,7 +4888,8 @@
       "answer4": "bei der Verbraucherzentrale",
       "correctAnswerIndex": 1,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 377,
@@ -4525,7 +4901,8 @@
       "answer4": "Wismar.",
       "correctAnswerIndex": 2,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 378,
@@ -4537,7 +4914,8 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 379,
@@ -4549,7 +4927,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 380,
@@ -4561,7 +4940,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "MECKLENBURG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 381,
@@ -4573,7 +4953,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "NIEDERSACHSEN",
-      "imageUrl": "image_381.webp"
+      "imageUrl": "image_381.webp",
+      "imageAttribution": null
     },
     {
       "id": 382,
@@ -4585,7 +4966,8 @@
       "answer4": "Vogtlandkreis",
       "correctAnswerIndex": 1,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 383,
@@ -4597,7 +4979,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 384,
@@ -4609,7 +4992,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 385,
@@ -4621,7 +5005,8 @@
       "answer4": "blau-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 386,
@@ -4633,7 +5018,8 @@
       "answer4": "bei den Kirchen",
       "correctAnswerIndex": 1,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 387,
@@ -4645,7 +5031,8 @@
       "answer4": "Osnabrück.",
       "correctAnswerIndex": 1,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 388,
@@ -4657,7 +5044,8 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 389,
@@ -4669,7 +5057,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 390,
@@ -4681,7 +5070,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 391,
@@ -4693,7 +5083,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": "image_391.webp"
+      "imageUrl": "image_391.webp",
+      "imageAttribution": null
     },
     {
       "id": 392,
@@ -4705,7 +5096,8 @@
       "answer4": "Vogtlandkreis",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 393,
@@ -4717,7 +5109,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 394,
@@ -4729,7 +5122,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 395,
@@ -4741,7 +5135,8 @@
       "answer4": "blau-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 396,
@@ -4753,7 +5148,8 @@
       "answer4": "bei der Landeszentrale für politische Bildung",
       "correctAnswerIndex": 4,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 397,
@@ -4765,7 +5161,8 @@
       "answer4": "Dortmund.",
       "correctAnswerIndex": 3,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 398,
@@ -4777,7 +5174,8 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 399,
@@ -4789,7 +5187,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 400,
@@ -4801,7 +5200,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 401,
@@ -4813,7 +5213,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "RHEINLAND",
-      "imageUrl": "image_401.webp"
+      "imageUrl": "image_401.webp",
+      "imageAttribution": null
     },
     {
       "id": 402,
@@ -4825,7 +5226,8 @@
       "answer4": "Prignitz",
       "correctAnswerIndex": 1,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 403,
@@ -4837,7 +5239,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 404,
@@ -4849,7 +5252,8 @@
       "answer4": "20",
       "correctAnswerIndex": 3,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 405,
@@ -4861,7 +5265,8 @@
       "answer4": "grün-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 406,
@@ -4873,7 +5278,8 @@
       "answer4": "bei der Landeszentrale für politische Bildung",
       "correctAnswerIndex": 4,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 407,
@@ -4885,7 +5291,8 @@
       "answer4": "Koblenz.",
       "correctAnswerIndex": 1,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 408,
@@ -4897,7 +5304,8 @@
       "answer4": "4",
       "correctAnswerIndex": 2,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 409,
@@ -4909,7 +5317,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 410,
@@ -4921,7 +5330,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "RHEINLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 411,
@@ -4933,7 +5343,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "SAARLAND",
-      "imageUrl": "image_411.webp"
+      "imageUrl": "image_411.webp",
+      "imageAttribution": null
     },
     {
       "id": 412,
@@ -4945,7 +5356,8 @@
       "answer4": "Rhein-Sieg-Kreis",
       "correctAnswerIndex": 3,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 413,
@@ -4957,7 +5369,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 414,
@@ -4969,7 +5382,8 @@
       "answer4": "20",
       "correctAnswerIndex": 3,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 415,
@@ -4981,7 +5395,8 @@
       "answer4": "grün-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 416,
@@ -4993,7 +5408,8 @@
       "answer4": "beim Ordnungsamt der Gemeinde",
       "correctAnswerIndex": 2,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 417,
@@ -5005,7 +5421,8 @@
       "answer4": "Völklingen.",
       "correctAnswerIndex": 3,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 418,
@@ -5017,7 +5434,8 @@
       "answer4": "4",
       "correctAnswerIndex": 2,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 419,
@@ -5029,7 +5447,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 420,
@@ -5041,7 +5460,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "SAARLAND",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 421,
@@ -5053,7 +5473,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "SACHSEN",
-      "imageUrl": "image_421.webp"
+      "imageUrl": "image_421.webp",
+      "imageAttribution": null
     },
     {
       "id": 422,
@@ -5065,7 +5486,8 @@
       "answer4": "Nordfriesland",
       "correctAnswerIndex": 1,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 423,
@@ -5077,7 +5499,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 424,
@@ -5089,7 +5512,8 @@
       "answer4": "20",
       "correctAnswerIndex": 3,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 425,
@@ -5101,7 +5525,8 @@
       "answer4": "schwarz-gelb",
       "correctAnswerIndex": 2,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 426,
@@ -5113,7 +5538,8 @@
       "answer4": "bei der Verbraucherzentrale",
       "correctAnswerIndex": 1,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 427,
@@ -5125,7 +5551,8 @@
       "answer4": "Zwickau.",
       "correctAnswerIndex": 2,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 428,
@@ -5137,7 +5564,8 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 429,
@@ -5149,7 +5577,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 430,
@@ -5161,7 +5590,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "SACHSEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 431,
@@ -5173,7 +5603,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "SACHSENANHALT",
-      "imageUrl": "image_431.webp"
+      "imageUrl": "image_431.webp",
+      "imageAttribution": null
     },
     {
       "id": 432,
@@ -5185,7 +5616,8 @@
       "answer4": "Börde",
       "correctAnswerIndex": 4,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 433,
@@ -5197,7 +5629,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 434,
@@ -5209,7 +5642,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 435,
@@ -5221,7 +5655,8 @@
       "answer4": "weiß-rot",
       "correctAnswerIndex": 2,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 436,
@@ -5233,7 +5668,8 @@
       "answer4": "bei der Verbraucherzentrale",
       "correctAnswerIndex": 2,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 437,
@@ -5245,7 +5681,8 @@
       "answer4": "Wittenberg.",
       "correctAnswerIndex": 3,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 438,
@@ -5257,7 +5694,8 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 439,
@@ -5269,7 +5707,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 440,
@@ -5281,7 +5720,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "SACHSENANHALT",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 441,
@@ -5293,7 +5733,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "SCHLESWIG",
-      "imageUrl": "image_441.webp"
+      "imageUrl": "image_441.webp",
+      "imageAttribution": null
     },
     {
       "id": 442,
@@ -5305,7 +5746,8 @@
       "answer4": "Rhein-Sieg-Kreis",
       "correctAnswerIndex": 3,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 443,
@@ -5317,7 +5759,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 444,
@@ -5329,7 +5772,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 445,
@@ -5341,7 +5785,8 @@
       "answer4": "grün-weiß-rot",
       "correctAnswerIndex": 2,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 446,
@@ -5353,7 +5798,8 @@
       "answer4": "bei den Kirchen",
       "correctAnswerIndex": 3,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 447,
@@ -5365,7 +5811,8 @@
       "answer4": "Kiel.",
       "correctAnswerIndex": 4,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 448,
@@ -5377,7 +5824,8 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 449,
@@ -5389,7 +5837,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 450,
@@ -5401,7 +5850,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "SCHLESWIG",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 451,
@@ -5413,7 +5863,8 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": "image_451.webp"
+      "imageUrl": "image_451.webp",
+      "imageAttribution": null
     },
     {
       "id": 452,
@@ -5425,7 +5876,8 @@
       "answer4": "Wartburgkreis",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 453,
@@ -5437,7 +5889,8 @@
       "answer4": "6",
       "correctAnswerIndex": 3,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 454,
@@ -5449,7 +5902,8 @@
       "answer4": "20",
       "correctAnswerIndex": 2,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 455,
@@ -5461,7 +5915,8 @@
       "answer4": "schwarz-gold",
       "correctAnswerIndex": 2,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 456,
@@ -5473,7 +5928,8 @@
       "answer4": "beim Ordnungsamt der Gemeinde",
       "correctAnswerIndex": 3,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 457,
@@ -5485,7 +5941,8 @@
       "answer4": "Jena.",
       "correctAnswerIndex": 2,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 458,
@@ -5497,7 +5954,8 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 459,
@@ -5509,7 +5967,8 @@
       "answer4": "Ministerpräsidentin/Ministerpräsident",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     },
     {
       "id": 460,
@@ -5521,8 +5980,8 @@
       "answer4": "Innenministerin/Innenminister",
       "correctAnswerIndex": 2,
       "category": "THURINGEN",
-      "imageUrl": null
+      "imageUrl": null,
+      "imageAttribution": null
     }
   ]
-
 }

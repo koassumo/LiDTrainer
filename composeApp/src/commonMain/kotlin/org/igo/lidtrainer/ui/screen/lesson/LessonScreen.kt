@@ -333,16 +333,7 @@ fun LessonScreen(
                         )
                     }
                 }
-                // Картинка вопроса (если есть)
-                if (currentNote.imageUrl != null) {
-                    QuestionImage(
-                        imageKey = currentNote.imageUrl,
-                        modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
-                    )
-                    Spacer(Modifier.height(Dimens.SpaceMedium))
-                } else {
-                    Spacer(Modifier.height(Dimens.SpaceSmall))
-                }
+                Spacer(Modifier.height(Dimens.SpaceSmall))
 
                 // Текст вопроса на немецком
                 Text(
@@ -358,6 +349,16 @@ fun LessonScreen(
                         text = currentNote.questionTextNative,
                         style = MaterialTheme.typography.bodyMedium.copy(fontSize = Dimens.QuizTranslationTextSize),
                         color = MaterialTheme.colorScheme.translationText,
+                        modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
+                    )
+                }
+
+                // Картинка вопроса (если есть)
+                if (currentNote.imageUrl != null) {
+                    Spacer(Modifier.height(Dimens.SpaceMedium))
+                    QuestionImage(
+                        imageKey = currentNote.imageUrl,
+                        imageAttribution = currentNote.imageAttribution,
                         modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
                     )
                 }

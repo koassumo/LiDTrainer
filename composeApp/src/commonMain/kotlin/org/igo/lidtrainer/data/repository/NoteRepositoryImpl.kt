@@ -99,6 +99,7 @@ class NoteRepositoryImpl(
                         correctAnswerIndex = note.correctAnswerIndex.toLong(),
                         category = note.category,
                         imageUrl = note.imageUrl,
+                        imageAttribution = note.imageAttribution,
                         userAnswerIndex = note.userAnswerIndex?.toLong(),
                         isAnsweredCorrectly = note.isAnsweredCorrectly?.let { if (it) 1L else 0L },
                         lastAnsweredAt = note.lastAnsweredAt,

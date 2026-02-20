@@ -23,6 +23,7 @@ data class Note(
     val correctAnswerIndex: Int,
     val category: String,
     val imageUrl: String?,
+    val imageAttribution: String?,
 
     // User progress
     val userAnswerIndex: Int?,

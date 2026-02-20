@@ -13,7 +13,8 @@ data class JNote(
     val answer4: String,
     val correctAnswerIndex: Int,
     val category: String,
-    val imageUrl: String? = null
+    val imageUrl: String? = null,
+    val imageAttribution: String? = null
 )
 
 @Serializable

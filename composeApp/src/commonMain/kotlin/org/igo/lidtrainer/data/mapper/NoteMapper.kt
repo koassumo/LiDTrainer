@@ -17,7 +17,8 @@ fun JNote.mapToPreNote(language: String): PreNote {
         answer4 = this.answer4,
         correctAnswerIndex = this.correctAnswerIndex,
         category = this.category,
-        imageUrl = this.imageUrl
+        imageUrl = this.imageUrl,
+        imageAttribution = this.imageAttribution
     )
 }
 
@@ -39,6 +40,7 @@ fun mergePreNotes(dePreNote: PreNote, nativePreNote: PreNote?): Note {
         correctAnswerIndex = dePreNote.correctAnswerIndex,
         category = dePreNote.category,
         imageUrl = dePreNote.imageUrl,
+        imageAttribution = dePreNote.imageAttribution,
         userAnswerIndex = null,
         isAnsweredCorrectly = null,
         lastAnsweredAt = null,
@@ -64,6 +66,7 @@ fun NoteEntity.mapToNote(): Note {
         correctAnswerIndex = this.correctAnswerIndex.toInt(),
         category = this.category,
         imageUrl = this.imageUrl,
+        imageAttribution = this.imageAttribution,
         userAnswerIndex = this.userAnswerIndex?.toInt(),
         isAnsweredCorrectly = this.isAnsweredCorrectly?.let { it == 1L },
         lastAnsweredAt = this.lastAnsweredAt,
