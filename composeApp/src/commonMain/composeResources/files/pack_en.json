@@ -253,7 +253,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_021.png"
+      "imageUrl": "image_021.webp"
     },
     {
       "id": 22,
@@ -661,7 +661,7 @@
       "answer4": "The Federal Chancellery in Berlin",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_55.png"
+      "imageUrl": "image_55.webp"
     },
     {
       "id": 56,
@@ -841,7 +841,7 @@
       "answer4": "He/She proposes the Chancellor for election.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": "image_70.png"
+      "imageUrl": "image_70.webp"
     },
     {
       "id": 71,
@@ -2173,7 +2173,7 @@
       "answer4": "He said a prayer at the Tomb of the Unknown Soldier.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": "image_181.png"
+      "imageUrl": "image_181.webp"
     },
     {
       "id": 182,
@@ -2509,7 +2509,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": "image_209.png"
+      "imageUrl": "image_209.webp"
     },
     {
       "id": 210,
@@ -2593,7 +2593,7 @@
       "answer4": "The Imperial Crown",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_216.png"
+      "imageUrl": "image_216.webp"
     },
     {
       "id": 217,
@@ -2713,7 +2713,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_226.png"
+      "imageUrl": "image_226.webp"
     },
     {
       "id": 227,
@@ -2821,7 +2821,7 @@
       "answer4": "Uniform public holidays in the countries of the EU",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": "image_235.png"
+      "imageUrl": "image_235.webp"
     },
     {
       "id": 236,
@@ -3613,7 +3613,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 1,
       "category": "BADEN",
-      "imageUrl": "image_301.png"
+      "imageUrl": "image_301.webp"
     },
     {
       "id": 302,
@@ -3733,7 +3733,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 2,
       "category": "BAYERN",
-      "imageUrl": "image_311.png"
+      "imageUrl": "image_311.webp"
     },
     {
       "id": 312,
@@ -3853,7 +3853,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": "image_321.png"
+      "imageUrl": "image_321.webp"
     },
     {
       "id": 322,
@@ -3973,7 +3973,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "BRANDENBURG",
-      "imageUrl": "image_331.png"
+      "imageUrl": "image_331.webp"
     },
     {
       "id": 332,
@@ -4093,7 +4093,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 3,
       "category": "BREMEN",
-      "imageUrl": "image_341.png"
+      "imageUrl": "image_341.webp"
     },
     {
       "id": 342,
@@ -4213,7 +4213,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": "image_351.png"
+      "imageUrl": "image_351.webp"
     },
     {
       "id": 352,
@@ -4333,7 +4333,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 2,
       "category": "HESSEN",
-      "imageUrl": "image_361.png"
+      "imageUrl": "image_361.webp"
     },
     {
       "id": 362,
@@ -4453,7 +4453,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 3,
       "category": "MECKLENBURG",
-      "imageUrl": "image_371.png"
+      "imageUrl": "image_371.webp"
     },
     {
       "id": 372,
@@ -4573,7 +4573,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 3,
       "category": "NIEDERSACHSEN",
-      "imageUrl": "image_381.png"
+      "imageUrl": "image_381.webp"
     },
     {
       "id": 382,
@@ -4693,7 +4693,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": "image_391.png"
+      "imageUrl": "image_391.webp"
     },
     {
       "id": 392,
@@ -4813,7 +4813,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 1,
       "category": "RHEINLAND",
-      "imageUrl": "image_401.png"
+      "imageUrl": "image_401.webp"
     },
     {
       "id": 402,
@@ -4933,7 +4933,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "SAARLAND",
-      "imageUrl": "image_411.png"
+      "imageUrl": "image_411.webp"
     },
     {
       "id": 412,
@@ -5053,7 +5053,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "SACHSEN",
-      "imageUrl": "image_421.png"
+      "imageUrl": "image_421.webp"
     },
     {
       "id": 422,
@@ -5173,7 +5173,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "SACHSENANHALT",
-      "imageUrl": "image_431.png"
+      "imageUrl": "image_431.webp"
     },
     {
       "id": 432,
@@ -5293,7 +5293,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 3,
       "category": "SCHLESWIG",
-      "imageUrl": "image_441.png"
+      "imageUrl": "image_441.webp"
     },
     {
       "id": 442,
@@ -5413,7 +5413,7 @@
       "answer4": "Image 4",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": "image_451.png"
+      "imageUrl": "image_451.webp"
     },
     {
       "id": 452,
