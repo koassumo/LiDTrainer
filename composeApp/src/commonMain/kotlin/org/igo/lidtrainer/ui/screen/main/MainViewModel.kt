@@ -8,12 +8,14 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import org.igo.lidtrainer.domain.rep_interface.NoteRepository
 import org.igo.lidtrainer.domain.rep_interface.SettingsRepository
+import org.igo.lidtrainer.domain.usecase.CheckAndUpdatePackUseCase
 import org.igo.lidtrainer.domain.usecase.LoadNotesFromJsonUseCase
 import org.igo.lidtrainer.ui.navigation.Destinations
 import org.igo.lidtrainer.ui.theme.AppLanguageConfig
 
 class MainViewModel(
     private val loadNotesFromJsonUseCase: LoadNotesFromJsonUseCase,
+    private val checkAndUpdatePackUseCase: CheckAndUpdatePackUseCase,
     private val noteRepository: NoteRepository,
     private val settingsRepository: SettingsRepository
 ) : ViewModel() {
@@ -47,6 +49,7 @@ class MainViewModel(
                 !settingsRepository.isBundeslandSelected() -> Destinations.BUNDESLAND_SELECT
                 else -> {
                     loadInitialData()
+                    checkForUpdates()
                     Destinations.DASHBOARD
                 }
             }
@@ -63,6 +66,14 @@ class MainViewModel(
             // Данные уже загружены или ошибка — продолжаем
         }
         updateStatistics()
+    }
+
+    private fun checkForUpdates() {
+        viewModelScope.launch {
+            val languageCode = settingsRepository.languageContentState.value
+            checkAndUpdatePackUseCase(languageCode)
+            updateStatistics()
+        }
     }
 
     private suspend fun updateStatistics() {

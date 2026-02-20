@@ -24,4 +24,7 @@ interface SettingsRepository {
 
     fun hasSeenSwipeHint(): Boolean
     fun setSeenSwipeHint()
+
+    fun getPackVersion(): Int
+    fun setPackVersion(version: Int)
 }

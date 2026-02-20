@@ -1,3 +1,5 @@
+import java.util.Properties
+import com.codingfeline.buildkonfig.compiler.FieldSpec.Type
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -7,6 +9,14 @@ plugins {
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.sqldelight)
+    alias(libs.plugins.buildkonfig)
+}
+
+val localProperties = Properties().apply {
+    val localPropsFile = rootProject.file("local.properties")
+    if (localPropsFile.exists()) {
+        localPropsFile.inputStream().use { load(it) }
+    }
 }
 
 kotlin {
@@ -117,6 +127,18 @@ android {
 
 dependencies {
     debugImplementation(libs.compose.uiTooling)
+}
+
+buildkonfig {
+    packageName = "org.igo.lidtrainer"
+
+    defaultConfigs {
+        buildConfigField(
+            Type.STRING,
+            "FIREBASE_STORAGE_BUCKET",
+            localProperties.getProperty("firebase.storage.bucket", "")
+        )
+    }
 }
 
 sqldelight {

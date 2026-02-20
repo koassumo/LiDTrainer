@@ -1,8 +1,11 @@
 package org.igo.lidtrainer.di
 
 import app.cash.sqldelight.db.SqlDriver
+import org.igo.lidtrainer.BuildKonfig
 import org.igo.lidtrainer.core.time.SystemTimeProvider
 import org.igo.lidtrainer.core.time.TimeProvider
+import org.igo.lidtrainer.data.remote.FirebaseStorageApi
+import org.igo.lidtrainer.data.remote.buildHttpClient
 import org.igo.lidtrainer.data.repository.NoteRepositoryImpl
 import org.igo.lidtrainer.data.repository.SettingsRepositoryImpl
 import org.igo.lidtrainer.db.AppDatabase
@@ -14,6 +17,9 @@ import org.koin.dsl.module
 
 val dataModule = module {
     singleOf(::SystemTimeProvider) bind TimeProvider::class
+
+    single { buildHttpClient() }
+    single { FirebaseStorageApi(client = get(), bucketName = BuildKonfig.FIREBASE_STORAGE_BUCKET) }
 
     single<AppDatabase> {
         val driver = get<SqlDriver>()

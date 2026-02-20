@@ -98,6 +98,14 @@ class SettingsRepositoryImpl(
         settings.putBoolean(KEY_SWIPE_HINT_SEEN, true)
     }
 
+    override fun getPackVersion(): Int {
+        return settings.getInt(KEY_PACK_VERSION, 1)
+    }
+
+    override fun setPackVersion(version: Int) {
+        settings.putInt(KEY_PACK_VERSION, version)
+    }
+
     companion object {
         private const val KEY_THEME = "app_theme_key"
         private const val KEY_LANGUAGE = "app_language_key"
@@ -105,5 +113,6 @@ class SettingsRepositoryImpl(
         private const val KEY_BUNDESLAND = "bundesland_key"
         private const val KEY_SHOW_CORRECT_IMMEDIATELY = "show_correct_immediately_key"
         private const val KEY_SWIPE_HINT_SEEN = "swipe_hint_seen_key"
+        private const val KEY_PACK_VERSION = "pack_version_key"
     }
 }
