@@ -66,6 +66,10 @@ object Dimens {
     val DashboardCardSpacing = 8.dp
     val DashboardCardTextSize = 18.sp
 
+    // ==================== Question Image ====================
+    val QuestionImageHeight = 200.dp
+    val QuestionImageCornerRadius = 12.dp
+
     // ==================== Other ====================
     val BorderWidthStandard = 1.dp
 

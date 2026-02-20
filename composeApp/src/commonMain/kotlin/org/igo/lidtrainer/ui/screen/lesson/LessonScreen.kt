@@ -65,6 +65,7 @@ import kotlinx.coroutines.launch
 import org.igo.lidtrainer.domain.model.LessonFilter
 import org.igo.lidtrainer.domain.model.Note
 import org.igo.lidtrainer.ui.common.CommonCard
+import org.igo.lidtrainer.ui.common.QuestionImage
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
 import androidx.compose.foundation.layout.IntrinsicSize
@@ -332,7 +333,16 @@ fun LessonScreen(
                         )
                     }
                 }
-                Spacer(Modifier.height(Dimens.SpaceSmall))
+                // Картинка вопроса (если есть)
+                if (currentNote.imageUrl != null) {
+                    QuestionImage(
+                        imageKey = currentNote.imageUrl,
+                        modifier = Modifier.padding(horizontal = Dimens.ScreenPaddingSides)
+                    )
+                    Spacer(Modifier.height(Dimens.SpaceMedium))
+                } else {
+                    Spacer(Modifier.height(Dimens.SpaceSmall))
+                }
 
                 // Текст вопроса на немецком
                 Text(

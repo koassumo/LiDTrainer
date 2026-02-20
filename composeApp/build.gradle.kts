@@ -58,6 +58,10 @@ kotlin {
             // SQLDelight (coroutines extensions for Flow)
             implementation(libs.sqldelight.coroutines)
 
+            // Coil (image loading)
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor3)
+
             // Ktor Client
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.content.negotiation)
