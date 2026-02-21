@@ -2,7 +2,7 @@
     <string name="app_name">LiD Trainer</string>
 
     <!-- Language Select Screen -->
-    <string name="language_select_title">Willkommen</string>
+    <string name="language_select_title">Übersetzungssprache wählen</string>
     <string name="language_select_prompt">Wählen Sie Ihre Muttersprache</string>
     <string name="language_select_continue">Weiter</string>
 

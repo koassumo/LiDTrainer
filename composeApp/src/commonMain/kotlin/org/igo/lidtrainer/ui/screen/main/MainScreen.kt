@@ -97,6 +97,7 @@ fun MainScreen() {
                 when (currentRoute) {
                     Destinations.LANGUAGE_SELECT -> {
                         LanguageSelectScreen(
+                            selectedLanguage = "",
                             onLanguageSelected = { code ->
                                 viewModel.onLanguageSelected(code)
                             }
@@ -104,10 +105,10 @@ fun MainScreen() {
                     }
                     Destinations.BUNDESLAND_SELECT -> {
                         BundeslandSelectScreen(
+                            selectedBundesland = "",
                             onBundeslandSelected = { code ->
                                 viewModel.onBundeslandSelected(code)
-                            },
-                            onNavigateBack = { viewModel.navigateBack() }
+                            }
                         )
                     }
                     Destinations.DASHBOARD -> {

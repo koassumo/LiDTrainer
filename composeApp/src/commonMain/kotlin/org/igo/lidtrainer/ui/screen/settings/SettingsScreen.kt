@@ -38,6 +38,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import org.igo.lidtrainer.domain.model.Bundesland
 import org.igo.lidtrainer.ui.common.AppBackHandler
+import org.igo.lidtrainer.ui.screen.bundeslandselect.BundeslandSelectScreen
+import org.igo.lidtrainer.ui.screen.languageselect.LanguageSelectScreen
 import org.igo.lidtrainer.ui.common.Dimens
 import org.igo.lidtrainer.ui.common.LocalTopBarState
 import org.igo.lidtrainer.ui.theme.AppLanguageConfig
@@ -169,28 +171,24 @@ fun SettingsScreen(
                 }
 
                 SettingsPage.LanguageContentSelection -> {
-                    SelectionScreen(
-                        options = listOf(
-                            "en" to strings.languageEn,
-                            "ru" to strings.languageRu,
-                            "de" to strings.languageDe
-                        ),
-                        selectedOption = state.selectedLanguageContent,
-                        onOptionSelected = { newCode ->
+                    LanguageSelectScreen(
+                        selectedLanguage = state.selectedLanguageContent,
+                        onLanguageSelected = { newCode ->
                             viewModel.updateLanguageContent(newCode)
                             currentPage = SettingsPage.MainList
-                        }
+                        },
+                        title = ""
                     )
                 }
 
                 SettingsPage.BundeslandSelection -> {
-                    SelectionScreen(
-                        options = Bundesland.entries.map { it.name to it.displayName },
-                        selectedOption = state.selectedBundesland,
-                        onOptionSelected = { newCode ->
+                    BundeslandSelectScreen(
+                        selectedBundesland = state.selectedBundesland,
+                        onBundeslandSelected = { newCode ->
                             viewModel.updateBundesland(newCode)
                             currentPage = SettingsPage.MainList
-                        }
+                        },
+                        title = ""
                     )
                 }
             }
