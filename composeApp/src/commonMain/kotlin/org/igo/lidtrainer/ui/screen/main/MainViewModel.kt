@@ -111,6 +111,7 @@ class MainViewModel(
                 "en" -> AppLanguageConfig.EN
                 "ru" -> AppLanguageConfig.RU
                 "de" -> AppLanguageConfig.DE
+                "es" -> AppLanguageConfig.ES
                 else -> AppLanguageConfig.EN
             }
             settingsRepository.setLanguage(uiLanguage)

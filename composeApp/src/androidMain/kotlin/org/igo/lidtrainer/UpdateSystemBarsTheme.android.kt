@@ -29,6 +29,7 @@ actual fun UpdateAppLanguage(language: AppLanguageConfig, content: @Composable (
         AppLanguageConfig.EN -> Locale.ENGLISH
         AppLanguageConfig.RU -> Locale("ru")
         AppLanguageConfig.DE -> Locale.GERMAN
+        AppLanguageConfig.ES -> Locale("es")
     }
     Locale.setDefault(newLocale)
 

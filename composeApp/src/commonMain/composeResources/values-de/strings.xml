@@ -44,6 +44,7 @@
     <string name="language_en">Englisch</string>
     <string name="language_ru">Russisch</string>
     <string name="language_de">Deutsch</string>
+    <string name="language_es">Spanisch</string>
     <string name="show_correct_immediately">Richtige Antwort sofort anzeigen</string>
 
     <!-- Common -->

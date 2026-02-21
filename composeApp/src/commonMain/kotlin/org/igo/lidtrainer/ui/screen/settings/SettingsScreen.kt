@@ -160,7 +160,8 @@ fun SettingsScreen(
                             AppLanguageConfig.SYSTEM to strings.systemTheme,
                             AppLanguageConfig.EN to strings.languageEn,
                             AppLanguageConfig.RU to strings.languageRu,
-                            AppLanguageConfig.DE to strings.languageDe
+                            AppLanguageConfig.DE to strings.languageDe,
+                            AppLanguageConfig.ES to strings.languageEs
                         ),
                         selectedOption = state.selectedLanguage,
                         onOptionSelected = { newLanguage ->
@@ -239,6 +240,7 @@ private fun SettingsMainList(
                 AppLanguageConfig.EN -> strings.languageEn
                 AppLanguageConfig.RU -> strings.languageRu
                 AppLanguageConfig.DE -> strings.languageDe
+                AppLanguageConfig.ES -> strings.languageEs
             },
             onClick = onLanguageClick
         )

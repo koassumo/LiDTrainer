@@ -47,6 +47,7 @@ interface AppStrings {
     val languageEn: String
     val languageRu: String
     val languageDe: String
+    val languageEs: String
     val showCorrectImmediately: String
 
     // Common

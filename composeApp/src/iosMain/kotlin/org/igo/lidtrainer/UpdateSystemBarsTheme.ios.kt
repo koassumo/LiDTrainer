@@ -19,6 +19,7 @@ actual fun UpdateAppLanguage(language: AppLanguageConfig, content: @Composable (
         AppLanguageConfig.EN -> "en"
         AppLanguageConfig.RU -> "ru"
         AppLanguageConfig.DE -> "de"
+        AppLanguageConfig.ES -> "es"
     }
 
     if (languageCode != null) {

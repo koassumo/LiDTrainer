@@ -4,5 +4,6 @@ enum class AppLanguageConfig {
     SYSTEM,
     EN,
     RU,
-    DE
+    DE,
+    ES
 }

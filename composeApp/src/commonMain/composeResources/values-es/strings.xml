@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">LiD Trainer</string>
+
+    <!-- Language Select Screen -->
+    <string name="language_select_title">Seleccionar idioma de traducción</string>
+    <string name="language_select_prompt">Elija su idioma nativo</string>
+    <string name="language_select_continue">Continuar</string>
+
+    <!-- Bundesland Select Screen -->
+    <string name="bundesland_select_title">Seleccionar estado</string>
+    <string name="bundesland_select_prompt">¿En qué estado vive?</string>
+    <string name="bundesland_section">Estado federal</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_title">Inicio</string>
+    <string name="study_questions">Estudiar preguntas</string>
+    <string name="all_questions">Todas las preguntas</string>
+    <string name="general_questions">Preguntas generales</string>
+    <string name="regional_questions">Preguntas regionales</string>
+    <string name="favorites">Favoritos</string>
+    <string name="practice_test">Examen de práctica</string>
+    <string name="statistics_title">Estadísticas</string>
+    <string name="questions_answered">Preguntas respondidas</string>
+    <string name="correct_answers">Correcto</string>
+    <string name="incorrect_answers">Incorrecto</string>
+    <string name="not_answered">Sin responder</string>
+    <string name="progress_label">Progreso</string>
+
+    <!-- Lesson Screen -->
+    <string name="lesson_title">Estudio</string>
+    <string name="next_question">Siguiente</string>
+    <string name="previous_question">Anterior</string>
+    <string name="show_answer">Mostrar respuesta</string>
+    <string name="question_number">Pregunta %1$d de %2$d</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Ajustes</string>
+    <string name="theme_section">Tema</string>
+    <string name="system_theme">Sistema</string>
+    <string name="light_theme">Claro</string>
+    <string name="dark_theme">Oscuro</string>
+    <string name="language_section">Idioma</string>
+    <string name="language_content_section">Idioma del contenido</string>
+    <string name="language_en">Inglés</string>
+    <string name="language_ru">Ruso</string>
+    <string name="language_de">Alemán</string>
+    <string name="language_es">Español</string>
+    <string name="show_correct_immediately">Mostrar respuesta correcta inmediatamente</string>
+
+    <!-- Common -->
+    <string name="back_button_tooltip">Atrás</string>
+    <string name="loading">Cargando…</string>
+    <string name="ok_button">Aceptar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="error_general">Algo salió mal</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_dialog_title">Salir de la app</string>
+    <string name="exit_dialog_message">¿Está seguro de que desea salir?</string>
+    <string name="exit_dialog_confirm">Salir</string>
+    <string name="exit_dialog_cancel">Cancelar</string>
+</resources>
