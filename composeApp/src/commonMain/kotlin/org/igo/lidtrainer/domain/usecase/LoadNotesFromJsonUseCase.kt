@@ -15,7 +15,12 @@ class LoadNotesFromJsonUseCase(
 
     @OptIn(ExperimentalResourceApi::class)
     suspend operator fun invoke(nativeLanguageCode: String) {
-        if (!noteRepository.isDbEmpty()) return
+        println("PackUpdate: LoadNotes invoke, lang=$nativeLanguageCode")
+        if (!noteRepository.isDbEmpty()) {
+            println("PackUpdate: DB not empty, skipping local load")
+            return
+        }
+        println("PackUpdate: DB empty, loading bundled resources...")
 
         // Load German pack (always required)
         val deJsonString = Res.readBytes("files/pack_de.json").decodeToString()
@@ -37,5 +42,6 @@ class LoadNotesFromJsonUseCase(
         }
 
         noteRepository.insertNotes(notes)
+        println("PackUpdate: Inserted ${notes.size} notes from bundled resources")
     }
 }

@@ -44,6 +44,9 @@ class MainViewModel(
 
     private fun determineInitialRoute() {
         viewModelScope.launch {
+            println("PackUpdate: determineInitialRoute started")
+            println("PackUpdate: isLanguageContentSelected=${settingsRepository.isLanguageContentSelected()}")
+            println("PackUpdate: isBundeslandSelected=${settingsRepository.isBundeslandSelected()}")
             val route = when {
                 !settingsRepository.isLanguageContentSelected() -> Destinations.LANGUAGE_SELECT
                 !settingsRepository.isBundeslandSelected() -> Destinations.BUNDESLAND_SELECT
@@ -61,16 +64,22 @@ class MainViewModel(
     private suspend fun loadInitialData() {
         try {
             val languageCode = settingsRepository.languageContentState.value
+            println("LiDTrainer: Loading notes for language=$languageCode")
             loadNotesFromJsonUseCase(languageCode)
+            println("LiDTrainer: Notes loaded successfully")
         } catch (e: Exception) {
-            // Данные уже загружены или ошибка — продолжаем
+            println("LiDTrainer: Error loading notes — ${e.message}")
+            e.printStackTrace()
         }
         updateStatistics()
     }
 
     private fun checkForUpdates() {
+        println("PackUpdate: checkForUpdates() called")
         viewModelScope.launch {
+            println("PackUpdate: checkForUpdates coroutine started")
             val languageCode = settingsRepository.languageContentState.value
+            println("PackUpdate: calling CheckAndUpdatePackUseCase with lang=$languageCode")
             checkAndUpdatePackUseCase(languageCode)
             updateStatistics()
         }
@@ -116,6 +125,7 @@ class MainViewModel(
         viewModelScope.launch {
             settingsRepository.setBundesland(code)
             loadInitialData()
+            checkForUpdates()
             navigateTo(Destinations.DASHBOARD)
         }
     }

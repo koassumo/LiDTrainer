@@ -17,23 +17,34 @@ class CheckAndUpdatePackUseCase(
 
     suspend operator fun invoke(nativeLanguageCode: String) {
         try {
+            println("PackUpdate: Checking for updates...")
             val versionInfo = firebaseApi.fetchVersionInfo()
             val localVersion = settingsRepository.getPackVersion()
+            println("PackUpdate: Server version=${versionInfo.packVersion}, local version=$localVersion")
 
-            if (versionInfo.packVersion <= localVersion) return
+            if (versionInfo.packVersion <= localVersion) {
+                println("PackUpdate: No update needed, versions match")
+                return
+            }
+
+            println("PackUpdate: New version found, downloading packs...")
 
             // Download German pack
             val deJsonString = firebaseApi.fetchPackJson("pack_de.json")
             val dePack = json.decodeFromString<JPack>(deJsonString)
             val dePreNotes = dePack.jNotes.map { it.mapToPreNote(dePack.language) }
+            println("PackUpdate: Downloaded pack_de.json (${dePreNotes.size} questions)")
 
             // Download native language pack
             val nativePreNotes = if (nativeLanguageCode != "de") {
                 try {
                     val nativeJsonString = firebaseApi.fetchPackJson("pack_$nativeLanguageCode.json")
                     val nativePack = json.decodeFromString<JPack>(nativeJsonString)
-                    nativePack.jNotes.map { it.mapToPreNote(nativePack.language) }
+                    val preNotes = nativePack.jNotes.map { it.mapToPreNote(nativePack.language) }
+                    println("PackUpdate: Downloaded pack_$nativeLanguageCode.json (${preNotes.size} questions)")
+                    preNotes
                 } catch (e: Exception) {
+                    println("PackUpdate: Native pack not available: ${e.message}")
                     null
                 }
             } else null
@@ -45,8 +56,9 @@ class CheckAndUpdatePackUseCase(
 
             noteRepository.insertNotes(notes)
             settingsRepository.setPackVersion(versionInfo.packVersion)
-        } catch (_: Exception) {
-            // Network error — continue with local data
+            println("PackUpdate: Update complete! Saved ${notes.size} questions, version=${versionInfo.packVersion}")
+        } catch (e: Exception) {
+            println("PackUpdate: Error — ${e.message}")
         }
     }
 }
