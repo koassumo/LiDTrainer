@@ -415,3 +415,17 @@ val DarkTranslationToggleOffBackground = Grey700
 // Меняй здесь: текст выключенного тоггла
 val LightTranslationToggleOffText = Grey600
 val DarkTranslationToggleOffText = Grey400
+
+// === Круговая диаграмма (Statistics Pie Chart) ===
+
+// Меняй здесь: сегмент правильных ответов (насыщенный зелёный)
+val LightChartCorrect = Green500
+val DarkChartCorrect = Green400
+
+// Меняй здесь: сегмент неправильных ответов (насыщенный красный)
+val LightChartIncorrect = Red500
+val DarkChartIncorrect = Red400
+
+// Меняй здесь: сегмент без ответа (заметный серый)
+val LightChartNotAnswered = Grey400
+val DarkChartNotAnswered = Grey600

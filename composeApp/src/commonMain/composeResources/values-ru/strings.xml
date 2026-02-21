@@ -19,6 +19,7 @@
     <string name="regional_questions">Региональные вопросы</string>
     <string name="favorites">Избранное</string>
     <string name="practice_test">Пробный тест</string>
+    <string name="statistics_title">Статистика</string>
     <string name="questions_answered">Вопросов отвечено</string>
     <string name="correct_answers">Правильно</string>
     <string name="incorrect_answers">Неправильно</string>

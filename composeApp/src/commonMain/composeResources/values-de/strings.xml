@@ -19,6 +19,7 @@
     <string name="regional_questions">Regionale Fragen</string>
     <string name="favorites">Favoriten</string>
     <string name="practice_test">Probetest</string>
+    <string name="statistics_title">Statistik</string>
     <string name="questions_answered">Fragen beantwortet</string>
     <string name="correct_answers">Richtig</string>
     <string name="incorrect_answers">Falsch</string>

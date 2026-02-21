@@ -33,6 +33,8 @@ import org.igo.lidtrainer.ui.screen.lesson.LessonScreen
 import org.igo.lidtrainer.ui.screen.lesson.LessonViewModel
 import org.igo.lidtrainer.ui.screen.settings.SettingsScreen
 import org.igo.lidtrainer.ui.screen.settings.SettingsViewModel
+import org.igo.lidtrainer.ui.screen.statistics.StatisticsScreen
+import org.igo.lidtrainer.ui.screen.statistics.StatisticsViewModel
 import org.igo.lidtrainer.ui.theme.LocalAppStrings
 import org.koin.compose.viewmodel.koinViewModel
 
@@ -136,12 +138,22 @@ fun MainScreen() {
                             onPracticeTestClick = {
                                 lessonViewModel.setFilter(LessonFilter.PRACTICE_TEST)
                                 viewModel.navigateTo(Destinations.LESSON)
+                            },
+                            onStatisticsClick = {
+                                viewModel.navigateTo(Destinations.STATISTICS)
                             }
                         )
                     }
                     Destinations.LESSON -> {
                         LessonScreen(
                             viewModel = lessonViewModel,
+                            onNavigateBack = { viewModel.navigateBack() }
+                        )
+                    }
+                    Destinations.STATISTICS -> {
+                        val statisticsViewModel = koinViewModel<StatisticsViewModel>()
+                        StatisticsScreen(
+                            viewModel = statisticsViewModel,
                             onNavigateBack = { viewModel.navigateBack() }
                         )
                     }

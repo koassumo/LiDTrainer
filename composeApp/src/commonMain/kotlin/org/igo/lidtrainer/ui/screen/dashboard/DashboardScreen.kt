@@ -42,7 +42,8 @@ fun DashboardScreen(
     onGeneralClick: () -> Unit,
     onRegionalClick: () -> Unit,
     onFavoritesClick: () -> Unit,
-    onPracticeTestClick: () -> Unit
+    onPracticeTestClick: () -> Unit,
+    onStatisticsClick: () -> Unit
 ) {
     val topBar = LocalTopBarState.current
     val strings = LocalAppStrings.current
@@ -82,6 +83,12 @@ fun DashboardScreen(
             text = strings.favorites,
             count = favoritesCount,
             onClick = onFavoritesClick
+        )
+        Spacer(Modifier.height(Dimens.SpaceLarge + Dimens.SpaceMedium))
+        DashboardCard(
+            text = strings.statisticsTitle,
+            count = totalQuestions,
+            onClick = onStatisticsClick
         )
         Spacer(Modifier.height(Dimens.SpaceLarge + Dimens.SpaceMedium))
         DashboardCard(

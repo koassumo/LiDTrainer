@@ -6,4 +6,5 @@ object Destinations {
     const val DASHBOARD = "DASHBOARD"
     const val LESSON = "LESSON"
     const val SETTINGS = "SETTINGS"
+    const val STATISTICS = "STATISTICS"
 }

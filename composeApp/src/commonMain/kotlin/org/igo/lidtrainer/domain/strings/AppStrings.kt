@@ -22,6 +22,7 @@ interface AppStrings {
     val regionalQuestions: String
     val favorites: String
     val practiceTest: String
+    val statisticsTitle: String
     val questionsAnswered: String
     val correctAnswers: String
     val incorrectAnswers: String

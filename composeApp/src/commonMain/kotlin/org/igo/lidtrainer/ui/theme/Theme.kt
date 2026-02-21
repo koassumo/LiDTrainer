@@ -139,6 +139,17 @@ val ColorScheme.correctBadge: Color
 val ColorScheme.incorrectBadge: Color
     get() = if (this == LightColors) LightIncorrectBadge else DarkIncorrectBadge
 
+// === Круговая диаграмма ===
+
+val ColorScheme.chartCorrect: Color
+    get() = if (this == LightColors) LightChartCorrect else DarkChartCorrect
+
+val ColorScheme.chartIncorrect: Color
+    get() = if (this == LightColors) LightChartIncorrect else DarkChartIncorrect
+
+val ColorScheme.chartNotAnswered: Color
+    get() = if (this == LightColors) LightChartNotAnswered else DarkChartNotAnswered
+
 // === Цвет текста перевода ===
 
 val ColorScheme.translationText: Color
