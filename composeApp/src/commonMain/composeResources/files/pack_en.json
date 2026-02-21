@@ -11,9 +11,6 @@
       "answer2": "people pay taxes.",
       "answer3": "people have the right to vote.",
       "answer4": "freedom of speech applies here.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -24,9 +21,6 @@
       "answer2": "religious instruction at school.",
       "answer3": "politics classes at school.",
       "answer4": "language classes at school.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -37,9 +31,6 @@
       "answer2": "The state does not have to abide by the laws.",
       "answer3": "Only Germans must follow the laws.",
       "answer4": "The courts make the laws.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -50,9 +41,6 @@
       "answer2": "Law of the jungle (Faustrecht)",
       "answer3": "Freedom of opinion",
       "answer4": "Vigilante justice",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -63,9 +51,6 @@
       "answer2": "Only persons who have never been in prison are allowed to vote.",
       "answer3": "The voter may not be influenced or forced to vote for a specific candidate and must not suffer any disadvantages because of the vote.",
       "answer4": "All eligible persons must vote.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -76,9 +61,6 @@
       "answer2": "Federal Law (Bundesgesetz)",
       "answer3": "German Law (Deutsches Gesetz)",
       "answer4": "Basic Law (Grundgesetz)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -89,9 +71,6 @@
       "answer2": "entertainment.",
       "answer3": "work.",
       "answer4": "housing.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -102,9 +81,6 @@
       "answer2": "Everyone should have the same amount of money.",
       "answer3": "Everyone may express their opinion.",
       "answer4": "All are equal before the law.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -115,9 +91,6 @@
       "answer2": "human dignity.",
       "answer3": "asylum.",
       "answer4": "freedom of speech.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -128,9 +101,6 @@
       "answer2": "Torture",
       "answer3": " The death penalty",
       "answer4": "Fines",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -141,9 +111,6 @@
       "answer2": "Federal Constitution",
       "answer3": "Code of Law",
       "answer4": "Constitutional Treaty",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -154,9 +121,6 @@
       "answer2": "Yes, but two-thirds of the members of the Bundestag must be in favor.",
       "answer3": "No, because freedom of the press is a fundamental right. It cannot be abolished.",
       "answer4": "No, because only the Bundesrat can abolish freedom of the press.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -167,9 +131,6 @@
       "answer2": "the parliamentary group with the most members.",
       "answer3": "all parties that were able to reach the 5% threshold in the last election.",
       "answer4": "all members of parliament who do not belong to the governing party/parties.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -180,9 +141,6 @@
       "answer2": "can express my opinion on the Internet.",
       "answer3": "may publicly wear Nazi, Hamas, or Islamic State symbols.",
       "answer4": "may only express my opinion as long as I do not contradict the government.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -193,9 +151,6 @@
       "answer2": "Forced labor",
       "answer3": "Free choice of occupation",
       "answer4": "Work abroad",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -206,9 +161,6 @@
       "answer2": "In the case of expressions of opinion about the federal government",
       "answer3": "In discussions about religions",
       "answer4": "In the case of criticism of the state",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -219,9 +171,6 @@
       "answer2": "petitions by citizens.",
       "answer3": "freedom of assembly for residents.",
       "answer4": "unequal treatment of citizens by the state.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -232,9 +181,6 @@
       "answer2": "The right to life",
       "answer3": "Freedom of religion",
       "answer4": "Freedom of speech",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -245,9 +191,6 @@
       "answer2": "You can change your profession.",
       "answer3": "You may decide on a different religion.",
       "answer4": "You may move around in public only lightly dressed.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -258,9 +201,6 @@
       "answer2": "oriented towards the rule of law.",
       "answer3": "law-abiding.",
       "answer4": "unconstitutional.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -271,9 +211,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": "image_021.webp",
       "imageAttribution": null
     },
     {
@@ -284,9 +221,6 @@
       "answer2": "Dictatorship",
       "answer3": "Republic",
       "answer4": "Principality",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -297,9 +231,6 @@
       "answer2": "working voluntarily for a federal state.",
       "answer3": "self-employed with their own company.",
       "answer4": "employed by a company or public authority.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -310,9 +241,6 @@
       "answer2": "15",
       "answer3": "16",
       "answer4": "17",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -323,9 +251,6 @@
       "answer2": "North Rhine-Westphalia",
       "answer3": "Mecklenburg-Western Pomerania",
       "answer4": "Saxony-Anhalt",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -336,9 +261,6 @@
       "answer2": "a democratic and social federal state.",
       "answer3": "a capitalist and social monarchy.",
       "answer4": "a social and socialist federal state.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -349,9 +271,6 @@
       "answer2": "a federal state.",
       "answer3": "a dictatorship.",
       "answer4": "a monarchy.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -362,9 +281,6 @@
       "answer2": "The economy",
       "answer3": "The eligible voters (the people)",
       "answer4": "The administration",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -375,9 +291,6 @@
       "answer2": "Eagle",
       "answer3": "Bear",
       "answer4": "Horse",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -388,9 +301,6 @@
       "answer2": "Press censorship",
       "answer3": "Freedom of speech",
       "answer4": "Different parties",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -401,9 +311,6 @@
       "answer2": "Coalition.",
       "answer3": "Ministry.",
       "answer4": "Parliamentary group (Fraktion).",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -414,9 +321,6 @@
       "answer2": "Executive (Government)",
       "answer3": "Press",
       "answer4": "Judiciary",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -427,9 +331,6 @@
       "answer2": "the religious communities form the state.",
       "answer3": "the state is dependent on the religious communities.",
       "answer4": "the state and religious communities form a unit.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -440,9 +341,6 @@
       "answer2": "A constitutional state",
       "answer3": "A monarchy",
       "answer4": "A welfare state",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -453,9 +351,6 @@
       "answer2": "Social security contributions",
       "answer3": "Donations",
       "answer4": "Club membership fees",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -466,9 +361,6 @@
       "answer2": "Car insurance",
       "answer3": "Building insurance",
       "answer4": "Liability insurance",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -479,9 +371,6 @@
       "answer2": "Prime Minister",
       "answer3": "Senator",
       "answer4": "Minister President (Ministerpräsident)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -492,9 +381,6 @@
       "answer2": "federal state.",
       "answer3": "confederation.",
       "answer4": "central state.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -505,9 +391,6 @@
       "answer2": "Its own currency",
       "answer3": "Its own army",
       "answer4": "Its own government",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -518,9 +401,6 @@
       "answer2": "Unity and Justice and Freedom ... (Einigkeit und Recht und Freiheit)",
       "answer3": "Joy, beautiful spark of gods ... (Freude schöner Götterfunken)",
       "answer4": "Germany united fatherland ... (Deutschland einig Vaterland)",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -531,9 +411,6 @@
       "answer2": "To limit bribery in politics.",
       "answer3": "To prevent political demonstrations.",
       "answer4": "To stimulate economic competition.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -544,9 +421,6 @@
       "answer2": "The parliament",
       "answer3": "The courts",
       "answer4": "The police",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -557,9 +431,6 @@
       "answer2": "If it fights against the constitution",
       "answer3": "If it expresses criticism of the head of state",
       "answer4": "If its program suggests a new direction",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -570,9 +441,6 @@
       "answer2": "The Federal President",
       "answer3": "Members of the State Parliament (Landtag)",
       "answer4": "Members of the Bundestag",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -583,9 +451,6 @@
       "answer2": "Accident insurance",
       "answer3": "Household insurance",
       "answer4": "Liability and fire insurance",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -596,9 +461,6 @@
       "answer2": "It sells food and clothing.",
       "answer3": "It supplies all residents with newspapers free of charge.",
       "answer4": "It produces cars and buses.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -609,9 +471,6 @@
       "answer2": "It pays child benefits.",
       "answer3": "It supports museums.",
       "answer4": "It promotes athletes.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -622,9 +481,6 @@
       "answer2": "The Federal President",
       "answer3": "The Citizens' Assembly",
       "answer4": "The Government",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -635,9 +491,6 @@
       "answer2": "The federal states",
       "answer3": "The Ministry of Family Affairs",
       "answer4": "The universities",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -648,9 +501,6 @@
       "answer2": "social market economy.",
       "answer3": "guided central economy.",
       "answer4": "planned economy.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -661,9 +511,6 @@
       "answer2": "citizens are allowed to demonstrate peacefully.",
       "answer3": "people are arrested by private police without reason.",
       "answer4": "someone commits a crime and is arrested for it.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -674,9 +521,6 @@
       "answer2": "Bundestag.",
       "answer3": "Prussian King.",
       "answer4": "Federal Constitutional Court.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -687,9 +531,6 @@
       "answer2": "There are only right-wing parties.",
       "answer3": "The citizens decide on laws.",
       "answer4": "The state must adhere to the laws.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -700,9 +541,6 @@
       "answer2": "Judiciary",
       "answer3": "Executive",
       "answer4": "Directive",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -713,9 +551,6 @@
       "answer2": "The Federal Constitutional Court in Karlsruhe",
       "answer3": "The Bundesrat building in Berlin",
       "answer4": "The Federal Chancellery in Berlin",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": "image_55.webp",
       "imageAttribution": null
     },
     {
@@ -726,9 +561,6 @@
       "answer2": "Public order office (Ordnungsamt)",
       "answer3": "Tax office (Finanzamt)",
       "answer4": "Foreign Office (Auswärtiges Amt)",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -739,9 +571,6 @@
       "answer2": "The Prime Minister of the largest federal state",
       "answer3": "A former Federal Chancellor",
       "answer4": "A member of the strongest parliamentary group",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -752,9 +581,6 @@
       "answer2": "The Federal President",
       "answer3": "The President of the Bundesrat",
       "answer4": "The President of the Bundestag",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -765,9 +591,6 @@
       "answer2": "About 700 years ago",
       "answer3": "About 1150 years ago",
       "answer4": "About 1700 years ago",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -778,9 +601,6 @@
       "answer2": "legislative branch.",
       "answer3": "directive branch.",
       "answer4": "judiciary branch.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -791,9 +611,6 @@
       "answer2": "The Federal Constitutional Court is above the constitution.",
       "answer3": "Interest groups exercise sovereignty together with the government.",
       "answer4": "State authority emanates from the people.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -804,9 +621,6 @@
       "answer2": "state election (Landtagswahl).",
       "answer3": "European election (Europawahl).",
       "answer4": "federal election (Bundestagswahl).",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -817,9 +631,6 @@
       "answer2": "The courts",
       "answer3": "The tax office",
       "answer4": "The ministries",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -830,9 +641,6 @@
       "answer2": "an eastern state and a western state.",
       "answer3": "16 cantons.",
       "answer4": "federal government, states, and municipalities.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -843,9 +651,6 @@
       "answer2": "control the federal government.",
       "answer3": "elect the Federal Chancellor.",
       "answer4": "form the federal cabinet.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -856,9 +661,6 @@
       "answer2": "Hamburg and Essen",
       "answer3": "Nuremberg and Stuttgart",
       "answer4": "Worms and Speyer",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -869,9 +671,6 @@
       "answer2": "Foreign policy",
       "answer3": "Economic policy",
       "answer4": "School policy",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -882,9 +681,6 @@
       "answer2": "Because all students must have a school leaving certificate.",
       "answer3": "Because there are different schools in the federal states.",
       "answer4": "Because it is its task according to the Basic Law.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -895,9 +691,6 @@
       "answer2": "District administrators",
       "answer3": "Municipalities (Gemeinden)",
       "answer4": "District offices",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -908,9 +701,6 @@
       "answer2": "He/She controls the ruling party.",
       "answer3": "He/She selects the ministers.",
       "answer4": "He/She proposes the Chancellor for election.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": "image_70.webp",
       "imageAttribution": null
     },
     {
@@ -921,9 +711,6 @@
       "answer2": "at Meseberg Palace, the guest house of the federal government, to receive state guests.",
       "answer3": "at Bellevue Palace, the official residence of the Federal President, to receive state guests.",
       "answer4": "in Berlin, because the Federal Chancellery and the Bundestag are located there.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -934,9 +721,6 @@
       "answer2": "Angela Merkel",
       "answer3": "Ursula von der Leyen",
       "answer4": "Friedrich Merz",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -947,9 +731,6 @@
       "answer2": "The Left (Die Linke) and Alliance 90/The Greens (Bündnis 90/Die Grünen).",
       "answer3": "Alliance 90/The Greens and SPD.",
       "answer4": "The Left and CDU/CSU.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -960,9 +741,6 @@
       "answer2": "People's Chamber (Volkskammer)",
       "answer3": "Bundestag",
       "answer4": "Federal Court of Justice",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -973,9 +751,6 @@
       "answer2": "Bärbel Bas",
       "answer3": "Bodo Ramelow",
       "answer4": "Joachim Gauck",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -986,9 +761,6 @@
       "answer2": "Club of German Entrepreneurs",
       "answer3": "Christian German Environmental Protection",
       "answer4": "Christian Democratic Union",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -999,9 +771,6 @@
       "answer2": "A German port",
       "answer3": "A German citizens' initiative",
       "answer4": "The German army",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1012,9 +781,6 @@
       "answer2": "Social Political Party of Germany",
       "answer3": "Social Democratic Party of Germany",
       "answer4": "Social Just Party of Germany",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1025,9 +791,6 @@
       "answer2": "Free Germany Party",
       "answer3": "Leading Democratic Party",
       "answer4": "Free Democratic Party",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1038,9 +801,6 @@
       "answer2": "District Court",
       "answer3": "Federal Constitutional Court",
       "answer4": "Administrative Court",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1051,9 +811,6 @@
       "answer2": "The Federal Assembly",
       "answer3": "The people",
       "answer4": "The Bundestag",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1064,9 +821,6 @@
       "answer2": "The Federal President",
       "answer3": "The President of the Bundesrat",
       "answer4": "The Federal Chancellor",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1077,9 +831,6 @@
       "answer2": "The Federal Assembly",
       "answer3": "The Bundestag",
       "answer4": "The Federal Government",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1090,9 +841,6 @@
       "answer2": "drafts the laws.",
       "answer3": "represents the country.",
       "answer4": "monitors compliance with the laws.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1103,9 +851,6 @@
       "answer2": "The ministers of the federal government",
       "answer3": "The government representatives of the federal states",
       "answer4": "The party members",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1116,9 +861,6 @@
       "answer2": "The Bundesrat",
       "answer3": "The Federal Parliament",
       "answer4": "The Federal Constitutional Court",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1129,9 +871,6 @@
       "answer2": "The Federal President",
       "answer3": "The President of the Bundesrat",
       "answer4": "The President of the Bundestag",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1142,9 +881,6 @@
       "answer2": "decides who becomes a federal minister.",
       "answer3": "determines who sits in the Bundesrat.",
       "answer4": "proposes the heads of government of the states.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1155,9 +891,6 @@
       "answer2": "Council of Elders",
       "answer3": "Parliamentary group (Fraktion)",
       "answer4": "Opposition",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1168,9 +901,6 @@
       "answer2": "the Federal Assembly.",
       "answer3": "the Bundestag.",
       "answer4": "the Federal Government.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1181,9 +911,6 @@
       "answer2": "easier if new parties enter the Bundesrat as a result.",
       "answer3": "more difficult if the majority in the Bundesrat changes as a result.",
       "answer4": "easier if it is a wealthy federal state.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1194,9 +921,6 @@
       "answer2": "Christian South German Union",
       "answer3": "Christian Social Entrepreneurs' Association",
       "answer4": "Christian Social Union",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1207,9 +931,6 @@
       "answer2": "more direct candidates of the party enter parliament.",
       "answer3": "greater the risk of having to form a coalition.",
       "answer4": "more seats the party receives in parliament.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1220,9 +941,6 @@
       "answer2": "18",
       "answer3": "21",
       "answer4": "23",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1233,9 +951,6 @@
       "answer2": "Compulsory schooling",
       "answer3": "Confidentiality obligation",
       "answer4": "Religious obligation",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1246,9 +961,6 @@
       "answer2": "Up to 100 hours of community service",
       "answer3": "Not at all, Holocaust denial is allowed",
       "answer4": "With imprisonment of up to five years or a fine",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1259,9 +971,6 @@
       "answer2": "Social assistance",
       "answer3": "Child benefit",
       "answer4": "Housing benefit",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1272,9 +981,6 @@
       "answer2": "the government can lose its majority.",
       "answer3": "the Federal President must give his/her consent beforehand.",
       "answer4": "the voters of these members of parliament are allowed to vote again.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1285,9 +991,6 @@
       "answer2": "Only employees",
       "answer3": "All nationals",
       "answer4": "Only employers",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1298,9 +1001,6 @@
       "answer2": "Statutory pension insurance",
       "answer3": "Unemployment insurance",
       "answer4": "Long-term care insurance",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1311,9 +1011,6 @@
       "answer2": "employees.",
       "answer3": "pensioners.",
       "answer4": "employers.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1324,9 +1021,6 @@
       "answer2": "Federal Eagle",
       "answer3": "Patriotic Order of Merit",
       "answer4": "Honorary title 'Hero of the German Democratic Republic'",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1337,9 +1031,6 @@
       "answer2": "of SPD, FDP, and Alliance 90/The Greens in a government",
       "answer3": "of CSU, The LEFT, and Alliance 90/The Greens in a government",
       "answer4": "of the Bundestag factions of CDU and SPD",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1350,9 +1041,6 @@
       "answer2": "The woman often arrived late for work.",
       "answer3": "The woman does private things during working hours.",
       "answer4": "The woman is having a child and her boss knows this.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1363,9 +1051,6 @@
       "answer2": "They write the election notifications before the election.",
       "answer3": "They pass interim results on to the media.",
       "answer4": "They count the votes after the end of the election.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1376,9 +1061,6 @@
       "answer2": "They write cards and letters stating the polling station.",
       "answer3": "They pass interim results on to journalists.",
       "answer4": "They count the votes after the end of the election.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1389,9 +1071,6 @@
       "answer2": "4 years",
       "answer3": "6 years",
       "answer4": "8 years",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1402,9 +1081,6 @@
       "answer2": "is a citizen of the Federal Republic of Germany and is at least 18 years old.",
       "answer3": "has lived in the Federal Republic of Germany for at least 3 years.",
       "answer4": "is a citizen of the Federal Republic of Germany and is at least 21 years old.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1415,9 +1091,6 @@
       "answer2": "Every four years",
       "answer3": "Every five years",
       "answer4": "Every six years",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1428,9 +1101,6 @@
       "answer2": "3 years",
       "answer3": "4 years",
       "answer4": "5 years",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1441,9 +1111,6 @@
       "answer2": "Hanging an Israeli flag on private property",
       "answer3": "A discussion about Israel's politics",
       "answer4": "Publicly calling for the destruction of Israel",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1454,9 +1121,6 @@
       "answer2": "secret.",
       "answer3": "job-related.",
       "answer4": "gender-dependent.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1467,9 +1131,6 @@
       "answer2": "the most men have voted for by a majority.",
       "answer3": "received the most votes from workers.",
       "answer4": "received the most first votes for its chancellor candidate.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1480,9 +1141,6 @@
       "answer2": "a right.",
       "answer3": "a compulsion.",
       "answer4": "a burden.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1493,9 +1151,6 @@
       "answer2": "One must go vote.",
       "answer3": "One can vote.",
       "answer4": "One must go to count the votes.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1506,9 +1161,6 @@
       "answer2": "active election procedure.",
       "answer3": "active election campaigning.",
       "answer4": "active right to vote.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1519,9 +1171,6 @@
       "answer2": "4%",
       "answer3": "5%",
       "answer4": "6%",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1532,9 +1181,6 @@
       "answer2": "Only Israelis",
       "answer3": "Only religious people",
       "answer4": "All people",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1545,9 +1191,6 @@
       "answer2": "If I want to go vote, my employer must give me time off.",
       "answer3": "Every person can decide without coercion whether they want to vote and who they want to vote for.",
       "answer4": "I can decide freely where I want to go vote.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1558,9 +1201,6 @@
       "answer2": "three-class franchise.",
       "answer3": "majority and proportional representation system.",
       "answer4": "universal male suffrage.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1571,9 +1211,6 @@
       "answer2": "admission limit.",
       "answer3": "base value.",
       "answer4": "guideline.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1584,9 +1221,6 @@
       "answer2": "open, secure, free.",
       "answer3": "closed, equal, secure.",
       "answer4": "secure, open, voluntary.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1597,9 +1231,6 @@
       "answer2": "Attendance check in the Bundestag for votes",
       "answer3": "Minimum share of voter votes to get into parliament",
       "answer4": "Attendance check in the Bundesrat for votes",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1610,9 +1241,6 @@
       "answer2": "the parliaments of the states.",
       "answer3": "the parliament for Germany.",
       "answer4": "the Federal President.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1623,9 +1251,6 @@
       "answer2": "to enable the change of government according to the will of the majority of voters.",
       "answer3": "to maintain existing laws in the country.",
       "answer4": "to give the poor more power.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1636,9 +1261,6 @@
       "answer2": "An election permit from the Federal President",
       "answer3": "A notification from the Federal Assembly",
       "answer4": "A notification from the parish office",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1649,9 +1271,6 @@
       "answer2": "citizens can lose their orientation with many small parties.",
       "answer3": "many small parties make forming a government difficult.",
       "answer4": "small parties do not have enough money to pay politicians.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1662,9 +1281,6 @@
       "answer2": "chancellors.",
       "answer3": "ambassadors.",
       "answer4": "prime ministers.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1675,9 +1291,6 @@
       "answer2": "the Prime Minister of a federal state.",
       "answer3": "the Bundestag.",
       "answer4": "the Federal President.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1688,9 +1301,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1701,9 +1311,6 @@
       "answer2": "the boss of a bank.",
       "answer3": "the head of a municipality.",
       "answer4": "the chairperson of a party.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1714,9 +1321,6 @@
       "answer2": "They work voluntarily and unpaid in clubs and associations.",
       "answer3": "They work in the federal government.",
       "answer4": "They work in a hospital and earn money doing it.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1727,9 +1331,6 @@
       "answer2": "You can cast your vote by postal vote.",
       "answer3": "You can cast your vote by telephone on election day.",
       "answer4": "Children from the age of 14 are allowed to vote.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1740,9 +1341,6 @@
       "answer2": "I become a member of a sports club and practice cycling.",
       "answer3": "I turn to the tax office because as a taxpayer I have a right to the bus line.",
       "answer4": "I write a letter to the forestry office of the municipality.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1753,9 +1351,6 @@
       "answer2": "Small companies",
       "answer3": "Self-employed people",
       "answer4": "Employees",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1766,9 +1361,6 @@
       "answer2": "unjustified dismissal by your boss.",
       "answer3": "problems with neighbors.",
       "answer4": "difficulties after a traffic accident.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1779,9 +1371,6 @@
       "answer2": "The criminal court",
       "answer3": "The labor court",
       "answer4": "The district court",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1792,9 +1381,6 @@
       "answer2": "Conduct a dunning procedure against the employer",
       "answer3": "File a lawsuit against unfair dismissal (Kündigungsschutzklage)",
       "answer4": "Report the employer to the police",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1805,9 +1391,6 @@
       "answer2": "has committed a crime and is indicted.",
       "answer3": "holds a different opinion than the government.",
       "answer4": "has parked their car incorrectly and it is towed.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1818,9 +1401,6 @@
       "answer2": "gives citizens legal advice.",
       "answer3": "issues documents.",
       "answer4": "defends the accused.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1831,9 +1411,6 @@
       "answer2": "A judge",
       "answer3": "A lay judge",
       "answer4": "A public prosecutor",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1844,9 +1421,6 @@
       "answer2": "works at a court and passes judgments.",
       "answer3": "changes laws.",
       "answer4": "looks after young people in court.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1857,9 +1431,6 @@
       "answer2": "executive.",
       "answer3": "operative.",
       "answer4": "legislative.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1870,9 +1441,6 @@
       "answer2": "judicial power.",
       "answer3": "planning power.",
       "answer4": "legislative power.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1883,9 +1451,6 @@
       "answer2": "executive",
       "answer3": "press",
       "answer4": "legislative",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1896,9 +1461,6 @@
       "answer2": "Procedure",
       "answer3": "Protocol",
       "answer4": "Trial (Prozess)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1909,9 +1471,6 @@
       "answer2": "To administer justice",
       "answer3": "To create plans",
       "answer4": "To issue laws",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1922,9 +1481,6 @@
       "answer2": "To wiretap citizens",
       "answer3": "To pass laws",
       "answer4": "To monitor compliance with laws",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1935,9 +1491,6 @@
       "answer2": "Criticizing the Israeli government",
       "answer3": "Denying the Holocaust",
       "answer4": "Playing soccer against Jews",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1948,9 +1501,6 @@
       "answer2": "an honorary judge.",
       "answer3": "a member of a local council.",
       "answer4": "a person who has studied law.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1961,9 +1511,6 @@
       "answer2": "The GDR (East Germany)",
       "answer3": "The Federal Republic of Germany",
       "answer4": "The USA",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1974,9 +1521,6 @@
       "answer2": "1932 to 1950",
       "answer3": "1933 to 1945",
       "answer4": "1945 to 1989",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1987,9 +1531,6 @@
       "answer2": "Start of the Berlin Wall construction",
       "answer3": "Election of Konrad Adenauer as Federal Chancellor",
       "answer4": "End of World War II in Europe",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2000,9 +1541,6 @@
       "answer2": "1945",
       "answer3": "1949",
       "answer4": "1961",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2013,9 +1551,6 @@
       "answer2": "1921 to 1934",
       "answer3": "1933 to 1945",
       "answer4": "1949 to 1963",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2026,9 +1561,6 @@
       "answer2": "1927",
       "answer3": "1933",
       "answer4": "1936",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2039,9 +1571,6 @@
       "answer2": "a democratic state.",
       "answer3": "a monarchy.",
       "answer4": "a principality.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2052,9 +1581,6 @@
       "answer2": "democracy.",
       "answer3": "monarchy.",
       "answer4": "soviet republic.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2065,9 +1591,6 @@
       "answer2": "Press censorship",
       "answer3": "Arbitrary arrests",
       "answer4": "Persecution of Jews",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2078,9 +1601,6 @@
       "answer2": "The Second World War",
       "answer3": "The Vietnam War",
       "answer4": "The Gulf War",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2091,9 +1611,6 @@
       "answer2": "freedom of speech",
       "answer3": "general religious freedom",
       "answer4": "the development of democracy",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2104,9 +1621,6 @@
       "answer2": "the construction of the Reichstag building.",
       "answer3": "the building of the Wehrmacht.",
       "answer4": "the assassination attempt on Hitler on July 20, 1944.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2117,9 +1631,6 @@
       "answer2": "1930",
       "answer3": "1938",
       "answer4": "1945",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2130,9 +1641,6 @@
       "answer2": "The National Socialists lose an election and dissolve the Reichstag.",
       "answer3": "Jewish shops and synagogues are destroyed by National Socialists and their followers.",
       "answer4": "Hitler becomes Reich President and has all parties banned.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2143,9 +1651,6 @@
       "answer2": "Kurt Georg Kiesinger",
       "answer3": "Helmut Schmidt",
       "answer4": "Willy Brandt",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2156,9 +1661,6 @@
       "answer2": "At the demonstrations in 1968 in the Federal Republic of Germany",
       "answer3": "At the anti-nuclear power demonstrations in 1985 in the Federal Republic of Germany",
       "answer4": "At the Monday demonstrations in 1989 in the GDR",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2169,9 +1671,6 @@
       "answer2": "France, Soviet Union, Italy, Japan",
       "answer3": "USA, Soviet Union, Spain, Portugal",
       "answer4": "USA, Soviet Union, Great Britain, France",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2182,9 +1681,6 @@
       "answer2": "Soviet Union",
       "answer3": "France",
       "answer4": "Japan",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2195,9 +1691,6 @@
       "answer2": "1945",
       "answer3": "1949",
       "answer4": "1951",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2208,9 +1701,6 @@
       "answer2": "The right to free development of personality",
       "answer3": "Freedom of the press",
       "answer4": "The protection of human dignity",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2221,9 +1711,6 @@
       "answer2": "is planned and controlled by the state; supply and demand are not considered.",
       "answer3": "is based on demand abroad.",
       "answer4": "is based on supply and demand, but the state provides for social balance.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2234,9 +1721,6 @@
       "answer2": "French occupation zone",
       "answer3": "British occupation zone",
       "answer4": "Soviet occupation zone",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2247,9 +1731,6 @@
       "answer2": "the United Nations (UN).",
       "answer3": "the European Union (EU).",
       "answer4": "the Warsaw Pact.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2260,9 +1741,6 @@
       "answer2": "1949",
       "answer3": "1953",
       "answer4": "1956",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2273,9 +1751,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2286,9 +1761,6 @@
       "answer2": "1=Soviet Union, 2=Great Britain, 3=USA, 4=France",
       "answer3": "1=Great Britain, 2=Soviet Union, 3=USA, 4=France",
       "answer4": "1=Great Britain, 2=USA, 3=Soviet Union, 4=France",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2299,9 +1771,6 @@
       "answer2": "Berlin",
       "answer3": "Dresden",
       "answer4": "Frankfurt/Oder",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2312,9 +1781,6 @@
       "answer2": "The American soldiers were afraid of attacks during land transport.",
       "answer3": "For Great Britain, supply via the airlift was faster.",
       "answer4": "The Soviet Union interrupted all traffic on land routes.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2325,9 +1791,6 @@
       "answer2": "By the unconditional surrender of Germany",
       "answer3": "With the withdrawal of Germans from occupied territories",
       "answer4": "By a revolution in Germany",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2338,9 +1801,6 @@
       "answer2": "Willy Brandt.",
       "answer3": "Konrad Adenauer.",
       "answer4": "Gerhard Schröder.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2351,9 +1811,6 @@
       "answer2": "He asked Poland and the Polish Jews for forgiveness.",
       "answer3": "He showed his humility before the Warsaw Pact.",
       "answer4": "He said a prayer at the Tomb of the Unknown Soldier.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": "image_181.webp",
       "imageAttribution": null
     },
     {
@@ -2364,9 +1821,6 @@
       "answer2": "Mosque",
       "answer3": "Synagogue",
       "answer4": "Church",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2377,9 +1831,6 @@
       "answer2": "50s",
       "answer3": "70s",
       "answer4": "80s",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2390,9 +1841,6 @@
       "answer2": "A decision of the Zionist Congress",
       "answer3": "A proposal by the Federal Government",
       "answer4": "A proposal by the USSR",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2403,9 +1851,6 @@
       "answer2": "Northern Germany against Southern Germany",
       "answer3": "Nazi Germany against the Allies",
       "answer4": "Europe against the USA",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2416,9 +1861,6 @@
       "answer2": "June 17",
       "answer3": "July 20",
       "answer4": "November 9",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2429,9 +1871,6 @@
       "answer2": "Federal Republic of Germany",
       "answer3": "'Third Reich'",
       "answer4": "GDR (East Germany)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2442,9 +1881,6 @@
       "answer2": "1956",
       "answer3": "1959",
       "answer4": "1961",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2455,9 +1891,6 @@
       "answer2": "1933",
       "answer3": "1961",
       "answer4": "1990",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2468,9 +1901,6 @@
       "answer2": "The German Republic (Die Deutsche Republik)",
       "answer3": "Third German Republic (Dritte Deutsche Republik)",
       "answer4": "German Democratic Republic (Deutsche Demokratische Republik)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2481,9 +1911,6 @@
       "answer2": "1989",
       "answer3": "1992",
       "answer4": "1995",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2494,9 +1921,6 @@
       "answer2": "Bavaria",
       "answer3": "Saarland",
       "answer4": "Hesse",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2507,9 +1931,6 @@
       "answer2": "a separate state.",
       "answer3": "divided by a wall.",
       "answer4": "only accessible by plane.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2520,9 +1941,6 @@
       "answer2": "Nation.",
       "answer3": "Federal States.",
       "answer4": "Cities.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2533,9 +1951,6 @@
       "answer2": "Saxony-Anhalt",
       "answer3": "North Rhine-Westphalia",
       "answer4": "Saarland",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2546,9 +1961,6 @@
       "answer2": "from a liberal market economy to socialism.",
       "answer3": "from a monarchy to social democracy.",
       "answer4": "from a religious state to a communist state.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2559,9 +1971,6 @@
       "answer2": "Hesse",
       "answer3": "Bavaria",
       "answer4": "Bremen",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2572,9 +1981,6 @@
       "answer2": "Lower Saxony",
       "answer3": "Saxony",
       "answer4": "Baden-Württemberg",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2585,9 +1991,6 @@
       "answer2": "the Ministry for State Security.",
       "answer3": "a ruling party.",
       "answer4": "the Ministry for Public Education.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2598,9 +2001,6 @@
       "answer2": "Schleswig-Holstein",
       "answer3": "Mecklenburg-Western Pomerania",
       "answer4": "Saarland",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2611,9 +2011,6 @@
       "answer2": "Mecklenburg-Western Pomerania, Brandenburg, Saxony, Saxony-Anhalt, Thuringia",
       "answer3": "Bavaria, Baden-Württemberg, Rhineland-Palatinate, Thuringia, Saxony",
       "answer4": "Saxony, Thuringia, Hesse, Lower Saxony, Brandenburg",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2624,9 +2021,6 @@
       "answer2": "To the Warsaw Pact",
       "answer3": "To NATO",
       "answer4": "To the non-aligned states",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2637,9 +2031,6 @@
       "answer2": "Planned economy",
       "answer3": "Supply and demand",
       "answer4": "Capitalism",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2650,9 +2041,6 @@
       "answer2": "The current five eastern federal states joined the Federal Republic of Germany.",
       "answer3": "The western federal states joined the GDR.",
       "answer4": "The GDR occupied the Federal Republic of Germany.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2663,9 +2051,6 @@
       "answer2": "to the Warsaw Pact.",
       "answer3": "to OPEC.",
       "answer4": "to the European Defense Community.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2676,9 +2061,6 @@
       "answer2": "The victims of National Socialism",
       "answer3": "Traffic fatalities",
       "answer4": "Famous Jewish musicians",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2689,9 +2071,6 @@
       "answer2": "In the Confederation of the Rhine",
       "answer3": "In the Warsaw Pact",
       "answer4": "In the European Alliance",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2702,9 +2081,6 @@
       "answer2": "A famous German memorial site",
       "answer3": "The secret service of the GDR",
       "answer4": "A German sports club during World War II",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2715,9 +2091,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": "image_209.webp",
       "imageAttribution": null
     },
     {
@@ -2728,9 +2101,6 @@
       "answer2": "Nationwide strikes and a popular uprising",
       "answer3": "The 1st SED Party Congress",
       "answer4": "The first visit of Fidel Castro",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2741,9 +2111,6 @@
       "answer2": "Willy Brandt",
       "answer3": "Mikhail Gorbachev",
       "answer4": "Ludwig Erhard",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2754,9 +2121,6 @@
       "answer2": "Federal States of Germany",
       "answer3": "Federal Republic of Germany",
       "answer4": "Federal District of Germany",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2767,9 +2131,6 @@
       "answer2": "78 million",
       "answer3": "84 million",
       "answer4": "90 million",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2780,9 +2141,6 @@
       "answer2": "red-white-black",
       "answer3": "black-red-green",
       "answer4": "black-yellow-red",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2793,9 +2151,6 @@
       "answer2": "Helmut Kohl",
       "answer3": "Konrad Adenauer",
       "answer4": "Helmut Schmidt",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2806,9 +2161,6 @@
       "answer2": "The flag of the city of Berlin",
       "answer3": "The Imperial Eagle",
       "answer4": "The Imperial Crown",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": "image_216.webp",
       "imageAttribution": null
     },
     {
@@ -2819,9 +2171,6 @@
       "answer2": "1933 to 1945",
       "answer3": "1945 to 1961",
       "answer4": "1949 to 1990",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2832,9 +2181,6 @@
       "answer2": "5",
       "answer3": "6",
       "answer4": "7",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2845,9 +2191,6 @@
       "answer2": "1949",
       "answer3": "1971",
       "answer4": "1990",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2858,9 +2201,6 @@
       "answer2": "The adoption of the Basic Law",
       "answer3": "The reunification of Germany",
       "answer4": "The victims of National Socialism (Day of the Liberation of Auschwitz concentration camp)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2871,9 +2211,6 @@
       "answer2": "All people can enter Germany without identity checks.",
       "answer3": "Germans can travel to any country without passport control.",
       "answer4": "Germans can pay with the Euro in any country.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2884,9 +2221,6 @@
       "answer2": "Portugal",
       "answer3": "Spain",
       "answer4": "Switzerland",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2897,9 +2231,6 @@
       "answer2": "Bulgaria",
       "answer3": "Poland",
       "answer4": "Greece",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2910,9 +2241,6 @@
       "answer2": "European Union",
       "answer3": "Uniform Union",
       "answer4": "Euro Union",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2923,9 +2251,6 @@
       "answer2": "Norway",
       "answer3": "Spain",
       "answer4": "Austria",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2936,9 +2261,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": "image_226.webp",
       "imageAttribution": null
     },
     {
@@ -2949,9 +2271,6 @@
       "answer2": "Denmark",
       "answer3": "Norway",
       "answer4": "Sweden",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2962,9 +2281,6 @@
       "answer2": "EU Eastern Expansion",
       "answer3": "German Reunification",
       "answer4": "European Community",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2975,9 +2291,6 @@
       "answer2": "Bulgaria",
       "answer3": "Norway",
       "answer4": "Luxembourg",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2988,9 +2301,6 @@
       "answer2": "6 years.",
       "answer3": "7 years.",
       "answer4": "8 years.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3001,9 +2311,6 @@
       "answer2": "The term refers to the immigration stop to Europe.",
       "answer3": "It refers to European emigrants in the USA.",
       "answer4": "The term refers to the unification of European states into the EU.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3014,9 +2321,6 @@
       "answer2": "The countries allowed to join the EU",
       "answer3": "The members of the European Parliament",
       "answer4": "The European constitution",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3027,9 +2331,6 @@
       "answer2": "Bulgaria",
       "answer3": "Greece",
       "answer4": "Portugal",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3040,9 +2341,6 @@
       "answer2": "Paris",
       "answer3": "Berlin",
       "answer4": "Strasbourg",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3053,9 +2351,6 @@
       "answer2": "Freedom of travel in all EU countries",
       "answer3": "Peace and security in the countries of the EU",
       "answer4": "Uniform public holidays in the countries of the EU",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": "image_235.webp",
       "imageAttribution": null
     },
     {
@@ -3066,9 +2361,6 @@
       "answer2": "23",
       "answer3": "25",
       "answer4": "27",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3079,9 +2371,6 @@
       "answer2": "Founding of the European Economic Community (EEC)",
       "answer3": "Germany's obligation to make reparation payments",
       "answer4": "Determination of the Oder-Neisse line as the eastern border",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3092,9 +2381,6 @@
       "answer2": "Strasbourg, Luxembourg, and Brussels",
       "answer3": "Rome, Bern, and Vienna",
       "answer4": "Bonn, Zurich, and Milan",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3105,9 +2391,6 @@
       "answer2": "Through the 'Treaties of Rome'",
       "answer3": "Through the 'Paris Treaties'",
       "answer4": "Through the 'London Treaties'",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3118,9 +2401,6 @@
       "answer2": "1998",
       "answer3": "2002",
       "answer4": "2005",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3131,9 +2411,6 @@
       "answer2": "She must submit an application to the parental allowance office.",
       "answer3": "She doesn't have to do anything because she automatically receives parental allowance.",
       "answer4": "She must ask the employment agency for permission.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3144,9 +2421,6 @@
       "answer2": "The federal states",
       "answer3": "The parents / guardians",
       "answer4": "The schools",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3157,9 +2431,6 @@
       "answer2": "They don't have to do anything. You can demonstrate anywhere anytime in Germany.",
       "answer3": "They can't do anything because demonstrations are generally forbidden in Germany.",
       "answer4": "Maik and Sybille must found a new club because only clubs are allowed to demonstrate.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3170,9 +2441,6 @@
       "answer2": "A diploma",
       "answer3": "The proxy (Prokura)",
       "answer4": "A journeyman's examination",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3183,9 +2451,6 @@
       "answer2": "Tom (20 years) and Klaus (45 years)",
       "answer3": "Sofie (35 years) and Lisa (40 years)",
       "answer4": "Anne (13 years) and Tim (25 years)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3196,9 +2461,6 @@
       "answer2": "18",
       "answer3": "19",
       "answer4": "21",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3209,9 +2471,6 @@
       "answer2": "Maternity protection (Mutterschutz)",
       "answer3": "Birth preparation",
       "answer4": "Puerperium (Wochenbett)",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3222,9 +2481,6 @@
       "answer2": "the parents.",
       "answer3": "the grandparents.",
       "answer4": "the schools.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3235,9 +2491,6 @@
       "answer2": "The parents",
       "answer3": "The relatives",
       "answer4": "The schools",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3248,9 +2501,6 @@
       "answer2": "are well educated.",
       "answer3": "are a woman.",
       "answer4": "are a member of a party.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3261,9 +2511,6 @@
       "answer2": "it's only the family's business.",
       "answer3": "you cannot be punished for it.",
       "answer4": "you can be punished for it.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3274,9 +2521,6 @@
       "answer2": "you can have several spouses at the same time.",
       "answer3": "you may not marry again if you were once married.",
       "answer4": "a woman may not marry again if her husband has died.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3287,9 +2531,6 @@
       "answer2": "At the registry office (Standesamt)",
       "answer3": "At the public order office (Ordnungsamt)",
       "answer4": "At the trade licensing office (Gewerbeamt)",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3300,9 +2541,6 @@
       "answer2": "The spouses have been married for one year, then divorce is possible.",
       "answer3": "Visitation rights for the children apply for one year.",
       "answer4": "The spouses live their own lives separately for at least one year. After that, divorce is possible.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3313,9 +2551,6 @@
       "answer2": "School office.",
       "answer3": "Youth welfare office (Jugendamt).",
       "answer4": "Health office.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3326,9 +2561,6 @@
       "answer2": "Approval from a party",
       "answer3": "Approval from the resident registration office",
       "answer4": "A restaurant permit from the responsible authority",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3339,9 +2571,6 @@
       "answer2": "an evening high school (Abendgymnasium).",
       "answer3": "a Hauptschule.",
       "answer4": "a private university.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3352,9 +2581,6 @@
       "answer2": "It can take a child who is beaten or starving out of the family.",
       "answer3": "It pays child benefit to the parents.",
       "answer4": "It checks whether the child attends a kindergarten.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3365,9 +2591,6 @@
       "answer2": "apprenticeship search.",
       "answer3": "tax return.",
       "answer4": "health insurance.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3378,9 +2601,6 @@
       "answer2": "freedom of choice for all subjects.",
       "answer3": "a claim to school money.",
       "answer4": "compulsory attendance.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3391,9 +2611,6 @@
       "answer2": "an evening high school (Abendgymnasium).",
       "answer3": "a Hauptschule.",
       "answer4": "a private university.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3404,9 +2621,6 @@
       "answer2": "You may disadvantage other people if sufficient personal reasons exist for this.",
       "answer3": "No one may sue persons if they have been disadvantaged.",
       "answer4": "It is law for everyone to donate money annually to disadvantaged groups.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3417,9 +2631,6 @@
       "answer2": "are treated like adults.",
       "answer3": "share the punishment with their parents.",
       "answer4": "are not punished.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3430,9 +2641,6 @@
       "answer2": "On May Day",
       "answer3": "At Oktoberfest",
       "answer4": "At Pentecost",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3443,9 +2651,6 @@
       "answer2": "To the public order office",
       "answer3": "To the employment agency",
       "answer4": "To the registry office (Standesamt)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3456,9 +2661,6 @@
       "answer2": "When the neighbors go to sleep",
       "answer3": "At 0:00 AM, midnight",
       "answer4": "At 10:00 PM",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3469,9 +2671,6 @@
       "answer2": "They have the right to bring the daughter back to the parental apartment.",
       "answer3": "They can go to the police and report the daughter.",
       "answer4": "They look for another man for the daughter.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3482,9 +2681,6 @@
       "answer2": "If she cannot speak German, she is not allowed to have a driver's license.",
       "answer3": "She must get the driver's license in the country where her language is spoken.",
       "answer4": "She can perhaps take the theory exam in her native language. There are more than ten languages to choose from.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3495,9 +2691,6 @@
       "answer2": "a place in a sports club.",
       "answer3": "a kindergarten place.",
       "answer4": "a holiday pass.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3508,9 +2701,6 @@
       "answer2": "only for young people.",
       "answer3": "for continuing education.",
       "answer4": "only for pensioners.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3521,9 +2711,6 @@
       "answer2": "Decorating a fir tree",
       "answer3": "Dressing up with masks and costumes",
       "answer4": "Putting pumpkins in front of the door",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3534,9 +2721,6 @@
       "answer2": "Two women live together.",
       "answer3": "A single father lives together with his two children.",
       "answer4": "A man is married to two women at the same time.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3547,9 +2731,6 @@
       "answer2": "to the health office.",
       "answer3": "to the resident registration office.",
       "answer4": "to the youth welfare office.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3560,9 +2741,6 @@
       "answer2": "The secrecy of correspondence",
       "answer3": "The duty of confidentiality",
       "answer4": "Freedom of speech",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3573,9 +2751,6 @@
       "answer2": "A certificate from a doctor",
       "answer3": "The consent of the children",
       "answer4": "The support of a lawyer",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3586,9 +2761,6 @@
       "answer2": "I have to put up with this treatment.",
       "answer3": "I threaten the person.",
       "answer4": "I can complain to the head of the authority.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3599,9 +2771,6 @@
       "answer2": "has too high salary expectations.",
       "answer3": "has no experience in this profession.",
       "answer4": "is a mother.",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3612,9 +2781,6 @@
       "answer2": "has no experience.",
       "answer3": "has too high salary expectations.",
       "answer4": "does not speak English.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3625,9 +2791,6 @@
       "answer2": "all tenants in the house.",
       "answer3": "rules that all residents must adhere to.",
       "answer4": "the address of the nearest public order office.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3638,9 +2801,6 @@
       "answer2": "throw the notice away.",
       "answer3": "file an objection.",
       "answer4": "wait until another notice comes.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3651,9 +2811,6 @@
       "answer2": "equal treatment",
       "answer3": "freedom of assembly",
       "answer4": "freedom of movement",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3664,9 +2821,6 @@
       "answer2": "Poll worker (Wahlhelfer)",
       "answer3": "Library supervision",
       "answer4": "Teacher",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3677,9 +2831,6 @@
       "answer2": "I file an objection with the authority.",
       "answer3": "I send the bill back to the authority.",
       "answer4": "I go to the tax office with the bill.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3690,9 +2841,6 @@
       "answer2": "Adults must continue learning even after training.",
       "answer3": "Children learn everything important for work in school. After school, you don't have to continue learning.",
       "answer4": "Everyone must stop working earlier because everything changes.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3703,9 +2851,6 @@
       "answer2": "Contributions to unemployment insurance",
       "answer3": "Contributions to pension and health insurance",
       "answer4": "Value added tax (Umsatzsteuer)",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3716,9 +2861,6 @@
       "answer2": "The auditor",
       "answer3": "The operations group",
       "answer4": "The operations management",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3729,9 +2871,6 @@
       "answer2": "The working hours",
       "answer3": "The notice period",
       "answer4": "The insurance obligation",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3742,9 +2881,6 @@
       "answer2": "From National Socialist crimes against Jews",
       "answer3": "From the Basic Law of the Federal Republic of Germany",
       "answer4": "From the Christian tradition",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3755,9 +2891,6 @@
       "answer2": "he has too high salary expectations.",
       "answer3": "he has dark skin.",
       "answer4": "he has no experience in the profession.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3768,9 +2901,6 @@
       "answer2": "Make a complaint about the TV (reklamieren)",
       "answer3": "Exchange the device without asking",
       "answer4": "Extend the warranty",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3781,9 +2911,6 @@
       "answer2": "that is important for statistics in Germany.",
       "answer3": "you have to pay more taxes if you do not belong to a church.",
       "answer4": "the church is responsible for the tax return.",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3794,9 +2921,6 @@
       "answer2": "All people believe in God.",
       "answer3": "Everyone can believe what they want.",
       "answer4": "The state decides which God people believe in.",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3807,9 +2931,6 @@
       "answer2": "Decorating a fir tree",
       "answer3": "Painting eggs",
       "answer4": "Shooting rockets into the air",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3820,9 +2941,6 @@
       "answer2": "German memorial day.",
       "answer3": "international day of mourning.",
       "answer4": "Bavarian custom.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3833,9 +2951,6 @@
       "answer2": "Christianity",
       "answer3": "Buddhism",
       "answer4": "Islam",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3846,9 +2961,6 @@
       "answer2": "Thanksgiving (Erntedankfest).",
       "answer3": "Advent season.",
       "answer4": "All Saints' Day (Allerheiligen).",
-      "correctAnswerIndex": 3,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3859,9 +2971,6 @@
       "answer2": "Poland",
       "answer3": "Morocco",
       "answer4": "Turkey",
-      "correctAnswerIndex": 4,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3872,9 +2981,6 @@
       "answer2": "France, Romania, Somalia.",
       "answer3": "Chile, Hungary, Zimbabwe.",
       "answer4": "North Korea, Mexico, Egypt.",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3885,9 +2991,6 @@
       "answer2": "Guest workers (Gastarbeiter).",
       "answer3": "Temporary workers (Zeitarbeiter).",
       "answer4": "Shift workers (Schichtarbeiter).",
-      "correctAnswerIndex": 2,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3898,9 +3001,6 @@
       "answer2": "Spain",
       "answer3": "Portugal",
       "answer4": "Turkey",
-      "correctAnswerIndex": 1,
-      "category": "GENERAL",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3911,9 +3011,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 1,
-      "category": "BADEN",
-      "imageUrl": "image_301.webp",
       "imageAttribution": null
     },
     {
@@ -3924,9 +3021,6 @@
       "answer2": "Neckar-Odenwald-Kreis",
       "answer3": "North Frisia",
       "answer4": "Altötting",
-      "correctAnswerIndex": 2,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3937,9 +3031,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3950,9 +3041,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3963,9 +3051,6 @@
       "answer2": "black-gold",
       "answer3": "white-blue",
       "answer4": "green-white-red",
-      "correctAnswerIndex": 2,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3976,9 +3061,6 @@
       "answer2": "At the consumer center",
       "answer3": "At the State Agency for Civic Education (Landeszentrale für politische Bildung)",
       "answer4": "At the churches",
-      "correctAnswerIndex": 3,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3989,9 +3071,6 @@
       "answer2": "Stuttgart.",
       "answer3": "Karlsruhe.",
       "answer4": "Mannheim.",
-      "correctAnswerIndex": 2,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4002,9 +3081,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 2,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4015,9 +3091,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4028,9 +3101,6 @@
       "answer2": "Justice Minister",
       "answer3": "Interior Minister",
       "answer4": "Foreign Minister",
-      "correctAnswerIndex": 4,
-      "category": "BADEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4041,9 +3111,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 2,
-      "category": "BAYERN",
-      "imageUrl": "image_311.webp",
       "imageAttribution": null
     },
     {
@@ -4054,9 +3121,6 @@
       "answer2": "Rhein-Sieg-Kreis",
       "answer3": "North Frisia",
       "answer4": "Altötting",
-      "correctAnswerIndex": 4,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4067,9 +3131,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4080,9 +3141,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 3,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4093,9 +3151,6 @@
       "answer2": "white-blue",
       "answer3": "green-white-red",
       "answer4": "black-yellow",
-      "correctAnswerIndex": 2,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4106,9 +3161,6 @@
       "answer2": "At the State Agency for Civic Education",
       "answer3": "At the consumer center",
       "answer4": "At the churches",
-      "correctAnswerIndex": 2,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4119,9 +3171,6 @@
       "answer2": "Regensburg.",
       "answer3": "Nuremberg.",
       "answer4": "Munich.",
-      "correctAnswerIndex": 4,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4132,9 +3181,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 4,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4145,9 +3191,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4158,9 +3201,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "BAYERN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4171,9 +3211,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "BERLIN",
-      "imageUrl": "image_321.webp",
       "imageAttribution": null
     },
     {
@@ -4184,9 +3221,6 @@
       "answer2": "Prignitz",
       "answer3": "Pankow",
       "answer4": "Mecklenburg Lake District",
-      "correctAnswerIndex": 3,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4197,9 +3231,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4210,9 +3241,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4223,9 +3251,6 @@
       "answer2": "white-red",
       "answer3": "green-white-red",
       "answer4": "black-gold",
-      "correctAnswerIndex": 2,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4236,9 +3261,6 @@
       "answer2": "At the churches",
       "answer3": "At the consumer center",
       "answer4": "At the State Agency for Civic Education",
-      "correctAnswerIndex": 4,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4249,9 +3271,6 @@
       "answer2": "Saarland",
       "answer3": "Brandenburg",
       "answer4": "Hesse",
-      "correctAnswerIndex": 1,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4262,9 +3281,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 4,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4275,9 +3291,6 @@
       "answer2": "Lord Mayor",
       "answer3": "President of the Senate",
       "answer4": "Governing Mayor",
-      "correctAnswerIndex": 4,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4288,9 +3301,6 @@
       "answer2": "Interior Senator",
       "answer3": "Senator for Foreign Relations",
       "answer4": "Justice Senator",
-      "correctAnswerIndex": 3,
-      "category": "BERLIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4301,9 +3311,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "BRANDENBURG",
-      "imageUrl": "image_331.webp",
       "imageAttribution": null
     },
     {
@@ -4314,9 +3321,6 @@
       "answer2": "Rhein-Sieg-Kreis",
       "answer3": "Vogtlandkreis",
       "answer4": "Amberg-Sulzbach",
-      "correctAnswerIndex": 1,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4327,9 +3331,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4340,9 +3341,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4353,9 +3351,6 @@
       "answer2": "red-white",
       "answer3": "green-white-red",
       "answer4": "black-yellow",
-      "correctAnswerIndex": 2,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4366,9 +3361,6 @@
       "answer2": "At the public order office of the municipality",
       "answer3": "At the State Agency for Civic Education",
       "answer4": "At the consumer center",
-      "correctAnswerIndex": 3,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4379,9 +3371,6 @@
       "answer2": "Cottbus.",
       "answer3": "Brandenburg.",
       "answer4": "Frankfurt/Oder.",
-      "correctAnswerIndex": 1,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4392,9 +3381,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 4,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4405,9 +3391,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4418,9 +3401,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "BRANDENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4431,9 +3411,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 3,
-      "category": "BREMEN",
-      "imageUrl": "image_341.webp",
       "imageAttribution": null
     },
     {
@@ -4444,9 +3421,6 @@
       "answer2": "Hemelingen",
       "answer3": "Pankow",
       "answer4": "Babelsberg",
-      "correctAnswerIndex": 2,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4457,9 +3431,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 2,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4470,9 +3441,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4483,9 +3451,6 @@
       "answer2": "red-white",
       "answer3": "green-white-red",
       "answer4": "black-gold",
-      "correctAnswerIndex": 2,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4496,9 +3461,6 @@
       "answer2": "At the State Agency for Civic Education",
       "answer3": "At the churches",
       "answer4": "At the consumer center",
-      "correctAnswerIndex": 2,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4509,9 +3471,6 @@
       "answer2": "Munich",
       "answer3": "Frankfurt",
       "answer4": "Erfurt",
-      "correctAnswerIndex": 1,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4522,9 +3481,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 1,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4535,9 +3491,6 @@
       "answer2": "First Mayor",
       "answer3": "President of the Senate / Mayor",
       "answer4": "Governing Mayor",
-      "correctAnswerIndex": 3,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4548,9 +3501,6 @@
       "answer2": "Finance Senator",
       "answer3": "Justice Senator",
       "answer4": "Interior Senator",
-      "correctAnswerIndex": 1,
-      "category": "BREMEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4561,9 +3511,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 2,
-      "category": "HAMBURG",
-      "imageUrl": "image_351.webp",
       "imageAttribution": null
     },
     {
@@ -4574,9 +3521,6 @@
       "answer2": "Hemelingen",
       "answer3": "Pankow",
       "answer4": "Mecklenburg Lake District",
-      "correctAnswerIndex": 1,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4587,9 +3531,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4600,9 +3541,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4613,9 +3551,6 @@
       "answer2": "white-red",
       "answer3": "green-white-red",
       "answer4": "black-yellow",
-      "correctAnswerIndex": 2,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4626,9 +3561,6 @@
       "answer2": "At the consumer center",
       "answer3": "At the churches",
       "answer4": "At the State Agency for Civic Education",
-      "correctAnswerIndex": 4,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4639,9 +3571,6 @@
       "answer2": "Saxony",
       "answer3": "Bavaria",
       "answer4": "Thuringia",
-      "correctAnswerIndex": 1,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4652,9 +3581,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 3,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4665,9 +3591,6 @@
       "answer2": "First Mayor",
       "answer3": "Governing Senator",
       "answer4": "Lord Mayor",
-      "correctAnswerIndex": 2,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4678,9 +3601,6 @@
       "answer2": "Senator for Foreign Relations",
       "answer3": "Finance Senator",
       "answer4": "Interior Senator",
-      "correctAnswerIndex": 2,
-      "category": "HAMBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4691,9 +3611,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 2,
-      "category": "HESSEN",
-      "imageUrl": "image_361.webp",
       "imageAttribution": null
     },
     {
@@ -4704,9 +3621,6 @@
       "answer2": "Altötting",
       "answer3": "Prignitz",
       "answer4": "Main-Taunus-Kreis",
-      "correctAnswerIndex": 4,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4717,9 +3631,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4730,9 +3641,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 3,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4743,9 +3651,6 @@
       "answer2": "red-white",
       "answer3": "black-gold",
       "answer4": "green-white-red",
-      "correctAnswerIndex": 2,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4756,9 +3661,6 @@
       "answer2": "At the consumer center",
       "answer3": "At the public order office of the municipality",
       "answer4": "At the churches",
-      "correctAnswerIndex": 1,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4769,9 +3671,6 @@
       "answer2": "Darmstadt.",
       "answer3": "Frankfurt.",
       "answer4": "Wiesbaden.",
-      "correctAnswerIndex": 4,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4782,9 +3681,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 3,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4795,9 +3691,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4808,9 +3701,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "HESSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4821,9 +3711,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 3,
-      "category": "MECKLENBURG",
-      "imageUrl": "image_371.webp",
       "imageAttribution": null
     },
     {
@@ -4834,9 +3721,6 @@
       "answer2": "Mecklenburg Lake District (Mecklenburgische Seenplatte)",
       "answer3": "Vogtlandkreis",
       "answer4": "Rhein-Sieg-Kreis",
-      "correctAnswerIndex": 2,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4847,9 +3731,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4860,9 +3741,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4873,9 +3751,6 @@
       "answer2": "blue-white-yellow-red",
       "answer3": "green-white-red",
       "answer4": "black-yellow",
-      "correctAnswerIndex": 2,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4886,9 +3761,6 @@
       "answer2": "At the churches",
       "answer3": "At the public order office of the municipality",
       "answer4": "At the consumer center",
-      "correctAnswerIndex": 1,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4899,9 +3771,6 @@
       "answer2": "Schwerin.",
       "answer3": "Rostock.",
       "answer4": "Wismar.",
-      "correctAnswerIndex": 2,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4912,9 +3781,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 3,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4925,9 +3791,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4938,9 +3801,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "MECKLENBURG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4951,9 +3811,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 3,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": "image_381.webp",
       "imageAttribution": null
     },
     {
@@ -4964,9 +3821,6 @@
       "answer2": "Rhein-Sieg-Kreis",
       "answer3": "North Frisia",
       "answer4": "Vogtlandkreis",
-      "correctAnswerIndex": 1,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4977,9 +3831,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -4990,9 +3841,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5003,9 +3851,6 @@
       "answer2": "black-red-gold",
       "answer3": "black-yellow",
       "answer4": "blue-white-red",
-      "correctAnswerIndex": 2,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5016,9 +3861,6 @@
       "answer2": "At the public order office of the municipality",
       "answer3": "At the consumer center",
       "answer4": "At the churches",
-      "correctAnswerIndex": 1,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5029,9 +3871,6 @@
       "answer2": "Braunschweig.",
       "answer3": "Wolfsburg.",
       "answer4": "Osnabrück.",
-      "correctAnswerIndex": 1,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5042,9 +3881,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 1,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5055,9 +3891,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5068,9 +3901,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "NIEDERSACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5081,9 +3911,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 2,
-      "category": "NORDRHEIN",
-      "imageUrl": "image_391.webp",
       "imageAttribution": null
     },
     {
@@ -5094,9 +3921,6 @@
       "answer2": "Rhein-Sieg-Kreis",
       "answer3": "North Frisia",
       "answer4": "Vogtlandkreis",
-      "correctAnswerIndex": 2,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5107,9 +3931,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5120,9 +3941,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5133,9 +3951,6 @@
       "answer2": "green-white-red",
       "answer3": "black-gold",
       "answer4": "blue-white-red",
-      "correctAnswerIndex": 2,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5146,9 +3961,6 @@
       "answer2": "At the public order office of the municipality",
       "answer3": "At the consumer center",
       "answer4": "At the State Agency for Civic Education",
-      "correctAnswerIndex": 4,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5159,9 +3971,6 @@
       "answer2": "Bonn.",
       "answer3": "Düsseldorf.",
       "answer4": "Dortmund.",
-      "correctAnswerIndex": 3,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5172,9 +3981,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 1,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5185,9 +3991,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5198,9 +4001,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "NORDRHEIN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5211,9 +4011,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 1,
-      "category": "RHEINLAND",
-      "imageUrl": "image_401.webp",
       "imageAttribution": null
     },
     {
@@ -5224,9 +4021,6 @@
       "answer2": "Altötting",
       "answer3": "Emsland",
       "answer4": "Prignitz",
-      "correctAnswerIndex": 1,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5237,9 +4031,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5250,9 +4041,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 3,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5263,9 +4051,6 @@
       "answer2": "black-red-gold",
       "answer3": "black-yellow",
       "answer4": "green-white-red",
-      "correctAnswerIndex": 2,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5276,9 +4061,6 @@
       "answer2": "At the consumer center",
       "answer3": "At the public order office of the municipality",
       "answer4": "At the State Agency for Civic Education",
-      "correctAnswerIndex": 4,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5289,9 +4071,6 @@
       "answer2": "Kaiserslautern.",
       "answer3": "Ludwigshafen.",
       "answer4": "Koblenz.",
-      "correctAnswerIndex": 1,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5302,9 +4081,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 2,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5315,9 +4091,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5328,9 +4101,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "RHEINLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5341,9 +4111,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "SAARLAND",
-      "imageUrl": "image_411.webp",
       "imageAttribution": null
     },
     {
@@ -5354,9 +4121,6 @@
       "answer2": "Altötting",
       "answer3": "Neunkirchen",
       "answer4": "Rhein-Sieg-Kreis",
-      "correctAnswerIndex": 3,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5367,9 +4131,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5380,9 +4141,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 3,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5393,9 +4151,6 @@
       "answer2": "black-red-gold",
       "answer3": "black-yellow",
       "answer4": "green-white-red",
-      "correctAnswerIndex": 2,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5406,9 +4161,6 @@
       "answer2": "At the State Agency for Civic Education",
       "answer3": "At the consumer center",
       "answer4": "At the public order office of the municipality",
-      "correctAnswerIndex": 2,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5419,9 +4171,6 @@
       "answer2": "Homburg.",
       "answer3": "Saarbrücken.",
       "answer4": "Völklingen.",
-      "correctAnswerIndex": 3,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5432,9 +4181,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 2,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5445,9 +4191,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5458,9 +4201,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "SAARLAND",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5471,9 +4211,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "SACHSEN",
-      "imageUrl": "image_421.webp",
       "imageAttribution": null
     },
     {
@@ -5484,9 +4221,6 @@
       "answer2": "Altötting",
       "answer3": "Uckermark",
       "answer4": "North Frisia",
-      "correctAnswerIndex": 1,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5497,9 +4231,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5510,9 +4241,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 3,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5523,9 +4251,6 @@
       "answer2": "white-green",
       "answer3": "green-white-red",
       "answer4": "black-yellow",
-      "correctAnswerIndex": 2,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5536,9 +4261,6 @@
       "answer2": "At the public order office of the municipality",
       "answer3": "At the churches",
       "answer4": "At the consumer center",
-      "correctAnswerIndex": 1,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5549,9 +4271,6 @@
       "answer2": "Dresden.",
       "answer3": "Chemnitz.",
       "answer4": "Zwickau.",
-      "correctAnswerIndex": 2,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5562,9 +4281,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 4,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5575,9 +4291,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5588,9 +4301,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "SACHSEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5601,9 +4311,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "SACHSENANHALT",
-      "imageUrl": "image_431.webp",
       "imageAttribution": null
     },
     {
@@ -5614,9 +4321,6 @@
       "answer2": "Altötting",
       "answer3": "Uckermark",
       "answer4": "Börde",
-      "correctAnswerIndex": 4,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5627,9 +4331,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5640,9 +4341,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5653,9 +4351,6 @@
       "answer2": "yellow-black",
       "answer3": "green-white-red",
       "answer4": "white-red",
-      "correctAnswerIndex": 2,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5666,9 +4361,6 @@
       "answer2": "At the State Agency for Civic Education",
       "answer3": "At the public order office of the municipality",
       "answer4": "At the consumer center",
-      "correctAnswerIndex": 2,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5679,9 +4371,6 @@
       "answer2": "Dessau.",
       "answer3": "Magdeburg.",
       "answer4": "Wittenberg.",
-      "correctAnswerIndex": 3,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5692,9 +4381,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 3,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5705,9 +4391,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5718,9 +4401,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "SACHSENANHALT",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5731,9 +4411,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 3,
-      "category": "SCHLESWIG",
-      "imageUrl": "image_441.webp",
       "imageAttribution": null
     },
     {
@@ -5744,9 +4421,6 @@
       "answer2": "Mecklenburg Lake District",
       "answer3": "North Frisia (Nordfriesland)",
       "answer4": "Rhein-Sieg-Kreis",
-      "correctAnswerIndex": 3,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5757,9 +4431,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5770,9 +4441,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5783,9 +4451,6 @@
       "answer2": "blue-white-red",
       "answer3": "white-red",
       "answer4": "green-white-red",
-      "correctAnswerIndex": 2,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5796,9 +4461,6 @@
       "answer2": "At the public order office of the municipality",
       "answer3": "At the State Commissioner for Civic Education",
       "answer4": "At the churches",
-      "correctAnswerIndex": 3,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5809,9 +4471,6 @@
       "answer2": "Flensburg.",
       "answer3": "Lübeck.",
       "answer4": "Kiel.",
-      "correctAnswerIndex": 4,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5822,9 +4481,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 1,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5835,9 +4491,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5848,9 +4501,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "SCHLESWIG",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5861,9 +4511,6 @@
       "answer2": "Image 2",
       "answer3": "Image 3",
       "answer4": "Image 4",
-      "correctAnswerIndex": 4,
-      "category": "THURINGEN",
-      "imageUrl": "image_451.webp",
       "imageAttribution": null
     },
     {
@@ -5874,9 +4521,6 @@
       "answer2": "Altötting",
       "answer3": "North Frisia",
       "answer4": "Wartburgkreis",
-      "correctAnswerIndex": 4,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5887,9 +4531,6 @@
       "answer2": "4",
       "answer3": "5",
       "answer4": "6",
-      "correctAnswerIndex": 3,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5900,9 +4541,6 @@
       "answer2": "16",
       "answer3": "18",
       "answer4": "20",
-      "correctAnswerIndex": 2,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5913,9 +4551,6 @@
       "answer2": "white-red",
       "answer3": "green-white-red",
       "answer4": "black-gold",
-      "correctAnswerIndex": 2,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5926,9 +4561,6 @@
       "answer2": "At the consumer center",
       "answer3": "At the State Agency for Civic Education",
       "answer4": "At the public order office of the municipality",
-      "correctAnswerIndex": 3,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5939,9 +4571,6 @@
       "answer2": "Erfurt.",
       "answer3": "Gera.",
       "answer4": "Jena.",
-      "correctAnswerIndex": 2,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5952,9 +4581,6 @@
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "correctAnswerIndex": 4,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5965,9 +4591,6 @@
       "answer2": "Prime Minister",
       "answer3": "Mayor",
       "answer4": "Minister President",
-      "correctAnswerIndex": 4,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -5978,9 +4601,6 @@
       "answer2": "Foreign Minister",
       "answer3": "Finance Minister",
       "answer4": "Interior Minister",
-      "correctAnswerIndex": 2,
-      "category": "THURINGEN",
-      "imageUrl": null,
       "imageAttribution": null
     }
   ]

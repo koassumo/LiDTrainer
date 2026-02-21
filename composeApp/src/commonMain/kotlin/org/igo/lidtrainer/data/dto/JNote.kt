@@ -11,8 +11,8 @@ data class JNote(
     val answer2: String,
     val answer3: String,
     val answer4: String,
-    val correctAnswerIndex: Int,
-    val category: String,
+    val correctAnswerIndex: Int = 0,
+    val category: String = "",
     val imageUrl: String? = null,
     val imageAttribution: String? = null
 )
