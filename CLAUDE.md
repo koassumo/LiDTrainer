@@ -223,7 +223,7 @@ Color.kt (color definitions) → Theme.kt (Material3 role binding) → MaterialT
 
 All user-facing strings are managed through **Jetpack Compose Resources** (multiplatform string resources).
 
-**Supported UI languages:** English (default), Russian, German.
+**Supported UI languages:** English (default), Russian, German, Spanish.
 
 **Key files:**
 - `domain/strings/AppStrings.kt` — interface (35 string properties)
@@ -231,12 +231,13 @@ All user-facing strings are managed through **Jetpack Compose Resources** (multi
 - `composeResources/values/strings.xml` — English
 - `composeResources/values-ru/strings.xml` — Russian
 - `composeResources/values-de/strings.xml` — German
+- `composeResources/values-es/strings.xml` — Spanish
 
 **Adding new strings:**
 1. Add to interface: `domain/strings/AppStrings.kt`
 2. Add to data class constructor: `ui/theme/AppStringsImpl.kt`
 3. Add resource mapping in `rememberAppStrings()`: `ui/theme/AppStringsImpl.kt`
-4. Add XML entries to all 3 language files: `composeResources/values*/strings.xml`
+4. Add XML entries to all 4 language files: `composeResources/values*/strings.xml`
 
 **Usage in screens:**
 ```kotlin
@@ -245,20 +246,20 @@ Text(strings.myStringKey)  // ✅ Correct
 Text("Hardcoded text")      // ❌ Wrong
 ```
 
-**Note:** UI localization (EN/RU/DE) is separate from quiz content localization (~200 languages loaded from server).
+**Note:** UI localization (EN/RU/DE/ES) is separate from quiz content localization (~200 languages loaded from server).
 
 ## Language Configuration — Two Independent Settings
 
 The app has **two separate language settings** stored in `SettingsRepository`:
 
 1. **`languageState: StateFlow<AppLanguageConfig>`** — UI language (menu, buttons, labels)
-   - Values: `SYSTEM`, `EN`, `RU`, `DE`
+   - Values: `SYSTEM`, `EN`, `RU`, `DE`, `ES`
    - Stored as: `"app_language_key"` in Settings
    - Controls: `UpdateAppLanguage()` + `rememberAppStrings()`
    - User can change in Settings → Language
 
 2. **`languageContentState: StateFlow<String>`** — Content language (quiz question translations)
-   - Values: `"en"`, `"ru"`, `"de"` (or `""` if not selected)
+   - Values: `"en"`, `"ru"`, `"de"`, `"es"` (or `""` if not selected)
    - Stored as: `"language_content_code"` in Settings
    - Controls: Which JSON pack to load (`pack_en.json`, `pack_ru.json`, etc.)
    - User can change in Settings → Content Language
@@ -277,7 +278,8 @@ The app has **two separate language settings** stored in `SettingsRepository`:
 1. **LanguageSelectScreen** — First launch: choose native language for quiz content. Auto-detects system language and pre-selects it. On continue, sets both UI language and content language to the same value.
 2. **DashboardScreen** — Statistics, "Study questions" button navigating to LessonScreen
 3. **LessonScreen** — Question cards with German text + native language translation, 4 answer options with color feedback (green/red). Navigation via **horizontal swipe** (`HorizontalPager`). Translation toggle (Switch) visible only when content language ≠ "de". TopBar shows `"X / N"` counter. Includes a one-time swipe hint (animated circle button + page nudge) that shows once the user finds the correct answer on any card and disappears permanently after the first real swipe — flag persisted in `SettingsRepository.hasSeenSwipeHint()`.
-4. **SettingsScreen** — Three settings: Theme (System/Light/Dark), UI Language (System/EN/RU/DE), Content Language (EN/RU/DE). Uses local sub-navigation with AnimatedContent.
+4. **SettingsScreen** — Three settings: Theme (System/Light/Dark), UI Language (System/EN/RU/DE/ES), Content Language (EN/RU/DE/ES). Uses local sub-navigation with AnimatedContent.
+5. **StatisticsScreen** — Pie chart (correct/incorrect/not answered) with percentage labels + read-only question grid (LazyVerticalGrid, 8 columns). Accessible from Dashboard via Statistics button.
 
 ## Data Model
 
@@ -311,7 +313,7 @@ SQLDelight schema at `commonMain/sqldelight/org/igo/lidtrainer/db/Note.sq`
 - [x] Project setup with all dependencies (Gradle sync passes)
 - [x] Koin DI infrastructure (5 modules + platform init)
 - [x] Theme system (Color.kt + Theme.kt + Dimens.kt + Light/Dark)
-- [x] Localization system (AppStrings + 3 languages + CompositionLocal)
+- [x] Localization system (AppStrings + 4 languages EN/RU/DE/ES + CompositionLocal)
 - [x] Common UI components (CommonButton, CommonCard, CommonTopBar, LoadingContent, ExitDialog)
 - [x] Single Scaffold architecture (MainScreen + TopBarState)
 - [x] Navigation with stack (MainViewModel + Destinations)
@@ -329,7 +331,8 @@ SQLDelight schema at `commonMain/sqldelight/org/igo/lidtrainer/db/Note.sq`
 ### Remaining
 - [ ] Ktor API client (language pack loading from Firebase for ~200 languages)
 - [ ] BuildKonfig setup (API keys from local.properties)
-- [ ] Full statistics display on DashboardScreen
+- [x] StatisticsScreen (pie chart + question grid, accessible from Dashboard)
+- [x] Spanish language support (UI + pack_es.json with 460 questions)
 - [ ] Practice test mode (timer, scoring, no answer reveal until end)
 
 ## Reference Project

@@ -41,7 +41,8 @@ fun LanguageSelectScreen(
     val languages = listOf(
         "en" to strings.languageEn,
         "ru" to strings.languageRu,
-        "de" to strings.languageDe
+        "de" to strings.languageDe,
+        "es" to strings.languageEs
     )
 
     Surface(modifier = modifier.fillMaxSize()) {

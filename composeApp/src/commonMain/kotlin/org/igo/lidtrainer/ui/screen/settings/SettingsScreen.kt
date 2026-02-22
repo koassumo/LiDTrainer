@@ -253,6 +253,7 @@ private fun SettingsMainList(
                 "en" -> strings.languageEn
                 "ru" -> strings.languageRu
                 "de" -> strings.languageDe
+                "es" -> strings.languageEs
                 else -> currentLanguageContent
             },
             onClick = onLanguageContentClick

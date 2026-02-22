@@ -4004,7 +4004,7 @@
       "answer4": "4",
       "correctAnswerIndex": 2,
       "category": "BADEN",
-      "imageUrl": null,
+      "imageUrl": "baden_8.webp",
       "imageAttribution": null
     },
     {
@@ -4134,7 +4134,7 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "BAYERN",
-      "imageUrl": null,
+      "imageUrl": "bayern_8.webp",
       "imageAttribution": null
     },
     {
@@ -4264,7 +4264,7 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": null,
+      "imageUrl": "berlin_8.webp",
       "imageAttribution": null
     },
     {
@@ -4394,7 +4394,7 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "BRANDENBURG",
-      "imageUrl": null,
+      "imageUrl": "brandenburg_8.webp",
       "imageAttribution": null
     },
     {
@@ -4524,7 +4524,7 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "BREMEN",
-      "imageUrl": null,
+      "imageUrl": "berlin_8.webp",
       "imageAttribution": null
     },
     {
@@ -4654,7 +4654,7 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "HAMBURG",
-      "imageUrl": null,
+      "imageUrl": "berlin_8.webp",
       "imageAttribution": null
     },
     {
@@ -4784,7 +4784,7 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "HESSEN",
-      "imageUrl": null,
+      "imageUrl": "hessen_8.webp",
       "imageAttribution": null
     },
     {
@@ -4914,7 +4914,7 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "MECKLENBURG",
-      "imageUrl": null,
+      "imageUrl": "mecklenburg_8.webp",
       "imageAttribution": null
     },
     {
@@ -5044,7 +5044,7 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "NIEDERSACHSEN",
-      "imageUrl": null,
+      "imageUrl": "sachsen_8.webp",
       "imageAttribution": null
     },
     {
@@ -5174,7 +5174,7 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "NORDRHEIN",
-      "imageUrl": null,
+      "imageUrl": "nordrhein_8.webp",
       "imageAttribution": null
     },
     {
@@ -5304,7 +5304,7 @@
       "answer4": "4",
       "correctAnswerIndex": 2,
       "category": "RHEINLAND",
-      "imageUrl": null,
+      "imageUrl": "baden_8.webp",
       "imageAttribution": null
     },
     {
@@ -5434,7 +5434,7 @@
       "answer4": "4",
       "correctAnswerIndex": 2,
       "category": "SAARLAND",
-      "imageUrl": null,
+      "imageUrl": "berlin_8.webp",
       "imageAttribution": null
     },
     {
@@ -5564,7 +5564,7 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "SACHSEN",
-      "imageUrl": null,
+      "imageUrl": "sachsen_8.webp",
       "imageAttribution": null
     },
     {
@@ -5694,7 +5694,7 @@
       "answer4": "4",
       "correctAnswerIndex": 3,
       "category": "SACHSENANHALT",
-      "imageUrl": null,
+      "imageUrl": "sachsen_8.webp",
       "imageAttribution": null
     },
     {
@@ -5824,7 +5824,7 @@
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "SCHLESWIG",
-      "imageUrl": null,
+      "imageUrl": "schleswig_8.webp",
       "imageAttribution": null
     },
     {
@@ -5954,7 +5954,7 @@
       "answer4": "4",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": null,
+      "imageUrl": "sachsen_8.webp",
       "imageAttribution": null
     },
     {
