@@ -492,7 +492,7 @@ private fun AnswerCard(
                     .padding(Dimens.CommonCardContentPadding)
             ) {
                 Text(
-                    text = "$index. $textDe",
+                    text = textDe,
                     style = MaterialTheme.typography.bodyMedium.copy(fontSize = Dimens.QuizAnswerTextSize),
                     color = textColor
                 )
