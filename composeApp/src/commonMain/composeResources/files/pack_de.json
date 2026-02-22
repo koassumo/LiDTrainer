@@ -273,7 +273,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_021.webp",
+      "imageUrl": "image_21.webp",
       "imageAttribution": "© Bundesregierung / gemeinfrei"
     },
     {
@@ -910,7 +910,7 @@
       "answer4": "Sie/Er schlägt die Kanzlerin/den Kanzler zur Wahl vor.",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": "image_70.webp",
+      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -1683,15 +1683,15 @@
     {
       "id": 130,
       "questionNumber": 130,
-      "questionText": "Welcher Stimmzettel wäre bei einer Bundestagswahl gültig? In Anlehnung an Bundeswahlordnung (BWO), Anlage 26",
+      "questionText": "Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?",
       "answer1": "1",
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": null,
-      "imageAttribution": null
+      "imageUrl": "image_130.webp",
+      "imageAttribution": "In Anlehnung an Bundeswahlordnung (BWO), Anlage 26"
     },
     {
       "id": 131,
@@ -2288,7 +2288,7 @@
       "answer4": "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": null,
+      "imageUrl": "image_176.webp",
       "imageAttribution": null
     },
     {
@@ -2353,7 +2353,7 @@
       "answer4": "Er sprach ein Gebet am Grab des Unbekannten Soldaten.",
       "correctAnswerIndex": 2,
       "category": "GENERAL",
-      "imageUrl": "image_181.webp",
+      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -2431,7 +2431,7 @@
       "answer4": "DDR",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": null,
+      "imageUrl": "image_187.webp",
       "imageAttribution": null
     },
     {
@@ -2717,7 +2717,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "GENERAL",
-      "imageUrl": "image_209.webp",
+      "imageUrl": "image_21.webp",
       "imageAttribution": null
     },
     {
@@ -2808,7 +2808,7 @@
       "answer4": "die Reichskrone",
       "correctAnswerIndex": 1,
       "category": "GENERAL",
-      "imageUrl": "image_216.webp",
+      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3055,7 +3055,7 @@
       "answer4": "einheitliche Feiertage in den Ländern der EU",
       "correctAnswerIndex": 3,
       "category": "GENERAL",
-      "imageUrl": "image_235.webp",
+      "imageUrl": null,
       "imageAttribution": null
     },
     {
@@ -3913,7 +3913,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "BADEN",
-      "imageUrl": "image_301.webp",
+      "imageUrl": "BADEN_301.webp",
       "imageAttribution": null
     },
     {
@@ -4043,7 +4043,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "BAYERN",
-      "imageUrl": "image_311.webp",
+      "imageUrl": "BAYERN_311.webp",
       "imageAttribution": null
     },
     {
@@ -4173,7 +4173,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "BERLIN",
-      "imageUrl": "image_321.webp",
+      "imageUrl": "BERLIN_321.webp",
       "imageAttribution": null
     },
     {
@@ -4303,7 +4303,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "BRANDENBURG",
-      "imageUrl": "image_331.webp",
+      "imageUrl": "BRANDENBURG_331.webp",
       "imageAttribution": null
     },
     {
@@ -4433,7 +4433,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "BREMEN",
-      "imageUrl": "image_341.webp",
+      "imageUrl": "BREMEN_341.webp",
       "imageAttribution": null
     },
     {
@@ -4563,7 +4563,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "HAMBURG",
-      "imageUrl": "image_351.webp",
+      "imageUrl": "HAMBURG_351.webp",
       "imageAttribution": null
     },
     {
@@ -4693,7 +4693,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "HESSEN",
-      "imageUrl": "image_361.webp",
+      "imageUrl": "HESSEN_361.webp",
       "imageAttribution": null
     },
     {
@@ -4823,7 +4823,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "MECKLENBURG",
-      "imageUrl": "image_371.webp",
+      "imageUrl": "MECKLENBURG_371.webp",
       "imageAttribution": null
     },
     {
@@ -4953,7 +4953,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "NIEDERSACHSEN",
-      "imageUrl": "image_381.webp",
+      "imageUrl": "NIEDERSACHSEN_381.webp",
       "imageAttribution": null
     },
     {
@@ -5083,7 +5083,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 2,
       "category": "NORDRHEIN",
-      "imageUrl": "image_391.webp",
+      "imageUrl": "NORDRHEIN_391.webp",
       "imageAttribution": null
     },
     {
@@ -5213,7 +5213,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 1,
       "category": "RHEINLAND",
-      "imageUrl": "image_401.webp",
+      "imageUrl": "RHEINLAND_401.webp",
       "imageAttribution": null
     },
     {
@@ -5343,7 +5343,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "SAARLAND",
-      "imageUrl": "image_411.webp",
+      "imageUrl": "SAARLAND_411.webp",
       "imageAttribution": null
     },
     {
@@ -5473,7 +5473,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "SACHSEN",
-      "imageUrl": "image_421.webp",
+      "imageUrl": "SACHSEN_421.webp",
       "imageAttribution": null
     },
     {
@@ -5603,7 +5603,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "SACHSENANHALT",
-      "imageUrl": "image_431.webp",
+      "imageUrl": "SACHSENANHALT_431.webp",
       "imageAttribution": null
     },
     {
@@ -5733,7 +5733,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 3,
       "category": "SCHLESWIG",
-      "imageUrl": "image_441.webp",
+      "imageUrl": "SCHLESWIG_441.webp",
       "imageAttribution": null
     },
     {
@@ -5863,7 +5863,7 @@
       "answer4": "Bild 4",
       "correctAnswerIndex": 4,
       "category": "THURINGEN",
-      "imageUrl": "image_451.webp",
+      "imageUrl": "THURINGEN_451.webp",
       "imageAttribution": null
     },
     {

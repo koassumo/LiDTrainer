@@ -1296,12 +1296,12 @@
     {
       "id": 130,
       "questionNumber": 130,
-      "questionText": "Which ballot paper would be valid in a federal election? Based on Federal Electoral Regulations (BWO), Annex 26",
+      "questionText": "Which ballot paper would be valid in a federal election?",
       "answer1": "1",
       "answer2": "2",
       "answer3": "3",
       "answer4": "4",
-      "imageAttribution": null
+      "imageAttribution": "Based on Federal Electoral Regulations (BWO), Annex 26"
     },
     {
       "id": 131,
